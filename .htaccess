@@ -1,0 +1,49 @@
+# ============================================================
+# Isabelly Lima — Portfolio
+# .htaccess — Hostinger / Apache
+# ============================================================
+
+# Habilita o motor de reescrita
+Options -Indexes
+RewriteEngine On
+
+# Cases dinamicos inexistentes devem sair do indice.
+RewriteCond %{QUERY_STRING} (^|&)slug= [NC]
+RewriteCond %{QUERY_STRING} !(^|&)slug=(brucutu-chapeiro|ft-irrigacao|vanessa-rosa|construzan|dr-giovani-advocacia|influenciadora-thaysa-paixao|terezan-telhas|vereador-francisco-arruda|vereador-homerinho|villas-burguer|nutripet-black-friday|cardapio-pesqueiro-cris|cartao-visita-amarelo|capa-livro-colagens|cartao-visita-ft|flyer-pan-queso|papel-timbrado-terezan|video-terezan-reels|video-plca-advogados)(&|$) [NC]
+RewriteRule ^projetos/case(?:\.html)?$ - [R=410,L]
+
+# ── 1. Redirecionar URLs antigas (com .html) para URLs limpas (301) ──
+# Ex.: /contato.html → /contato
+RewriteCond %{THE_REQUEST} \s/+([^.]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# ── 2. Remover barra final antes de checar extensão ─────────────────
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# ── 3. Servir arquivos .html ao acessar URLs sem extensão ────────────
+# Funciona para raiz e subpastas (ex.: /projetos/case → /projetos/case.html)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [END]
+
+# ── 4. Página de erro personalizada ─────────────────────────────────
+ErrorDocument 404 /404.html
+
+# ── 5. Compressão gzip ───────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# ── 6. Cache de assets estáticos ────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg  "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png  "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css   "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType video/mp4  "access plus 1 year"
+</IfModule>

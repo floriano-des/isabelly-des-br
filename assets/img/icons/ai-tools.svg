@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="18" fill="#1A0F2E"/>
+  <!-- sparkle top-right -->
+  <path d="M72 18 L74 24 L80 26 L74 28 L72 34 L70 28 L64 26 L70 24 Z" fill="#9669e5"/>
+  <!-- sparkle small bottom-left -->
+  <path d="M26 62 L27 65 L30 66 L27 67 L26 70 L25 67 L22 66 L25 65 Z" fill="#9669e5" opacity="0.6"/>
+  <!-- main text -->
+  <text x="50" y="56" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">IA</text>
+  <text x="50" y="74" font-family="Arial, sans-serif" font-size="11" font-weight="400" fill="#9669e5" text-anchor="middle" letter-spacing="2">TOOLS</text>
+</svg>

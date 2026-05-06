@@ -1,0 +1,30 @@
+# Robots.txt for Isabelly Lima Portfolio
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /sobre.html
+Allow: /projetos.html
+Allow: /projetos/*.html
+Allow: /contato.html
+Allow: /assets/
+
+# Disallow specific paths
+Disallow: /admin/
+Disallow: /*.php
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Sitemap
+Sitemap: https://isabelly.des.br/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Request rate
+Request-rate: 30/60
+
+# Robots.txt for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
