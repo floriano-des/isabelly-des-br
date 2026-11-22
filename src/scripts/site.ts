@@ -34,7 +34,12 @@ function bindPage() {
   const interval = window.setInterval(updateClock, 15000);
   const smooth = reduced.matches
     ? null
-    : new Lenis({ lerp: 0.1, anchors: true, allowNestedScroll: true });
+    : new Lenis({
+        lerp: 0.1,
+        // O Astro cuida das âncoras e do histórico de navegação no índice do Sobre.
+        anchors: !document.querySelector('.about-index'),
+        allowNestedScroll: true,
+      });
   if (smooth) {
     smooth.on('scroll', ScrollTrigger.update);
     const tick = (seconds: number) => smooth.raf(seconds * 1000);

@@ -3521,6 +3521,22 @@
         "en": "The opossum tattoo coloured in blue, pink and lilac."
       }
     },
+    "Desenhos e Ilustrações/Ilustrações/Estampa Formandos/esboco.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/17-esboco.webp",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        640,
+        960,
+        1200
+      ],
+      "url": "/media/cases/ilustracao/17-esboco",
+      "alt": {
+        "pt": "Esboço a lápis da estampa: uma água-viva junto à inscrição “NONO 2025”, cercada pelos nomes da turma.",
+        "en": "Pencil sketch for the class print. A jellyfish sits beside the words “NONO 2025”, surrounded by the students’ names."
+      }
+    },
     "Desenhos e Ilustrações/Ilustrações/Estampa Formandos/1.jpg": {
       "kind": "image",
       "asset": "cases/ilustracao/15-1.webp",
@@ -3587,21 +3603,6 @@
         "en": "A taped portrait of Isabelly closes her scrapbook about her creative influences."
       }
     },
-    "Identidade Visual do Site/Carrossel 3/Slide 7.jpg": {
-      "kind": "image",
-      "asset": "isabelly/carrossel-design-slide-7.webp",
-      "width": 864,
-      "height": 1080,
-      "widths": [
-        640,
-        864
-      ],
-      "url": "/media/isabelly/carrossel-design-slide-7",
-      "alt": {
-        "pt": "Um selo de coração prende um papel sobre o fundo roxo. Nele se lê “Um designer não serve só pra fazer post ou cartaz bonitinho pra você”.",
-        "en": "A note with a heart-shaped wax seal on a purple background explains that a designer does more than make a good-looking post or poster."
-      }
-    },
     "sobre-infancia": {
       "kind": "image",
       "asset": "isabelly/isabelly-infancia.webp",
@@ -3623,19 +3624,56 @@
     },
     "instagram-marca-bonita": {
       "kind": "image",
-      "asset": "isabelly/instagram-marca-bonita.webp",
-      "width": 680,
-      "height": 664,
+      "asset": "isabelly/instagram-marca-bonita-capa.webp",
+      "width": 1080,
+      "height": 1350,
       "widths": [
         320,
         480,
         640,
-        680
+        960,
+        1080
       ],
-      "url": "/media/isabelly/instagram-marca-bonita",
+      "url": "/media/isabelly/instagram-marca-bonita-capa",
       "alt": {
-        "pt": "O título “Sua marca pode ser bonita” aparece em letras claras sobre a textura roxa.",
-        "en": "The headline “Sua marca pode ser bonita” appears in pale lettering on a textured purple background."
+        "pt": "Na capa roxa, um gato preto acompanha a pergunta “Sua marca pode ser bonita. Mas será que isso é suficiente?”",
+        "en": "A black cat on a purple cover beside a question in Portuguese: “Your brand can be beautiful. But is that enough?”"
+      }
+    },
+    "instagram-isys-capa": {
+      "kind": "image",
+      "asset": "isabelly/instagram-isys-capa.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        320,
+        480,
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/isabelly/instagram-isys-capa",
+      "alt": {
+        "pt": "Símbolo de Isys Karoline sobre duas pessoas correndo. No rodapé, “Brand Design — Isys Karoline | Personal e Pilates”.",
+        "en": "Isys Karoline’s brand symbol over two runners, with a caption identifying her personal training and Pilates practice."
+      }
+    },
+    "instagram-fundamentos-capa": {
+      "kind": "image",
+      "asset": "isabelly/instagram-fundamentos-capa.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        320,
+        480,
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/isabelly/instagram-fundamentos-capa",
+      "alt": {
+        "pt": "Um açougueiro de máscara segura um cutelo ao lado da pergunta “Você faria sua cirurgia com um açougueiro?”",
+        "en": "A masked butcher holding a cleaver beside the question “Would you let a butcher perform your surgery?” in Portuguese."
       }
     }
   },

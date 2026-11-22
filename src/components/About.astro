@@ -2,6 +2,7 @@
 import { getAboutSlide, getMedia, getPhoto } from '../lib/media';
 import Photo from './HomePicture.astro';
 import AboutInstagram from './AboutInstagram.astro';
+import AboutBackground from './AboutBackground.astro';
 import { copy, pathFor, type Lang } from '../lib/site';
 import '../styles/info.css';
 interface Props {
@@ -25,23 +26,11 @@ const notes = pt
     ];
 const sections = [
   { id: 'historia', label: pt ? 'Minha história' : 'My story', preview: getPhoto(3) },
-  { id: 'percurso', label: pt ? 'Meu percurso' : 'My background', preview: getPhoto(5) },
+  { id: 'percurso', label: pt ? 'Experiência profissional' : 'Work experience', preview: getPhoto(5) },
+  { id: 'formacao', label: pt ? 'Formação e cursos' : 'Education and courses', preview: getAboutSlide(10) },
   { id: 'fora-do-design', label: pt ? 'Fora do design' : 'Away from my desk', preview: getAboutSlide(9) },
   { id: 'instagram', label: pt ? 'No Instagram' : 'On Instagram' },
 ];
-const timeline = pt
-  ? [
-      ['2023', 'Freelancer', 'Design gráfico e ilustração'],
-      ['', 'Design Gráfico', 'Formação em design'],
-      ['', 'Agência Dolivs', 'Design para marcas e redes sociais'],
-      ['2026', 'Jack Usephot', 'Ambientação e Manipulação de Imagens'],
-    ]
-  : [
-      ['2023', 'Freelance', 'Graphic design and illustration'],
-      ['', 'Graphic design', 'Design studies'],
-      ['', 'Agência Dolivs', 'Design for brands and social media'],
-      ['2026', 'Jack Usephot', 'Image composition and manipulation'],
-    ];
 const off = pt
   ? [
       ['Na cozinha', 'Gosto de experimentar receitas.'],
@@ -68,7 +57,6 @@ const off = pt
           <div class="portrait-print">
             <Photo asset={getMedia('sobre-infancia')} {lang} sizes="(max-width: 600px) 75vw, (max-width: 1000px) 38vw, 28vw" eager />
           </div>
-          <figcaption><span>Isabelly Lima</span><img src="/cursor/gato-lavanda.svg" alt="" width="30" height="30" /></figcaption>
         </figure>
         <div class="about-introduction">
           <h2>{pt ? 'Me chamo' : 'My name is'} <strong>Isabelly.</strong></h2>
@@ -95,36 +83,22 @@ const off = pt
       {notes.slice(1).map((note) => <p>{note}</p>)}
     </div>
   </section>
-  <section class="about-process info-wrap" id="percurso" aria-label={sections[1].label}>
-    <div>
-      <h2>{pt ? 'Na minha mesa' : 'On my desk'}</h2>
-      <ul class="tool-list">
-        {[
-          'Photoshop',
-          'Illustrator',
-          'InDesign',
-          'After Effects',
-          'Premiere',
-          'Notion',
-          pt ? 'IA generativa' : 'Generative AI',
-        ].map((x) => (
-          <li>{x}</li>
-        ))}
-      </ul>
-    </div>
-    <div>
-      <h2>{pt ? 'Meu percurso' : 'My background'}</h2>
-      <dl class="timeline">
-        {timeline.map(([year, name, detail]) => (
-          <div>
-            <dt>
-              {name} {year && <small>{year}</small>}
-            </dt>
-            <dd>{detail}</dd>
-          </div>
-        ))}
-      </dl>
-    </div>
+  <AboutBackground {lang} />
+  <section class="about-tools info-wrap" aria-labelledby="tools-title">
+    <h2 id="tools-title">{pt ? 'Na minha mesa' : 'On my desk'}</h2>
+    <ul class="tool-list">
+      {[
+        'Photoshop',
+        'Illustrator',
+        'InDesign',
+        'After Effects',
+        'Premiere',
+        'Notion',
+        pt ? 'IA generativa' : 'Generative AI',
+      ].map((x) => (
+        <li>{x}</li>
+      ))}
+    </ul>
   </section>
   <section class="outside info-wrap" id="fora-do-design" aria-labelledby="outside-title">
     <div class="outside-title">

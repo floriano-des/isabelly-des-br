@@ -1,6 +1,7 @@
 ---
 import type { CaseLanguage, ProjectBlock } from '../lib/case-content';
 import { sectionName } from '../lib/case-content';
+import { copy } from '../lib/site';
 import CaseMedia from './CaseMedia.astro';
 interface Props {
   blocks: ProjectBlock[];
@@ -11,6 +12,7 @@ interface Props {
 }
 
 const { blocks, lang, slug, prefix, sectionHeading } = Astro.props;
+const labels = copy[lang].portfolio;
 const narrow = '(max-width: 767px) 92vw, 59vw';
 const paired = '(max-width: 600px) 92vw, 46vw';
 ---
@@ -58,16 +60,23 @@ const paired = '(max-width: 600px) 92vw, 46vw';
   if (block.tipo === 'strip' && block.titulo) {
     const title = block.titulo[lang];
     return (
-      <div class="case-gallery">
-        <h3 class="case-label" id={id}>{title}</h3>
-        <ol class="case-gallery-slides" role="list" aria-labelledby={sectionHeading ? `${sectionHeading} ${id}` : id}>
-          {files.map(file => (
-            <li>
-              <CaseMedia file={file} lang={lang} sizes="(max-width: 615px) calc(80vw - 1.6rem), (max-width: 767px) 76vw, 46.2vw" />
-            </li>
+      <case-strip class="case-strip" role="region" aria-labelledby={sectionHeading ? `${sectionHeading} ${id}` : id}>
+        <div class="case-strip-head">
+          <h3 class="case-label" id={id}>{title}</h3>
+          <div class="case-strip-nav" hidden>
+            <output aria-live="off"><span data-counter>01</span> / {String(files.length).padStart(2, '0')}</output>
+            <button type="button" data-prev aria-label={labels.previousSlide} aria-controls={`${id}-slides`}>←</button>
+            <button type="button" data-next aria-label={labels.nextSlide} aria-controls={`${id}-slides`}>→</button>
+          </div>
+        </div>
+        <div id={`${id}-slides`} class="case-strip-track" tabindex="0" role="group" aria-label={title} data-cursor="drag" data-lenis-prevent-horizontal>
+          {files.map((file, n) => (
+            <figure tabindex="0" role="group" aria-label={`Slide ${n + 1} / ${files.length}`}>
+              <CaseMedia file={file} lang={lang} sizes="(max-width: 767px) 77vw, 46vw" />
+            </figure>
           ))}
-        </ol>
-      </div>
+        </div>
+      </case-strip>
     );
   }
 })}

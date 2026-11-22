@@ -1,0 +1,103 @@
+---
+import type { Lang } from '../lib/site';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const pt = lang === 'pt';
+const roles = [
+  {
+    title: pt ? 'Designer gráfica' : 'Graphic designer',
+    organisation: pt ? 'Freelancer' : 'Freelance',
+    period: pt ? 'Mai 2023 – atual' : 'May 2023 – present',
+    detail: pt
+      ? 'Branding e identidade visual, motion design e edição de vídeo. Criação de apresentações, impressos e peças para publicidade e redes sociais.'
+      : 'Branding and visual identity, motion design and video editing. Presentations, print materials, advertising and social media graphics.',
+  },
+  {
+    title: pt ? 'Designer gráfica' : 'Graphic designer',
+    organisation: 'Dolivs',
+    period: pt ? 'Jan – mar 2026' : 'Jan – Mar 2026',
+    detail: pt
+      ? 'Campanhas, posts, materiais institucionais e layouts de e-mail marketing. Edição de vídeo e tratamento de imagens em colaboração com as equipes de criação e planejamento.'
+      : 'Campaigns, social posts, corporate communications and email layouts. Video editing and image retouching in collaboration with the creative and planning teams.',
+  },
+  {
+    title: pt ? 'Estagiária de design gráfico' : 'Graphic design intern',
+    organisation: 'Dolivs',
+    period: pt ? 'Jan – dez 2025' : 'Jan – Dec 2025',
+    detail: pt
+      ? 'Apoio em campanhas publicitárias e adaptação de peças a partir dos visuais principais. Criação de materiais para redes sociais, e-mail e impressão, além de edição de vídeo.'
+      : 'Supported advertising campaigns and adapted key visuals across formats. Created social, email and print materials, and edited videos.',
+  },
+  {
+    title: pt ? 'Social media' : 'Social media specialist',
+    organisation: pt ? 'Freelancer' : 'Freelance',
+    period: pt ? 'Jan – dez 2024' : 'Jan – Dec 2024',
+    detail: pt
+      ? 'Planejamento editorial, criação de conteúdo para redes sociais, gerenciamento de anúncios e análise de desempenho.'
+      : 'Editorial planning, social content creation, ad management and performance analysis.',
+  },
+];
+const courses = [
+  [pt ? 'Design gráfico: desenvolvendo identidade visual' : 'Graphic Design: Developing a Visual Identity', 'Alura', '2026'],
+  [pt ? 'PowerPoint: criando apresentações de alto impacto' : 'PowerPoint: Creating High-Impact Presentations', 'Alura', '2026'],
+  [pt ? 'Intro à manipulação de imagens para publicidade' : 'Introduction to Image Manipulation for Advertising', 'Jackschool', '2026'],
+  [pt ? 'Jornada Tech do Programa Desenvolve' : 'Programa Desenvolve Tech Journey', 'Grupo Boticário', '2025'],
+  [pt ? 'Identidade visual – traduzindo visualmente conceitos de marcas' : 'Visual Identity – Translating Brand Concepts into Visuals', 'Alura', '2024'],
+];
+---
+
+<div class="about-background info-wrap">
+  <section id="percurso" aria-labelledby="experience-title">
+    <h2 id="experience-title">{pt ? 'Experiência profissional' : 'Work experience'}</h2>
+    <ol class="career-roles" role="list">
+      {roles.map(({ title, organisation, period, detail }) => (
+        <li>
+          <p class="career-meta">{organisation} <span>·</span> {period}</p>
+          <h3>{title}</h3>
+          <p class="career-detail">{detail}</p>
+        </li>
+      ))}
+    </ol>
+  </section>
+  <div class="about-studies">
+    <section id="formacao" aria-labelledby="education-title">
+      <h2 id="education-title">{pt ? 'Formação acadêmica' : 'Education'}</h2>
+      <div class="degree">
+        <p class="career-meta">Universidade Cruzeiro do Sul <span>·</span> 2026</p>
+        <h3>{pt ? 'Tecnólogo em Design Gráfico' : 'Technology Degree in Graphic Design'}</h3>
+      </div>
+    </section>
+    <section id="cursos" aria-labelledby="courses-title">
+      <h2 id="courses-title">{pt ? 'Cursos e certificações' : 'Courses and certifications'}</h2>
+      <ul class="course-list" role="list">
+        {courses.map(([title, institution, year]) => (
+          <li><h3>{title}</h3><p class="career-meta">{institution} <span>·</span> {year}</p></li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</div>
+
+<style>
+  .about-background {
+    display: grid;
+    grid-template-columns: 1.08fr 1fr;
+    gap: clamp(40px, 6vw, 90px);
+    align-items: start;
+    padding-block: 1.5rem clamp(40px, 5vw, 76px);
+  }
+  .career-roles, .course-list { list-style: none; margin: 0; padding: 0; }
+  .career-roles li, .course-list li, .degree { border-top: 1px solid var(--rule); padding: 1.05rem 0; }
+  .career-meta { color: #ceb9db; font: 400 .8rem/1.55 var(--mono); }
+  .career-meta span { padding: 0 .1em; }
+  .about-background h3 { font: 600 clamp(1.16rem, 1.6vw, 1.6rem)/1.2 var(--sans); }
+  .career-roles h3, .degree h3 { margin: .3rem 0; }
+  .career-detail { max-width: 52ch; margin-top: .45rem; color: var(--lavanda); line-height: 1.5; }
+  .about-studies { display: grid; gap: clamp(24px, 3vw, 52px); }
+  .course-list .career-meta { margin-top: .3rem; }
+  .course-list h3 { font-size: clamp(1.08rem, 1.35vw, 1.35rem); }
+  @media (max-width: 767px) {
+    .about-background { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>

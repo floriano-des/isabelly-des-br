@@ -40,13 +40,10 @@
   align-items: start;
 }
 .about-portrait {
-  position: relative;
-  isolation: isolate;
-  margin: 0;
-  padding: 11% 14% 4%;
-  background: linear-gradient(#3a1b4cdb, #31133ee8), url('/media/texturas/damask-folhas.webp') center/420px;
-  color: #f2def8;
-  box-shadow: 0 4px 12px #23132e20;
+  margin: .8rem 0;
+  width: 88%;
+  justify-self: center;
+  align-self: center;
 }
 .portrait-print {
   position: relative;
@@ -72,20 +69,7 @@
 .portrait-print img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-.about-portrait figcaption {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding-top: 7%;
-  font: 500 clamp(1.5rem, 2vw, 2rem)/1.1 var(--hand);
-}
-.about-portrait figcaption img {
-  width: clamp(21px, 2vw, 30px);
-  height: auto;
-  rotate: 8deg;
+  object-fit: contain;
 }
 .about-introduction {
   align-self: center;
@@ -168,11 +152,8 @@
 .story-note p + p {
   margin-top: 0.9em;
 }
-.about-process {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 7%;
-  padding-block: 30px 65px;
+.about-tools {
+  padding-block: 0 clamp(48px, 6vw, 90px);
 }
 .about-page h2 {
   font: 400 clamp(2.2rem, 4.5vw, 5rem)/1.1 var(--display);
@@ -199,24 +180,9 @@
   background: #dfd3e8;
   color: var(--noite);
 }
-.timeline {
-  margin: 0;
-}
-.timeline div {
-  border-top: 1px solid var(--rule);
-  padding: 12px 0;
-}
-.timeline dt {
-  font-weight: 600;
-}
-.timeline small,
 .direct-portrait small {
   font: 0.75rem var(--mono);
   color: #c9b1d9;
-}
-.timeline dd {
-  margin: 3px 0;
-  color: var(--lavanda);
 }
 .outside-title {
   display: flex;
@@ -427,12 +393,8 @@
   margin: 0;
 }
 @media (max-width: 767px) {
-  .contact-columns,
-  .about-process {
+  .contact-columns {
     grid-template-columns: 1fr;
-  }
-  .about-process {
-    gap: 38px;
   }
   .personal-note {
     flex-basis: 78%;
@@ -469,7 +431,7 @@
 @media (max-width: 600px) {
   .about-opening, .about-story { grid-template-columns: minmax(0, 1fr); }
   .about-opening { gap: 26px; }
-  .about-portrait { width: min(100%, 370px); justify-self: center; }
+  .about-portrait { width: min(86%, 340px); }
   .about-introduction { padding-block: 4px; }
   .about-lead { max-width: 40ch; }
   .about-index a { padding-block: 0.45rem; }

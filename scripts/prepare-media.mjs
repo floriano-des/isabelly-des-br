@@ -27,7 +27,7 @@ async function registerImage(key, input, directory, name, alt, options = {}) {
   const { max = 2560, cover = false, focusX } = options;
   const square = focusX !== undefined;
   const edge = Math.min(w, h);
-  const crop = square ? { width: edge, height: edge, left: Math.round((w - edge) * focusX), top: Math.round((h - edge) / 2) } : options.crop;
+  const crop = square ? { width: edge, height: edge, left: Math.round((w - edge) * focusX), top: Math.round((h - edge) / 2) } : undefined;
   const originalWidth = crop?.width ?? w, originalHeight = crop?.height ?? h;
   const ratio = Math.min(1, max / Math.max(originalWidth, originalHeight));
   const width = Math.round(originalWidth * ratio), height = Math.round(originalHeight * ratio);
@@ -45,7 +45,7 @@ async function registerImage(key, input, directory, name, alt, options = {}) {
     };
     const webpOptions = cover ? { quality: 94, effort: 5, smartSubsample: true } : { quality: 82, effort: 3, smartSubsample: true };
     const avifOptions = cover ? { quality: 73, effort: 4, chromaSubsampling: '4:4:4' } : { quality: 53, effort: 1 };
-    const imageRecipeTime = cover || crop ? recipeTime : 0;
+    const imageRecipeTime = cover ? recipeTime : 0;
     for (const size of widths) {
       const webp = size === width ? projectPath('src/assets', asset) : path.join(publicDir, `${url}-${size}.webp`);
       await prepareFile(input, webp, (file) => resize(size).webp(webpOptions).toFile(file), imageRecipeTime);
@@ -150,9 +150,11 @@ for (const [index, photo] of seed.fotos.itens.entries()) {
 
 for (const page of seed.cases) {
   const files = references([page.capa, ...page.blocos]);
-  let nextSlot = Math.max(0, ...files.map(file => fileSlots[file] ?? 0));
+  const reservedSlots = new Set(files.map(file => fileSlots[file]));
+  let nextSlot = 1;
   for (const file of files) {
-    const slot = fileSlots[file] ?? ++nextSlot;
+    while (reservedSlots.has(nextSlot)) nextSlot++;
+    const slot = fileSlots[file] ?? nextSlot++;
     const name = `${String(slot).padStart(2, '0')}-${ascii(path.parse(file).name)}`;
     const input = path.join(originals, file);
     const alt = altFor(file);
@@ -189,22 +191,25 @@ for (const n of [9, 10]) {
   manifest.slides[n] = key;
 }
 
-const instagramSlide = 'Identidade Visual do Site/Carrossel 3/Slide 7.jpg';
-await registerImage(instagramSlide, path.join(originals, instagramSlide), 'isabelly', 'carrossel-design-slide-7', {
-  pt: 'Um selo de coração prende um papel sobre o fundo roxo. Nele se lê “Um designer não serve só pra fazer post ou cartaz bonitinho pra você”.',
-  en: 'A note with a heart-shaped wax seal on a purple background explains that a designer does more than make a good-looking post or poster.'
-}, { max: 1080 });
-
 await registerImage('sobre-infancia', projectPath('_material/fotos/isabelly-infancia.png'), 'isabelly', 'isabelly-infancia', {
   pt: 'Isabelly na infância, de vestido jeans e com presilhas coloridas no cabelo.',
   en: 'Isabelly as a child, wearing a denim dress and colourful hair clips.'
 }, { widths: [320, 480, 640, 960, 1280] });
 
-const brandPost = 'Identidade Visual do Site/Carrossel 2/Slide 1.jpg';
-await registerImage('instagram-marca-bonita', path.join(originals, brandPost), 'isabelly', 'instagram-marca-bonita', {
-  pt: 'O título “Sua marca pode ser bonita” aparece em letras claras sobre a textura roxa.',
-  en: 'The headline “Sua marca pode ser bonita” appears in pale lettering on a textured purple background.'
-}, { crop: { left: 0, top: 0, width: 680, height: 664 }, widths: [320, 480, 640] });
+const instagramDir = path.join(originals, 'Identidade Visual do Site');
+const postWidths = { widths: [320, 480, 640, 960] };
+await registerImage('instagram-marca-bonita', path.join(instagramDir, 'Carrossel 2/Slide 1.jpg'), 'isabelly', 'instagram-marca-bonita-capa', {
+  pt: 'Na capa roxa, um gato preto acompanha a pergunta “Sua marca pode ser bonita. Mas será que isso é suficiente?”',
+  en: 'A black cat on a purple cover beside a question in Portuguese: “Your brand can be beautiful. But is that enough?”'
+}, postWidths);
+await registerImage('instagram-isys-capa', path.join(instagramDir, 'Instagram/Dfua3aTGy4V.webp'), 'isabelly', 'instagram-isys-capa', {
+  pt: 'Símbolo de Isys Karoline sobre duas pessoas correndo. No rodapé, “Brand Design — Isys Karoline | Personal e Pilates”.',
+  en: 'Isys Karoline’s brand symbol over two runners, with a caption identifying her personal training and Pilates practice.'
+}, postWidths);
+await registerImage('instagram-fundamentos-capa', path.join(instagramDir, 'Carrossel 3/Slide 1.jpg'), 'isabelly', 'instagram-fundamentos-capa', {
+  pt: 'Um açougueiro de máscara segura um cutelo ao lado da pergunta “Você faria sua cirurgia com um açougueiro?”',
+  en: 'A masked butcher holding a cleaver beside the question “Would you let a butcher perform your surgery?” in Portuguese.'
+}, postWidths);
 
 await Promise.all([
   prepareTexture('damask', '1283323_381.jpg', 480, 50),

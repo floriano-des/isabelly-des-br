@@ -23,7 +23,7 @@ Com o servidor local ativo, `npm run check:work` verifica as duas listagens de T
 
 ## Atualizar trabalhos
 
-Edite [o inventário bilíngue](docs/briefing/projetos.seed.json) e as descrições de mídia em `scripts/media-alt.json`. Para preparar novas peças, instale FFmpeg e FFprobe no PATH e monte o acervo em `_material/isabelly/` e as fotos renomeadas em `_material/fotos/`, conforme a seção 4 do [briefing](docs/briefing/BRIEFING.md). Inclua a foto de infância enviada para o Sobre em `_material/fotos/isabelly-infancia.png`. Execute `npm run media` antes do build. O preparo gera a coleção dos sete cases, variantes responsivas, vídeos, posters e imagens de compartilhamento.
+Edite [o inventário bilíngue](docs/briefing/projetos.seed.json) e as descrições de mídia em `scripts/media-alt.json`. Para preparar novas peças, instale FFmpeg e FFprobe no PATH e monte o acervo em `_material/isabelly/` e as fotos renomeadas em `_material/fotos/`, conforme a seção 4 do [briefing](docs/briefing/BRIEFING.md). Inclua a foto de infância enviada para o Sobre em `_material/fotos/isabelly-infancia.png`. No acervo `_material/isabelly/`, a foto da estampa fica em `Desenhos e Ilustrações/Ilustrações/Estampa Formandos/esboco.jpg` e a capa da publicação de Isys fica em `Identidade Visual do Site/Instagram/Dfua3aTGy4V.webp`. Execute `npm run media` antes do build. O preparo gera a coleção dos sete cases, variantes responsivas, vídeos, posters e imagens de compartilhamento.
 
 ## Revisão
 

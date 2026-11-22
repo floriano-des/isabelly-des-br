@@ -7,33 +7,31 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const pt = lang === 'pt';
 const imageSizes = '(max-width: 44rem) 90vw, 30vw';
-const isys = 'Marcas/Identidade Visual - Isys Karoline Personal';
 const action = pt ? 'ver post' : 'view post';
 const posts = [
   {
     url: 'https://www.instagram.com/p/DbI83krAAL0/',
-    layout: 'lettering',
     context: pt ? 'Branding além da aparência' : 'Branding beyond appearances',
-    images: [
-      { asset: getMedia('instagram-marca-bonita'), alt: pt ? 'Lettering branco com a frase “Sua marca pode ser bonita” sobre textura roxa.' : 'White lettering on purple reads “Your brand can be beautiful” in Portuguese.' },
-    ],
+    cover: getMedia('instagram-marca-bonita'),
+    alt: pt
+      ? 'Gato preto ao lado da frase “Sua marca pode ser bonita. Mas será que isso é suficiente?” em um fundo roxo.'
+      : 'A black cat on purple next to the words “Your brand can be beautiful. But is that enough?” in Portuguese.',
   },
   {
     url: 'https://www.instagram.com/p/Dfua3aTGy4V/',
-    layout: 'two-works',
     context: pt ? 'Identidade visual de Isys Karoline' : 'Visual identity for Isys Karoline',
-    images: [
-      { asset: getMedia(isys + '/9.jpg'), alt: pt ? 'Crachá com o símbolo da Isys Karoline em branco e azul.' : 'An ID badge with the white and blue Isys Karoline symbol.' },
-      { asset: getMedia(isys + '/10.jpg'), alt: pt ? 'Cartões de visita da marca em azul e preto.' : 'Blue and black business cards for the same brand.' },
-    ],
+    cover: getMedia('instagram-isys-capa'),
+    alt: pt
+      ? 'Atleta de roupa azul em movimento, com o símbolo da marca e a assinatura “Isys Karoline | Personal e Pilates”.'
+      : 'An athlete in blue in motion, overlaid with the Isys Karoline logo and the words “Personal e Pilates”.',
   },
   {
     url: 'https://www.instagram.com/p/DcEWmpgkT9d/',
-    layout: 'poster',
     context: pt ? 'Fundamentos do design' : 'Design fundamentals',
-    images: [
-      { asset: getMedia('Identidade Visual do Site/Carrossel 3/Slide 7.jpg'), alt: pt ? 'Recorte de papel com um lacre sobre fundo roxo. O texto fala do papel de quem projeta um cartaz.' : 'A torn paper note with a wax seal on purple, discussing the decisions behind a poster.' },
-    ],
+    cover: getMedia('instagram-fundamentos-capa'),
+    alt: pt
+      ? 'Personagem de máscara com um cutelo ao lado da pergunta “Você faria sua cirurgia com um açougueiro?”.'
+      : 'A masked figure with a cleaver beside the question “Would you have surgery with a butcher?” in Portuguese.',
   },
 ];
 ---
@@ -54,8 +52,8 @@ const posts = [
     {posts.map(post => (
       <li>
         <a class="instagram-post" href={post.url}>
-          <div class:list={['instagram-art', post.layout]}>
-            {post.images.map(image => <HomePicture asset={image.asset} alt={image.alt} lang={lang} sizes={imageSizes} />)}
+          <div class="instagram-art">
+            <HomePicture asset={post.cover} alt={post.alt} lang={lang} sizes={imageSizes} />
           </div>
           <span class="instagram-action">{action}<span class="sr-only"> · {post.context}</span></span>
         </a>
@@ -104,19 +102,8 @@ const posts = [
     padding: 0;
   }
   .instagram-post { display: block; color: inherit; text-decoration: none; }
-  .instagram-art {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr);
-    aspect-ratio: 4/5;
-    background: var(--noite);
-    overflow: hidden;
-  }
-  .instagram-art.two-works { grid-template-rows: repeat(2, minmax(0, 1fr)); }
-  .instagram-art :global(picture), .instagram-art :global(img) { display: block; width: 100%; height: 100%; }
-  .instagram-art :global(img) { object-fit: cover; }
-  .instagram-art.lettering { background: linear-gradient(#4f316b, #472b5e); }
-  .instagram-art.lettering :global(img) { object-fit: contain; }
+  .instagram-art :global(picture), .instagram-art :global(img) { display: block; width: 100%; height: auto; }
+  .instagram-art :global(img) { object-fit: contain; }
   .instagram-action {
     display: inline-block;
     margin-top: .85rem;

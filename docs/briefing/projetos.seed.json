@@ -1545,6 +1545,11 @@
           "blocos": [
             {
               "tipo": "full",
+              "arquivo": "Desenhos e Ilustrações/Ilustrações/Estampa Formandos/esboco.jpg",
+              "largura": "media"
+            },
+            {
+              "tipo": "full",
               "arquivo": "Desenhos e Ilustrações/Ilustrações/Estampa Formandos/1.jpg",
               "largura": "total"
             },

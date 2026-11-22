@@ -187,6 +187,11 @@
       "blocos": [
         {
           "tipo": "full",
+          "arquivo": "src/assets/cases/ilustracao/17-esboco.webp",
+          "largura": "media"
+        },
+        {
+          "tipo": "full",
           "arquivo": "src/assets/cases/ilustracao/15-1.webp",
           "largura": "total"
         },
