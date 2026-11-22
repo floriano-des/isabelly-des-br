@@ -1598,6 +1598,62 @@
       }
     ]
   },
+  "hobbies": [
+    {
+      "key": "hobby-filmes",
+      "original": "WhatsApp Image 2026-11-22 at 19.55.04.jpeg",
+      "titulo": { "pt": "Maratonar filmes", "en": "Movie marathons" },
+      "alt": {
+        "pt": "O logotipo da A24 brilha na tela de uma sala de cinema escura.",
+        "en": "The A24 logo glows on the screen in a dark cinema."
+      }
+    },
+    {
+      "key": "hobby-vampira",
+      "original": "WhatsApp Image 2026-11-22 at 19.58.39.jpeg",
+      "titulo": { "pt": "Diva vampira desde sempre", "en": "Always a vampire diva" },
+      "alt": {
+        "pt": "Com batom preto e sombra lilás, uma menina curva os dedos como garras.",
+        "en": "A girl wearing black lipstick and lilac eyeshadow curls her fingers like claws."
+      }
+    },
+    {
+      "key": "hobby-melanie",
+      "original": "WhatsApp Image 2026-11-22 at 20.00.42.jpeg",
+      "titulo": { "pt": "Se você me conhece, conhece a Melanie Martinez.", "en": "If you know me, you know Melanie Martinez." },
+      "alt": {
+        "pt": "Uma mulher de franja escura sorri entre rostos de manequim.",
+        "en": "A woman with a dark fringe smiles among mannequin faces."
+      }
+    },
+    {
+      "key": "hobby-receitas",
+      "original": "WhatsApp Image 2026-11-22 at 19.48.33.jpeg",
+      "titulo": { "pt": "Receitas gostosas", "en": "Tasty recipes" },
+      "alt": {
+        "pt": "Bolo de chocolate em camadas com morangos cortados em volta da cobertura.",
+        "en": "A chocolate layer cake with sliced strawberries arranged around the icing."
+      }
+    },
+    {
+      "key": "hobby-online",
+      "original": "WhatsApp Image 2026-11-22 at 19.59.39.jpeg",
+      "titulo": { "pt": "Cronicamente online", "en": "Chronically online" },
+      "alt": {
+        "pt": "Uma mulher de franja sorri e segura uma mecha do cabelo. Ao fundo, uma pessoa de camiseta vermelha.",
+        "en": "A woman with a fringe smiles and holds a lock of her hair. Someone in a red shirt stands behind her."
+      }
+    },
+    {
+      "key": "hobby-gato",
+      "original": "WhatsApp Image 2026-11-22 at 19.48.34.jpeg",
+      "titulo": { "pt": "Meu filho laranja", "en": "My ginger boy" },
+      "alt": {
+        "pt": "Um gato laranja listrado repousa sobre um cobertor cinza e olha para a câmera.",
+        "en": "A ginger tabby rests on a grey blanket and looks at the camera."
+      }
+    }
+  ],
   "pendencias": [
     "Pasta Social Media/Terezan Telhas contém carrosséis da Thaysa Paixão / Cassulinha Cabelos, e a subpasta Post Único está vazia. Confirmar com a Isabelly.",
     "Datas divergentes: o carrossel “sobre mim” diz formação em Design Gráfico de 2024 a 2026; o site atual diz Unicid 2022–2025 (index) e lista também Publicidade e Propaganda UNIP 2021–presente (sobre.html). Agência Dolivs aparece como 2024–2025 (sobre) e 2025–presente (index). Confirmar antes de publicar.",

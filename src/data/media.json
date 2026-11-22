@@ -97,6 +97,116 @@
         "en": "Isabelly looking at the camera from a car seat."
       }
     },
+    "hobby-filmes": {
+      "kind": "image",
+      "asset": "isabelly/fora-do-design/hobby-filmes.webp",
+      "width": 738,
+      "height": 1600,
+      "widths": [
+        240,
+        360,
+        480,
+        640,
+        738
+      ],
+      "url": "/media/isabelly/fora-do-design/hobby-filmes",
+      "alt": {
+        "pt": "O logotipo da A24 brilha na tela de uma sala de cinema escura.",
+        "en": "The A24 logo glows on the screen in a dark cinema."
+      }
+    },
+    "hobby-vampira": {
+      "kind": "image",
+      "asset": "isabelly/fora-do-design/hobby-vampira.webp",
+      "width": 1080,
+      "height": 1291,
+      "widths": [
+        240,
+        360,
+        480,
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/isabelly/fora-do-design/hobby-vampira",
+      "alt": {
+        "pt": "Com batom preto e sombra lilás, uma menina curva os dedos como garras.",
+        "en": "A girl wearing black lipstick and lilac eyeshadow curls her fingers like claws."
+      }
+    },
+    "hobby-melanie": {
+      "kind": "image",
+      "asset": "isabelly/fora-do-design/hobby-melanie.webp",
+      "width": 736,
+      "height": 736,
+      "widths": [
+        240,
+        360,
+        480,
+        640,
+        736
+      ],
+      "url": "/media/isabelly/fora-do-design/hobby-melanie",
+      "alt": {
+        "pt": "Uma mulher de franja escura sorri entre rostos de manequim.",
+        "en": "A woman with a dark fringe smiles among mannequin faces."
+      }
+    },
+    "hobby-receitas": {
+      "kind": "image",
+      "asset": "isabelly/fora-do-design/hobby-receitas.webp",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        240,
+        360,
+        480,
+        640,
+        960,
+        1200
+      ],
+      "url": "/media/isabelly/fora-do-design/hobby-receitas",
+      "alt": {
+        "pt": "Bolo de chocolate em camadas com morangos cortados em volta da cobertura.",
+        "en": "A chocolate layer cake with sliced strawberries arranged around the icing."
+      }
+    },
+    "hobby-online": {
+      "kind": "image",
+      "asset": "isabelly/fora-do-design/hobby-online.webp",
+      "width": 736,
+      "height": 768,
+      "widths": [
+        240,
+        360,
+        480,
+        640,
+        736
+      ],
+      "url": "/media/isabelly/fora-do-design/hobby-online",
+      "alt": {
+        "pt": "Uma mulher de franja sorri e segura uma mecha do cabelo. Ao fundo, uma pessoa de camiseta vermelha.",
+        "en": "A woman with a fringe smiles and holds a lock of her hair. Someone in a red shirt stands behind her."
+      }
+    },
+    "hobby-gato": {
+      "kind": "image",
+      "asset": "isabelly/fora-do-design/hobby-gato.webp",
+      "width": 738,
+      "height": 1600,
+      "widths": [
+        240,
+        360,
+        480,
+        640,
+        738
+      ],
+      "url": "/media/isabelly/fora-do-design/hobby-gato",
+      "alt": {
+        "pt": "Um gato laranja listrado repousa sobre um cobertor cinza e olha para a câmera.",
+        "en": "A ginger tabby rests on a grey blanket and looks at the camera."
+      }
+    },
     "Marcas/Identidade Visual - Manicure Vanessa Rosa/Cover.jpg": {
       "kind": "image",
       "asset": "cases/vanessa-rosa/01-cover.webp",

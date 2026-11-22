@@ -148,6 +148,10 @@ for (const [index, photo] of seed.fotos.itens.entries()) {
   await registerImage(key, projectPath('_material/fotos', photo.novo), 'isabelly', name, photoDescriptions[index], { max: 1920 });
 }
 
+for (const { key, original, alt } of seed.hobbies) {
+  await registerImage(key, projectPath('_material/fotos/fora-do-design', original), 'isabelly/fora-do-design', key, alt, { widths: [240, 360, 480, 640, 960] });
+}
+
 for (const page of seed.cases) {
   const files = references([page.capa, ...page.blocos]);
   const reservedSlots = new Set(files.map(file => fileSlots[file]));

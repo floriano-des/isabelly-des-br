@@ -1,5 +1,6 @@
 ---
-import { getAboutSlide, getMedia, getPhoto } from '../lib/media';
+import seed from '../../docs/briefing/projetos.seed.json';
+import { getMedia } from '../lib/media';
 import Photo from './HomePicture.astro';
 import AboutInstagram from './AboutInstagram.astro';
 import AboutBackground from './AboutBackground.astro';
@@ -25,27 +26,12 @@ const notes = pt
       'I’m curious about how brands communicate. I enjoy working both independently and as part of a team, especially when a project has a story to tell.',
     ];
 const sections = [
-  { id: 'historia', label: pt ? 'Minha história' : 'My story', preview: getPhoto(3) },
-  { id: 'percurso', label: pt ? 'Experiência profissional' : 'Work experience', preview: getPhoto(5) },
-  { id: 'formacao', label: pt ? 'Formação e cursos' : 'Education and courses', preview: getAboutSlide(10) },
-  { id: 'fora-do-design', label: pt ? 'Fora do design' : 'Away from my desk', preview: getAboutSlide(9) },
+  { id: 'historia', label: pt ? 'Minha história' : 'My story' },
+  { id: 'percurso', label: pt ? 'Experiência profissional' : 'Work experience' },
+  { id: 'formacao', label: pt ? 'Formação e cursos' : 'Education and courses' },
+  { id: 'fora-do-design', label: pt ? 'Fora do design' : 'Away from my desk' },
   { id: 'instagram', label: pt ? 'No Instagram' : 'On Instagram' },
 ];
-const off = pt
-  ? [
-      ['Na cozinha', 'Gosto de experimentar receitas.'],
-      ['Na tela', 'Terror psicológico, fantasia e animação ocupam boa parte da minha lista.'],
-      ['Nos fones', 'A minha playlist é mega aleatória.'],
-      ['Sukito e Luna', 'Sukito faz jus à cor, tira minha paz.'],
-      ['Meu repertório', 'Agora você conhece um pouco do meu repertório criativo :)'],
-    ]
-  : [
-      ['In the kitchen', 'I like trying out recipes.'],
-      ['On screen', 'My watchlist is full of psychological horror, fantasy and animation.'],
-      ['In my headphones', 'My playlist is all over the place.'],
-      ['Sukito and Luna', 'Sukito, my little black cat, is always up to something.'],
-      ['My creative world', 'Now you know a little more about what inspires me :)'],
-    ];
 ---
 
 <article class="about-page">
@@ -64,12 +50,9 @@ const off = pt
           <p class="about-lead">{notes[0]}</p>
         </div>
         <nav class="about-index" aria-label={pt ? 'Nesta página' : 'On this page'}>
-          {sections.map(({ id, label, preview }) => (
+          {sections.map(({ id, label }) => (
             <a href={`#${id}`}>
               <span>{label}</span>
-              <span class="index-picture" aria-hidden="true">
-                {preview ? <Photo asset={preview} {lang} alt="" sizes="56px" /> : <img class="index-cat" src="/cursor/gato-lavanda.svg" alt="" width="28" height="28" />}
-              </span>
               <span class="index-arrow" aria-hidden="true">↘</span>
             </a>
           ))}
@@ -100,35 +83,25 @@ const off = pt
       ))}
     </ul>
   </section>
-  <section class="outside info-wrap" id="fora-do-design" aria-labelledby="outside-title">
-    <div class="outside-title">
-      <h2 id="outside-title">{pt ? 'Fora do design' : 'Away from my desk'}</h2>
-      <div class="strip-controls" hidden>
-        <button type="button" data-step="-1" aria-label={pt ? 'Voltar uma nota' : 'Previous note'}>
-          ←
-        </button>
-        <button type="button" data-step="1" aria-label={pt ? 'Avançar uma nota' : 'Next note'}>
-          →
-        </button>
-      </div>
-    </div>
-    <div
-      class="personal-strip"
-      tabindex="0"
-      data-cursor="drag"
-      role="region"
-      aria-labelledby="outside-title"
-    >
-      {off.map(([title, body], i) => (
-        <article class="personal-note">
-          {i >= 3 && <Photo asset={getAboutSlide(i + 6)} {lang} sizes="(max-width: 767px) 75vw, 24vw" />}
-          <div>
-            <h3>{title}</h3>
-            <p>{body}</p>
-          </div>
-        </article>
+  <section class="outside" id="fora-do-design" aria-labelledby="outside-title">
+    <h2 id="outside-title">{pt ? 'Fora do' : 'Away from'} <em>{pt ? 'design' : 'my desk'}</em></h2>
+    <ol class="hobby-grid" role="list">
+      {seed.hobbies.map((hobby, index) => (
+        <li>
+          <figure>
+            <Photo
+              asset={getMedia(hobby.key)}
+              {lang}
+              sizes="(max-width: 599px) 46vw, (max-width: 1099px) 30vw, 12vw"
+            />
+            <figcaption>
+              <span class="hobby-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+              <span>{hobby.titulo[lang]}</span>
+            </figcaption>
+          </figure>
+        </li>
       ))}
-    </div>
+    </ol>
   </section>
   <AboutInstagram {lang} />
   <div class="info-actions info-wrap">
@@ -141,64 +114,27 @@ const off = pt
   </div>
 </article>
 <script>
-  function bindAbout() {
-    const controls = document.querySelector<HTMLElement>('.strip-controls');
-    const strip = document.querySelector<HTMLElement>('.personal-strip');
-    if (!strip || !controls || !controls.hidden) return;
-    controls.hidden = false;
-    const buttons = controls.querySelectorAll<HTMLButtonElement>('button');
-    function sync() {
-      if (strip) {
-        buttons[0].disabled = strip.scrollLeft < 2;
-        buttons[1].disabled = strip.scrollLeft >= strip.scrollWidth - strip.clientWidth - 2;
-      }
-    }
-    buttons.forEach((btn) =>
-      btn.addEventListener('click', () =>
-        strip.scrollBy({
-          left:
-            Number(btn.dataset.step) *
-            (strip.children[1].getBoundingClientRect().left -
-              strip.children[0].getBoundingClientRect().left),
-          behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
-        }),
-      ),
-    );
-    strip.addEventListener('scroll', sync, { passive: true });
-    sync();
-    let drag: { x: number; scroll: number } | undefined;
-    strip.addEventListener('pointerdown', (event) => {
-      if (event.pointerType !== 'mouse' || event.button !== 0) return;
-      drag = { x: event.clientX, scroll: strip.scrollLeft };
-      strip.setPointerCapture(event.pointerId);
-      strip.classList.add('dragging');
-    });
-    strip.addEventListener('pointermove', (event) => {
-      if (drag) strip.scrollLeft = drag.scroll - (event.clientX - drag.x);
-    });
-    strip.addEventListener('lostpointercapture', () => {
-      drag = undefined;
-      strip.classList.remove('dragging');
-    });
+  function bindPortrait() {
     const collage = document.querySelector<HTMLElement>('.about-portrait');
-    if (collage && matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) {
-      collage.addEventListener('pointermove', (event) => {
-        const area = collage.getBoundingClientRect();
-        collage.style.setProperty(
-          '--drift-x',
-          ((event.clientX - area.left) / area.width - 0.5) * 10 + 'px',
-        );
-        collage.style.setProperty(
-          '--drift-y',
-          ((event.clientY - area.top) / area.height - 0.5) * 8 + 'px',
-        );
-      });
-      collage.addEventListener('pointerleave', () => {
-        collage.style.removeProperty('--drift-x');
-        collage.style.removeProperty('--drift-y');
-      });
-    }
+    if (!collage || collage.hasAttribute('data-parallax') ||
+      !matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) return;
+    collage.setAttribute('data-parallax', '');
+    collage.addEventListener('pointermove', (event) => {
+      const area = collage.getBoundingClientRect();
+      collage.style.setProperty(
+        '--drift-x',
+        ((event.clientX - area.left) / area.width - 0.5) * 10 + 'px',
+      );
+      collage.style.setProperty(
+        '--drift-y',
+        ((event.clientY - area.top) / area.height - 0.5) * 8 + 'px',
+      );
+    });
+    collage.addEventListener('pointerleave', () => {
+      collage.style.removeProperty('--drift-x');
+      collage.style.removeProperty('--drift-y');
+    });
   }
-  document.addEventListener('astro:page-load', bindAbout);
-  bindAbout();
+  document.addEventListener('astro:page-load', bindPortrait);
+  bindPortrait();
 </script>

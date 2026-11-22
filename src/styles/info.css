@@ -101,9 +101,10 @@
 }
 .about-index a {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 0.8rem;
   align-items: center;
+  min-height: clamp(48px, 4.8vw, 72px);
   padding-block: 0.54rem;
   border-bottom: 1px solid #70567580;
   font: 600 clamp(1.02rem, 1.48vw, 1.55rem)/1.15 var(--sans);
@@ -113,21 +114,6 @@
   text-decoration: underline;
   text-underline-offset: 0.18em;
 }
-.index-picture {
-  width: clamp(36px, 3.7vw, 54px);
-  aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  background: var(--roxo-carrossel);
-}
-.index-picture picture, .index-picture picture img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.index-picture .index-cat { width: 48%; }
 .index-arrow {
   font: 1.05rem var(--sans);
 }
@@ -184,64 +170,63 @@
   font: 0.75rem var(--mono);
   color: #c9b1d9;
 }
-.outside-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1em;
+.outside {
+  display: grid;
+  grid-template-columns: minmax(0, .29fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(1.5rem, 2.3vw, 3rem);
+  padding: clamp(4rem, 7.6vw, 9rem) clamp(1.25rem, 3.8vw, 6rem);
+  color: #28152f;
+  background: #e5d8e9;
+  border-block: 1px solid #70567555;
 }
-.strip-controls {
-  display: flex;
-  gap: 0.5rem;
+.about-page .outside h2 {
+  margin: 0;
+  font: 400 clamp(2.9rem, 4.4vw, 5.6rem)/.98 var(--display);
 }
-.strip-controls[hidden] {
-  display: none;
+.outside h2 em {
+  display: block;
+  font: italic 500 1.04em/1 var(--serif);
 }
-.strip-controls button {
-  border: 1px solid var(--rule);
-  border-radius: 50%;
-  background: var(--noite);
-  color: var(--texto);
-  width: 38px;
-  height: 38px;
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  column-gap: clamp(.625rem, .95vw, 1.25rem);
+  row-gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.strip-controls button:disabled {
-  opacity: 0.4;
+.hobby-grid figure { margin: 0; }
+.hobby-grid picture {
+  display: block;
+  aspect-ratio: 1;
+  background: #d6c8dc;
 }
-.personal-strip {
-  display: flex;
-  overflow: auto;
-  gap: 16px;
-  scroll-snap-type: x mandatory;
-  padding: 10px 2px 20px;
-  scrollbar-color: #80599a #24122e;
-}
-.personal-note {
-  overflow: hidden;
-  flex: 0 0 clamp(240px, 26vw, 420px);
-  scroll-snap-align: start;
-  background: var(--roxo-carrossel);
-  border: 1px solid var(--rule);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.personal-note:nth-child(2n) {
-  background: var(--papel);
-  color: var(--noite);
-}
-.personal-note div {
-  padding: 1.5rem;
-}
-.personal-note img {
+.hobby-grid img {
+  display: block;
   width: 100%;
-  height: 190px;
-  object-fit: contain;
-  background: #1c0c27;
+  height: 100%;
+  object-fit: cover;
 }
-.personal-note h3 {
-  font: 400 2.15rem/1.1 var(--display);
-  margin-bottom: 0.6rem;
+.hobby-grid li:first-child img { object-position: center 34%; }
+.hobby-grid figcaption {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: baseline;
+  gap: .55em;
+  margin-top: .7em;
+  font: 400 clamp(.8rem, .82vw, .98rem)/1.4 var(--mono);
+  overflow-wrap: anywhere;
+}
+.hobby-number { font-size: .85em; color: #614a67; }
+@media (max-width: 1099px) {
+  .outside { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
+  .outside h2 em { display: inline; }
+  .hobby-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 599px) {
+  .hobby-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 .info-actions {
   display: flex;
@@ -396,9 +381,6 @@
   .contact-columns {
     grid-template-columns: 1fr;
   }
-  .personal-note {
-    flex-basis: 78%;
-  }
   .contact-columns {
     gap: 38px;
   }
@@ -416,13 +398,6 @@
 }
 .lost-page .button-line {
   gap: 0.65rem;
-}
-.personal-strip.dragging {
-  scroll-snap-type: none;
-  user-select: none;
-}
-.personal-strip img {
-  -webkit-user-drag: none;
 }
 @media (min-width: 601px) and (max-width: 1000px) {
   .about-opening { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); }
