@@ -1,0 +1,20 @@
+---
+import { copy, pathFor, type Lang } from '../lib/site';
+import '../styles/info.css';
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props,
+  t = copy[lang];
+---
+
+<section class="lost-page">
+  <p class="info-kicker">404</p>
+  <img class="lost-bat" src="/media/gravuras/morcego.png" alt="" width="690" height="230" />
+  <h1>{t.error}</h1>
+  <p>{t.errorText}</p>
+  <a class="button-line" href={pathFor(lang, 'home')}>
+    <img src="/cursor/gato-lavanda.svg" alt="" width="20" height="20" />
+    {t.homeLink}
+  </a>
+</section>

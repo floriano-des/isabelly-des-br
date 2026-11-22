@@ -1,0 +1,3430 @@
+{
+  "items": {
+    "foto-1": {
+      "kind": "image",
+      "asset": "isabelly/isabelly-01-damask-roxo.webp",
+      "width": 1600,
+      "height": 1600,
+      "widths": [
+        320,
+        480,
+        640,
+        960,
+        1280,
+        1600
+      ],
+      "url": "/media/isabelly/isabelly-01-damask-roxo",
+      "alt": {
+        "pt": "Isabelly Lima de óculos, com cabelo preto e batom escuro, diante de um damasco roxo.",
+        "en": "Isabelly Lima wearing glasses and dark lipstick against a purple damask background."
+      }
+    },
+    "foto-2": {
+      "kind": "image",
+      "asset": "isabelly/isabelly-02-camiseta-branca.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/isabelly/isabelly-02-camiseta-branca",
+      "alt": {
+        "pt": "Isabelly de camiseta branca diante de uma parede escura estampada.",
+        "en": "Isabelly in a white T-shirt against a dark patterned wall."
+      }
+    },
+    "foto-3": {
+      "kind": "image",
+      "asset": "isabelly/isabelly-03-carro-luz.webp",
+      "width": 1499,
+      "height": 1500,
+      "widths": [
+        640,
+        960,
+        1280,
+        1499
+      ],
+      "url": "/media/isabelly/isabelly-03-carro-luz",
+      "alt": {
+        "pt": "Isabelly dentro de um carro, com luz natural no rosto.",
+        "en": "Isabelly sitting in a car with daylight on her face."
+      }
+    },
+    "foto-4": {
+      "kind": "image",
+      "asset": "isabelly/isabelly-04-frontal-escuro.webp",
+      "width": 959,
+      "height": 1280,
+      "widths": [
+        640,
+        959
+      ],
+      "url": "/media/isabelly/isabelly-04-frontal-escuro",
+      "alt": {
+        "pt": "Retrato frontal de Isabelly com óculos e roupa escura.",
+        "en": "Front-facing portrait of Isabelly wearing glasses and dark clothing."
+      }
+    },
+    "foto-5": {
+      "kind": "image",
+      "asset": "isabelly/isabelly-05-olhar-baixo.webp",
+      "width": 959,
+      "height": 1280,
+      "widths": [
+        640,
+        959
+      ],
+      "url": "/media/isabelly/isabelly-05-olhar-baixo",
+      "alt": {
+        "pt": "Isabelly olha para baixo, com os cabelos pretos sobre os ombros.",
+        "en": "Isabelly looking down, with black hair falling over her shoulders."
+      }
+    },
+    "foto-6": {
+      "kind": "image",
+      "asset": "isabelly/isabelly-06-carro-frontal.webp",
+      "width": 959,
+      "height": 1280,
+      "widths": [
+        640,
+        959
+      ],
+      "url": "/media/isabelly/isabelly-06-carro-frontal",
+      "alt": {
+        "pt": "Isabelly olha para a câmera no banco do carro.",
+        "en": "Isabelly looking at the camera from a car seat."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/Cover.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/01-cover.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/01-cover",
+      "alt": {
+        "pt": "O monograma VR sobre uma fotografia de mãos com unhas naturais.",
+        "en": "The VR monogram over a photograph of hands with natural nails."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 1.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/02-pag-1.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/02-pag-1",
+      "alt": {
+        "pt": "Unhas pintadas em tom de café junto à introdução da identidade.",
+        "en": "Coffee-coloured nail polish alongside the introduction to the identity."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 2.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/03-pag-2.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/03-pag-2",
+      "alt": {
+        "pt": "Estudos a lápis das iniciais e do nome Vanessa Rosa.",
+        "en": "Pencil sketches exploring the initials and the Vanessa Rosa name."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 3.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/04-pag-3.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/04-pag-3",
+      "alt": {
+        "pt": "Apresentação do logotipo final Vanessa Rosa Manicure em marrom sobre bege.",
+        "en": "The final Vanessa Rosa Manicure wordmark in brown on beige."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 5.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/05-pag-5.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/05-pag-5",
+      "alt": {
+        "pt": "Assinatura tipográfica de Vanessa Rosa, com o descritivo manicure entre dois traços.",
+        "en": "Vanessa Rosa wordmark with the manicure descriptor between two horizontal rules."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 4.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/06-pag-4.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/06-pag-4",
+      "alt": {
+        "pt": "Linhas-guia demonstrando o alinhamento do nome e do descritivo.",
+        "en": "Guidelines showing how the name and descriptor align."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 6.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/07-pag-6.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/07-pag-6",
+      "alt": {
+        "pt": "Amostras das fontes Polymath e Spalla que compõem a identidade.",
+        "en": "Samples of the Polymath and Spalla typefaces used in the identity."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 7.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/08-pag-7.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/08-pag-7",
+      "alt": {
+        "pt": "Paleta bege, café e palha ao lado de uma manicure em esmalte escuro.",
+        "en": "Beige, coffee and straw palette beside a manicure with dark polish."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 8.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/09-pag-8.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/09-pag-8",
+      "alt": {
+        "pt": "Logotipo e variações circulares do monograma VR em três fundos da marca.",
+        "en": "Wordmark and circular VR monograms on three brand backgrounds."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 9.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/10-pag-9.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/10-pag-9",
+      "alt": {
+        "pt": "Cartões de visita claros e escuros ao lado de fotografias de manicure.",
+        "en": "Light and dark business cards beside manicure photography."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 10.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/11-pag-10.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/11-pag-10",
+      "alt": {
+        "pt": "Caneca e bolsa em creme com o monograma da marca.",
+        "en": "Cream mug and bag printed with the brand monogram."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 11.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/12-pag-11.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/12-pag-11",
+      "alt": {
+        "pt": "Embalagem de papel, caixa e toalha com a assinatura Vanessa Rosa.",
+        "en": "A paper bag, box and towel carrying the Vanessa Rosa wordmark."
+      }
+    },
+    "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 12.jpg": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/13-pag-12.webp",
+      "width": 1400,
+      "height": 800,
+      "widths": [
+        640,
+        960,
+        1280,
+        1400
+      ],
+      "url": "/media/cases/vanessa-rosa/13-pag-12",
+      "alt": {
+        "pt": "Perfil da marca no celular e camiseta preta com o nome Vanessa Rosa.",
+        "en": "The brand profile on a phone beside a black Vanessa Rosa T-shirt."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/Cover.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/01-cover.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/isys-karoline/01-cover",
+      "alt": {
+        "pt": "Colagem de exercícios com o símbolo branco de Isys Karoline sobre azul.",
+        "en": "An exercise collage with the white Isys Karoline symbol on blue."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/1.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/02-1.webp",
+      "width": 1686,
+      "height": 905,
+      "widths": [
+        640,
+        960,
+        1280,
+        1686
+      ],
+      "url": "/media/cases/isys-karoline/02-1",
+      "alt": {
+        "pt": "Marca projetada numa academia, com recortes de treino ao lado.",
+        "en": "The wordmark displayed in a gym beside cropped exercise photos."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/Ícone explicação.png": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/03-icone-explicacao.webp",
+      "width": 1686,
+      "height": 905,
+      "widths": [
+        640,
+        960,
+        1280,
+        1686
+      ],
+      "url": "/media/cases/isys-karoline/03-icone-explicacao",
+      "alt": {
+        "pt": "A construção do símbolo reúne a letra K, o pingo do i e uma pessoa em movimento.",
+        "en": "Three stages combine the letter K, the dot of an i and a figure in motion."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/6.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/04-6.webp",
+      "width": 1686,
+      "height": 905,
+      "widths": [
+        640,
+        960,
+        1280,
+        1686
+      ],
+      "url": "/media/cases/isys-karoline/04-6",
+      "alt": {
+        "pt": "Seis versões da assinatura Isys Karoline em azul, creme e branco.",
+        "en": "Six blue, cream and white versions of the Isys Karoline signature."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/5.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/05-5.webp",
+      "width": 1686,
+      "height": 905,
+      "widths": [
+        640,
+        960,
+        1280,
+        1686
+      ],
+      "url": "/media/cases/isys-karoline/05-5",
+      "alt": {
+        "pt": "Aplicações em positivo e negativo do símbolo e do logotipo.",
+        "en": "Positive and reversed versions of the symbol and wordmark."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/4.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/06-4.webp",
+      "width": 1686,
+      "height": 905,
+      "widths": [
+        640,
+        960,
+        1280,
+        1686
+      ],
+      "url": "/media/cases/isys-karoline/06-4",
+      "alt": {
+        "pt": "Paleta de azuis e as famílias tipográficas Boldonse e Elms Sans.",
+        "en": "Blue colour palette with the Boldonse and Elms Sans typefaces."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/2.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/07-2.webp",
+      "width": 1686,
+      "height": 905,
+      "widths": [
+        640,
+        960,
+        1280,
+        1686
+      ],
+      "url": "/media/cases/isys-karoline/07-2",
+      "alt": {
+        "pt": "Painel visual com halteres, treino, roupa esportiva e cores da marca.",
+        "en": "A moodboard of dumbbells, training, sportswear and brand colours."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/7.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/08-7.webp",
+      "width": 2560,
+      "height": 1912,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/isys-karoline/08-7",
+      "alt": {
+        "pt": "Painel iluminado com a marca em uma academia escura.",
+        "en": "An illuminated brand display in a dark gym."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/8.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/09-8.webp",
+      "width": 2560,
+      "height": 1877,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/isys-karoline/09-8",
+      "alt": {
+        "pt": "Papelaria azul com prancheta, folha timbrada e cartões.",
+        "en": "Blue stationery including a clipboard, letterhead and cards."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/9.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/10-9.webp",
+      "width": 2560,
+      "height": 1911,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/isys-karoline/10-9",
+      "alt": {
+        "pt": "Crachá com o símbolo sobre azul, preso a um cordão esportivo.",
+        "en": "Branded badge on a sports lanyard against a blue background."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/10.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/11-10.webp",
+      "width": 2560,
+      "height": 1920,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/isys-karoline/11-10",
+      "alt": {
+        "pt": "Duas pilhas de cartões de visita em azul e preto.",
+        "en": "Two stacks of blue and black business cards."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/11.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/12-11.webp",
+      "width": 1686,
+      "height": 905,
+      "widths": [
+        640,
+        960,
+        1280,
+        1686
+      ],
+      "url": "/media/cases/isys-karoline/12-11",
+      "alt": {
+        "pt": "Saco esportivo e garrafa com a identidade Isys Karoline.",
+        "en": "A drawstring sports bag and bottle with the Isys Karoline identity."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/12.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/13-12.webp",
+      "width": 1686,
+      "height": 905,
+      "widths": [
+        640,
+        960,
+        1280,
+        1686
+      ],
+      "url": "/media/cases/isys-karoline/13-12",
+      "alt": {
+        "pt": "Aplicação da marca em telas de celular e conjunto esportivo preto.",
+        "en": "The identity applied to phone screens and black sportswear."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/13.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/14-13.webp",
+      "width": 2560,
+      "height": 1920,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/isys-karoline/14-13",
+      "alt": {
+        "pt": "Notebook exibindo o site da personal trainer.",
+        "en": "Laptop displaying the personal trainer’s website."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/14.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/15-14.webp",
+      "width": 1686,
+      "height": 905,
+      "widths": [
+        640,
+        960,
+        1280,
+        1686
+      ],
+      "url": "/media/cases/isys-karoline/15-14",
+      "alt": {
+        "pt": "Símbolo azul nas telas de um relógio inteligente e de um celular.",
+        "en": "The blue symbol displayed on a smartwatch and phone."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/15.png": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/16-15.webp",
+      "width": 1622,
+      "height": 908,
+      "widths": [
+        640,
+        960,
+        1280,
+        1622
+      ],
+      "url": "/media/cases/isys-karoline/16-15",
+      "alt": {
+        "pt": "Perfil nas redes e telas de serviços de treino em dois celulares.",
+        "en": "A social profile and coaching services displayed on two phones."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/16.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/17-16.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/isys-karoline/17-16",
+      "alt": {
+        "pt": "Três peças para redes sociais com fotografia de treino e tipografia em branco.",
+        "en": "Three social posts with training photography and white typography."
+      }
+    },
+    "Marcas/Identidade Visual - Brucutu Chapeiro/5.png": {
+      "kind": "image",
+      "asset": "cases/brucutu-chapeiro/01-5.webp",
+      "width": 2560,
+      "height": 1440,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/brucutu-chapeiro/01-5",
+      "alt": {
+        "pt": "Embalagens de batata, hambúrguer e sacola kraft com a marca Brucutu.",
+        "en": "Brucutu fries carton, burger packaging and kraft takeaway bag."
+      }
+    },
+    "Marcas/Identidade Visual - Brucutu Chapeiro/2.png": {
+      "kind": "image",
+      "asset": "cases/brucutu-chapeiro/02-2.webp",
+      "width": 2560,
+      "height": 1440,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/brucutu-chapeiro/02-2",
+      "alt": {
+        "pt": "Variações do logotipo de hamburgueria sobre fundos laranja e vermelho.",
+        "en": "Burger shop logo variations on orange and red backgrounds."
+      }
+    },
+    "Marcas/Identidade Visual - Brucutu Chapeiro/3.png": {
+      "kind": "image",
+      "asset": "cases/brucutu-chapeiro/03-3.webp",
+      "width": 2560,
+      "height": 1440,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/brucutu-chapeiro/03-3",
+      "alt": {
+        "pt": "Faixas apresentam a paleta laranja, vermelha, creme e marrom da Brucutu.",
+        "en": "Stripes show Brucutu’s orange, red, cream and brown palette."
+      }
+    },
+    "Marcas/Identidade Visual - Brucutu Chapeiro/4.png": {
+      "kind": "image",
+      "asset": "cases/brucutu-chapeiro/04-4.webp",
+      "width": 2560,
+      "height": 481,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/brucutu-chapeiro/04-4",
+      "alt": {
+        "pt": "Amostra de Bylander em caixa-alta sobre fundo marrom.",
+        "en": "Bylander type specimen in capitals against brown."
+      }
+    },
+    "Marcas/Identidade Visual - Brucutu Chapeiro/6.png": {
+      "kind": "image",
+      "asset": "cases/brucutu-chapeiro/05-6.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/brucutu-chapeiro/05-6",
+      "alt": {
+        "pt": "Placa vermelha com o logotipo Brucutu Lanches instalada numa fachada.",
+        "en": "Red Brucutu Lanches sign mounted on a building."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Cover.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/01-cover.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/social-media/01-cover",
+      "alt": {
+        "pt": "Peças coloridas da 2 Palitos ao redor de um celular sobre fundo roxo.",
+        "en": "Colourful 2 Palitos posts arranged around a phone against purple."
+      }
+    },
+    "Social Media/Zen Pensions/Post Único/6.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/02-6.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/02-6",
+      "alt": {
+        "pt": "Post da Zen Pensions sobre a experiência digital do trabalhador.",
+        "en": "Zen Pensions post about digital pensions for today’s workforce."
+      }
+    },
+    "Social Media/Zen Pensions/Post Único/2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/03-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/03-2",
+      "alt": {
+        "pt": "Folha pautada sobre previdência em 2026, presa com um clipe.",
+        "en": "A clipped sheet of squared paper introducing pensions in 2026."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 1/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/04-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/04-slide-1",
+      "alt": {
+        "pt": "Cinco perguntas sobre inscrição automática em planos de previdência.",
+        "en": "Five questions about auto-enrolment in workplace pensions."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 1/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/05-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/05-slide-2",
+      "alt": {
+        "pt": "Pergunta sobre o plano de previdência atual, com ícones de saúde financeira.",
+        "en": "Question about the current pension scheme with financial health icons."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 1/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/06-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/06-slide-3",
+      "alt": {
+        "pt": "Funcionários ilustrados acompanham a questão sobre engajamento.",
+        "en": "An illustrated team accompanies a question about employee engagement."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 1/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/07-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/07-slide-4",
+      "alt": {
+        "pt": "Pergunta sobre a carga administrativa, com ícones de agenda e poupança.",
+        "en": "A question about the administrative burden, with calendar and savings icons."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 1/Slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/08-slide-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/08-slide-5",
+      "alt": {
+        "pt": "Pergunta sobre comunicação com funcionários, com ilustração de conversa.",
+        "en": "Question about employee communications with a conversation illustration."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 1/Slide 6.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/09-slide-6.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/09-slide-6",
+      "alt": {
+        "pt": "Pergunta sobre o provedor do plano, com uma prancheta ilustrada.",
+        "en": "Question about the pension provider alongside an illustrated clipboard."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 1/Slide 7.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/10-slide-7.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/10-slide-7",
+      "alt": {
+        "pt": "Convite para entrar em contato com a Zen, acompanhado de um cofrinho.",
+        "en": "Invitation to contact Zen Pensions, illustrated with a piggy bank."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 2/30 - Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/11-30-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/11-30-slide-1",
+      "alt": {
+        "pt": "Troféu ilustrado anuncia os Irish Pensions Awards de 2026.",
+        "en": "Illustrated trophy introducing the 2026 Irish Pensions Awards."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 2/30 - Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/12-30-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/12-30-slide-3",
+      "alt": {
+        "pt": "Indicação a administrador de planos de previdência do ano.",
+        "en": "Nomination for pension scheme administrator of the year."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 2/30 - Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/13-30-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/13-30-slide-4",
+      "alt": {
+        "pt": "Medalha ilustrada para a categoria de excelência em contribuição definida.",
+        "en": "Illustrated medal for the excellence award in defined contribution."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 2/30 - Slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/14-30-slide-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/14-30-slide-5",
+      "alt": {
+        "pt": "Premiação em inovação tecnológica, com diagrama ilustrado.",
+        "en": "Technology innovation award illustrated with a diagram."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 2/30 - Slide 6.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/15-30-slide-6.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/15-30-slide-6",
+      "alt": {
+        "pt": "Categoria de provedor de tecnologia para previdência.",
+        "en": "Award category for pension technology provider of the year."
+      }
+    },
+    "Social Media/Zen Pensions/Carrossel 2/30 - Slide 7.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/16-30-slide-7.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/16-30-slide-7",
+      "alt": {
+        "pt": "Categorias do Fintech Awards para tecnologia em seguros e startups.",
+        "en": "Fintech award categories for insurance technology and start-ups."
+      }
+    },
+    "Social Media/Zen Pensions/Post Único/1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/17-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/17-1",
+      "alt": {
+        "pt": "Contracheque ilustrado ao lado de um cofrinho em uma peça de previdência.",
+        "en": "An illustrated payslip and piggy bank in a pensions post."
+      }
+    },
+    "Social Media/Zen Pensions/Post Único/3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/18-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/18-3",
+      "alt": {
+        "pt": "Peça sobre quanto se poupa de fato, com uma mulher usando o celular.",
+        "en": "A post about actual savings with a woman using her phone."
+      }
+    },
+    "Social Media/Zen Pensions/Post Único/4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/19-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/19-4",
+      "alt": {
+        "pt": "Documentos e ilustrações sobre planos de previdência de empregos anteriores.",
+        "en": "Documents and illustrations about pension plans from previous jobs."
+      }
+    },
+    "Social Media/Zen Pensions/Post Único/5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/20-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/20-5",
+      "alt": {
+        "pt": "Exemplos de documentos disponíveis no aplicativo Zen.",
+        "en": "Examples of pension documents available in the Zen app."
+      }
+    },
+    "Social Media/Zen Pensions/Post Único/7.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/21-7.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/21-7",
+      "alt": {
+        "pt": "Homem de amarelo ao lado de uma chamada sobre inscrição automática.",
+        "en": "A man in yellow beside an auto-enrolment headline."
+      }
+    },
+    "Social Media/Zen Pensions/Post Único/8.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/22-8.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/22-8",
+      "alt": {
+        "pt": "Ilustração de uma pessoa consultando seus benefícios de previdência.",
+        "en": "Illustration of a person reading about their pension benefits."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Capa.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/23-capa.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/social-media/23-capa",
+      "alt": {
+        "pt": "Três posts claros de Michelle Lasta sobre posicionamento e branding.",
+        "en": "Three pale-toned Michelle Lasta posts about brand positioning."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Post Único/1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/24-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/24-1",
+      "alt": {
+        "pt": "Michelle ao lado da mensagem sobre clareza de marca.",
+        "en": "Michelle beside a headline about brand clarity."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Vídeo/Reels.mp4": {
+      "kind": "video",
+      "src": "/media/social-media/25-reels.mp4",
+      "webm": "/media/social-media/25-reels.webm",
+      "poster": "/media/social-media/25-reels.jpg",
+      "width": 1080,
+      "height": 1920,
+      "alt": {
+        "pt": "Reel de Michelle Lasta sobre anúncios no Google e o site da marca.",
+        "en": "Michelle Lasta reel about Google Ads and the brand’s website."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/26-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/26-slide-1",
+      "alt": {
+        "pt": "Chamada sobre branding além do logotipo, com fotografia colorida.",
+        "en": "A headline about branding beyond the logo with a colour photograph."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/27-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/27-slide-2",
+      "alt": {
+        "pt": "Dois exemplos de comunicação da Coca-Cola sobre reconhecimento de marca.",
+        "en": "Two examples of Coca-Cola communications illustrating brand recognition."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/28-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/28-slide-3",
+      "alt": {
+        "pt": "Lista de elementos de marca ao lado de um copo de cafeteria.",
+        "en": "List of brand elements beside a branded coffee cup."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/29-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/29-slide-4",
+      "alt": {
+        "pt": "Texto sobre a desconexão entre os elementos de uma marca.",
+        "en": "Text about a disconnect between different brand elements."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/30-slide-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/30-slide-5",
+      "alt": {
+        "pt": "Outdoor vermelho ilustra a relação entre consistência e confiança.",
+        "en": "A red billboard illustrates the connection between consistency and trust."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 6.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/31-slide-6.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/31-slide-6",
+      "alt": {
+        "pt": "Uma identidade clara aplicada a telas de computador, tablet e celular.",
+        "en": "A clear brand identity shown on computer, tablet and phone screens."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/32-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/32-slide-1",
+      "alt": {
+        "pt": "Retrato escuro encabeça a pergunta sobre a clareza de um site.",
+        "en": "A dark portrait introduces a question about website clarity."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/33-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/33-slide-2",
+      "alt": {
+        "pt": "Notebook com a mensagem sobre apresentar quem você é.",
+        "en": "Laptop displaying a message about introducing who you are."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/34-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/34-slide-3",
+      "alt": {
+        "pt": "Celular em turquesa apresenta a pergunta sobre o que você oferece.",
+        "en": "A turquoise phone screen asks what you offer."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/35-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/35-slide-4",
+      "alt": {
+        "pt": "Monitor em turquesa apresenta a pergunta sobre o público.",
+        "en": "A turquoise monitor asks who the offer is for."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/36-slide-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/36-slide-5",
+      "alt": {
+        "pt": "Tablet com caneta pergunta por que confiar na marca.",
+        "en": "A tablet and stylus accompany a question about trusting a brand."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 6.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/37-slide-6.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/37-slide-6",
+      "alt": {
+        "pt": "Michelle aparece ao lado de um cartão de orientação sobre próximos passos.",
+        "en": "Michelle beside a message about guiding visitors to their next step."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/38-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/38-slide-1",
+      "alt": {
+        "pt": "Retrato de Michelle introduz descoberta e alinhamento no processo de design.",
+        "en": "A portrait of Michelle introduces discovery and alignment in design."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/39-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/39-slide-2",
+      "alt": {
+        "pt": "Michelle com notebook em uma peça sobre decisões criativas informadas.",
+        "en": "Michelle at a laptop in a post about informed creative decisions."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/40-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/40-slide-3",
+      "alt": {
+        "pt": "Nota amarela lista questões de descoberta sobre o negócio.",
+        "en": "A yellow note lists business discovery questions."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/41-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/41-slide-4",
+      "alt": {
+        "pt": "Pontos de contato da marca enumerados ao lado de Michelle.",
+        "en": "Brand touchpoints listed alongside a portrait of Michelle."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/42-slide-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/42-slide-5",
+      "alt": {
+        "pt": "Seta em uma tela ilustra a busca por direção no design.",
+        "en": "An arrow on a screen illustrates finding direction in design."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 6.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/43-slide-6.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/43-slide-6",
+      "alt": {
+        "pt": "Michelle com um tablet na conclusão sobre descoberta e execução.",
+        "en": "Michelle holding a tablet in a conclusion about discovery and execution."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Post Único/2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/44-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/44-2",
+      "alt": {
+        "pt": "Retrato de Michelle e texto sobre a relação entre estratégia e conteúdo.",
+        "en": "Michelle’s portrait and text linking strategy to content."
+      }
+    },
+    "Social Media/Michelle Lasta - Profissional de Branding/Post Único/3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/45-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/45-3",
+      "alt": {
+        "pt": "Peça em azul claro pergunta se uma marca visualmente atraente faz sentido.",
+        "en": "A pale blue post asks whether a good-looking brand makes sense."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Cover.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/46-cover.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/social-media/46-cover",
+      "alt": {
+        "pt": "Três posts verdes da Forestry Services sobre manejo de florestas.",
+        "en": "Three green Forestry Services posts about woodland management."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Post Único/2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/47-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/47-2",
+      "alt": {
+        "pt": "Vista aérea de floresta com informação sobre prêmios florestais.",
+        "en": "Aerial woodland view with information about forestry premiums."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Vídeo/Reels.mp4": {
+      "kind": "video",
+      "src": "/media/social-media/48-reels.mp4",
+      "webm": "/media/social-media/48-reels.webm",
+      "poster": "/media/social-media/48-reels.jpg",
+      "width": 1080,
+      "height": 1920,
+      "alt": {
+        "pt": "Vídeo com paisagens agrícolas e mensagens verdes sobre manter a atividade rural.",
+        "en": "Video of farmland with green text about continuing to farm."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Carrossel 1/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/49-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/49-slide-1",
+      "alt": {
+        "pt": "Chamada da Forestry Services sobre o planejamento de florestas para 2027.",
+        "en": "Forestry Services headline about planning woodlands for 2027."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Carrossel 1/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/50-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/50-slide-2",
+      "alt": {
+        "pt": "Árvore ao lado da mensagem sobre as diferenças entre terrenos.",
+        "en": "A tree beside a message about differences between sites."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Carrossel 1/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/51-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/51-slide-3",
+      "alt": {
+        "pt": "Paisagem de mata ilustra características ambientais que merecem atenção.",
+        "en": "Woodland photograph illustrating environmental features to consider."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Carrossel 1/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/52-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/52-slide-4",
+      "alt": {
+        "pt": "Lista de objetivos de manejo sobre fotografia de estrada florestal.",
+        "en": "List of management objectives over a photograph of a forest road."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Carrossel 1/Slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/53-slide-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/53-slide-5",
+      "alt": {
+        "pt": "Vista aérea e convite para começar o planejamento do terreno.",
+        "en": "Aerial view and invitation to start planning for the land."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Carrossel 2/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/54-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/54-slide-1",
+      "alt": {
+        "pt": "Vista aérea de floresta com a chamada sobre patrimônio de longo prazo.",
+        "en": "Aerial forest view with a headline about long-term assets."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Carrossel 2/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/55-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/55-slide-2",
+      "alt": {
+        "pt": "Árvores e chamada sobre o plano integrado de manejo florestal.",
+        "en": "Trees behind a headline about integrated forest management."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Carrossel 2/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/56-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/56-slide-3",
+      "alt": {
+        "pt": "Itens de planejamento e manutenção sobre imagem aérea.",
+        "en": "Planning and maintenance items over an aerial photograph."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Carrossel 2/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/57-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/57-slide-4",
+      "alt": {
+        "pt": "Etapas de colheita e manutenção sobre imagem rural.",
+        "en": "Harvesting and maintenance stages over a rural photograph."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Carrossel 2/Slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/58-slide-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/58-slide-5",
+      "alt": {
+        "pt": "Estrada de floresta com a mensagem sobre seu ciclo completo.",
+        "en": "Forest road with a message about the full woodland lifecycle."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Post Único/1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/59-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/59-1",
+      "alt": {
+        "pt": "Peça sobre proprietários de florestas com foto de árvores.",
+        "en": "Post for forest owners featuring a photograph of trees."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Post Único/3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/60-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/60-3",
+      "alt": {
+        "pt": "Post verde convida o leitor a obter aconselhamento florestal.",
+        "en": "Green post inviting the reader to seek forestry advice."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Post Único/4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/61-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/61-4",
+      "alt": {
+        "pt": "Paisagem aérea ilustra o programa de áreas com árvores nativas.",
+        "en": "An aerial landscape illustrates the native tree area scheme."
+      }
+    },
+    "Social Media/FORESTRY SERVICES LTD/Post Único/5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/62-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/62-5",
+      "alt": {
+        "pt": "Saudação de Halloween com lua e silhuetas sobre verde.",
+        "en": "Halloween greeting with a moon and silhouettes against green."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 1/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/63-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/63-slide-1",
+      "alt": {
+        "pt": "Celular e janela de computador sobre degradê roxo e ciano.",
+        "en": "Phone and computer window over a purple and cyan gradient."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 1/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/64-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/64-slide-2",
+      "alt": {
+        "pt": "Captura de ferramenta digital apresentada em uma janela de navegador.",
+        "en": "Digital tool screenshot displayed in a browser window."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 1/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/65-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/65-slide-3",
+      "alt": {
+        "pt": "Exemplos da interface em janelas sobre um degradê retro.",
+        "en": "Interface examples in windows over a retro gradient."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 1/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/66-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/66-slide-4",
+      "alt": {
+        "pt": "Comparação com o Claude em uma colagem sobre fundo gradiente.",
+        "en": "A Claude comparison in a collage over a gradient background."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 2/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/67-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/67-slide-1",
+      "alt": {
+        "pt": "Televisor antigo apresenta os serviços da agência 2 Palitos.",
+        "en": "A vintage television introduces the services of 2 Palitos."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 2/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/68-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/68-slide-2",
+      "alt": {
+        "pt": "Cartaz sobre tráfego pago e gestão de leads com colagens em roxo.",
+        "en": "Poster about paid traffic and lead management with purple collage details."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 2/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/69-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/69-slide-3",
+      "alt": {
+        "pt": "Serviços de sites e conteúdo com uma colagem de olho roxo.",
+        "en": "Web and content services illustrated with a purple eye collage."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 2/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/70-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/70-slide-4",
+      "alt": {
+        "pt": "Pergunta sobre os serviços da agência dentro de uma estética de navegador.",
+        "en": "A question about agency services in a retro browser layout."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 3/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/71-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/71-slide-1",
+      "alt": {
+        "pt": "Figura em magenta introduz uma curiosidade no perfil da 2 Palitos.",
+        "en": "A magenta figure introduces a fact on the 2 Palitos profile."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 3/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/72-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/72-slide-2",
+      "alt": {
+        "pt": "Lista de conteúdos de um e-book ao lado de uma figura em colagem.",
+        "en": "List of e-book contents beside a collage figure."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 3/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/73-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/73-slide-3",
+      "alt": {
+        "pt": "Personagem roxo sentado sob uma chamada para o processo de venda.",
+        "en": "A seated purple figure under a headline about the sales process."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 3/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/74-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/74-slide-4",
+      "alt": {
+        "pt": "Mão em colagem sustenta um convite a transformar conversas em vendas.",
+        "en": "A hand collage holds a call to turn conversations into sales."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 4/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/75-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/75-slide-1",
+      "alt": {
+        "pt": "Uma peça pergunta o que a concorrência está anunciando.",
+        "en": "A post asks what competitors are advertising."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 4/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/76-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/76-slide-2",
+      "alt": {
+        "pt": "Gato preto sobre teclado e um bilhete sobre pesquisa de anúncios.",
+        "en": "A black cat on a keyboard with a note about researching advertisements."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 4/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/77-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/77-slide-3",
+      "alt": {
+        "pt": "Janela de navegador e emoji sobre anúncios em fase de teste.",
+        "en": "A browser window and emoji introduce advertising tests."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 4/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/78-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/78-slide-4",
+      "alt": {
+        "pt": "Uma imagem de reação acompanha a mensagem sobre anúncios ativos.",
+        "en": "A reaction image accompanies a message about active advertisements."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 4/Slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/79-slide-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/79-slide-5",
+      "alt": {
+        "pt": "Captura da biblioteca de anúncios em uma moldura de navegador retrô.",
+        "en": "An ad library screenshot inside a retro browser frame."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 5/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/80-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/80-slide-1",
+      "alt": {
+        "pt": "Fantasmas em pixels ao redor da chamada sobre sites e leads.",
+        "en": "Pixel ghosts around a headline about websites and leads."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 5/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/81-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/81-slide-2",
+      "alt": {
+        "pt": "Peça em fundo magenta sugere levar o público para uma conversa.",
+        "en": "A magenta post suggests inviting the audience to start a conversation."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 5/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/82-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/82-slide-3",
+      "alt": {
+        "pt": "Imagem em ciano e texto sobre direcionamento inteligente.",
+        "en": "Cyan imagery and a message about targeted conversations."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 5/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/83-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/83-slide-4",
+      "alt": {
+        "pt": "Chamada tipográfica sobre transformar conversas em oportunidades.",
+        "en": "Typographic headline about turning conversations into opportunities."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Carrossel 5/Slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/84-slide-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/84-slide-5",
+      "alt": {
+        "pt": "Janela de navegador convida a acessar o blog da 2 Palitos.",
+        "en": "A browser window invites readers to visit the 2 Palitos blog."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Post único/1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/85-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/85-1",
+      "alt": {
+        "pt": "Etapas de campanha organizadas ao redor de uma imagem azul.",
+        "en": "Campaign stages arranged around a blue illustration."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Post único/2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/86-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/86-2",
+      "alt": {
+        "pt": "Megafone e ícones de livro sobre fundo preto.",
+        "en": "A megaphone and book icons on a black background."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Post único/3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/87-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/87-3",
+      "alt": {
+        "pt": "Fantasmas e elementos de fliperama ilustram uma campanha contínua.",
+        "en": "Ghosts and arcade graphics illustrate an ongoing campaign."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Post único/4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/88-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/88-4",
+      "alt": {
+        "pt": "Homem de terno aponta para o texto sobre o vendedor ainda não contratado.",
+        "en": "A man in a suit points to text about a salesperson not yet hired."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Post único/5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/89-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/89-5",
+      "alt": {
+        "pt": "Pessoa de óculos e balões de fala sobre redes sociais e orçamentos.",
+        "en": "A person wearing sunglasses with speech bubbles about social media and enquiries."
+      }
+    },
+    "Social Media/2 Palitos Marketing Digital/Post único/05.10.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/90-05-10.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/90-05-10",
+      "alt": {
+        "pt": "Figura de óculos escuros acompanha a pergunta sobre cliques e oportunidades.",
+        "en": "A figure in dark glasses accompanies a question about clicks and opportunities."
+      }
+    },
+    "Social Media/Black Friday Nutripet/1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/91-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/91-1",
+      "alt": {
+        "pt": "Cartaz de Black Friday da Nutripet com cão e lista de produtos.",
+        "en": "Nutripet Black Friday poster featuring a dog and product list."
+      }
+    },
+    "Social Media/Black Friday Nutripet/3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/92-3.webp",
+      "width": 1080,
+      "height": 1920,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/92-3",
+      "alt": {
+        "pt": "Versão vertical da campanha Nutripet com um cachorro segurando a oferta.",
+        "en": "Vertical Nutripet campaign artwork with a dog holding the offer."
+      }
+    },
+    "Social Media/Black Friday Nutripet/2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/93-2.webp",
+      "width": 1240,
+      "height": 1240,
+      "widths": [
+        640,
+        960,
+        1240
+      ],
+      "url": "/media/cases/social-media/93-2",
+      "alt": {
+        "pt": "Composição quadrada da Black Friday Nutripet com cachorro e selo de preço.",
+        "en": "Square Nutripet Black Friday artwork with a dog and price badge."
+      }
+    },
+    "Social Media/Black Friday Nutripet/4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/94-4.webp",
+      "width": 1264,
+      "height": 296,
+      "widths": [
+        640,
+        960,
+        1264
+      ],
+      "url": "/media/cases/social-media/94-4",
+      "alt": {
+        "pt": "Faixa horizontal das ofertas Black Friday Nutripet em verde e creme.",
+        "en": "Horizontal green and cream banner for Nutripet’s Black Friday offers."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 1/Slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/95-slide-1.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/95-slide-1",
+      "alt": {
+        "pt": "Thaysa abre sua retrospectiva de 2024 com uma foto pessoal.",
+        "en": "Thaysa opens her 2024 retrospective with a personal photo."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 1/Slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/96-slide-2.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/96-slide-2",
+      "alt": {
+        "pt": "Polaroides registram mudanças de cabelo ao longo do ano.",
+        "en": "Polaroids document different hairstyles throughout the year."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 1/Slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/97-slide-3.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/97-slide-3",
+      "alt": {
+        "pt": "Foto de um cachorro em uma página de recordações.",
+        "en": "A photograph of a dog on a scrapbook page."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 1/Slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/98-slide-4.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/98-slide-4",
+      "alt": {
+        "pt": "Imagens de viagens e de Buenos Aires em uma página de memória.",
+        "en": "Travel photos including Buenos Aires on a scrapbook page."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 1/Slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/99-slide-5.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/99-slide-5",
+      "alt": {
+        "pt": "Cenas de viagem e retratos em fotografias presas ao papel.",
+        "en": "Travel scenes and portraits in photographs pinned to paper."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 1/Slide 6.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/100-slide-6.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/100-slide-6",
+      "alt": {
+        "pt": "Colagem colorida de fotos de eventos e apresentações.",
+        "en": "Colourful collage of event and performance photos."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 1/Slide 7.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/101-slide-7.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/101-slide-7",
+      "alt": {
+        "pt": "Retrato de família e lembranças de fim de ano.",
+        "en": "Family portrait and end-of-year memories."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 1/Slide 8.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/102-slide-8.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/102-slide-8",
+      "alt": {
+        "pt": "Fotos das ações e conteúdos gravados durante o ano.",
+        "en": "Photos of events and content recorded during the year."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 1/Slide 9.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/103-slide-9.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/103-slide-9",
+      "alt": {
+        "pt": "Duas lembranças da mudança da loja Cassulinha.",
+        "en": "Two photographs recalling the Cassulinha shop move."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 1/Slide 10.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/104-slide-10.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/104-slide-10",
+      "alt": {
+        "pt": "Thaysa em fotos e capturas digitais sobre fundo rosa.",
+        "en": "Thaysa in photographs and digital screenshots against pink."
+      }
+    },
+    "Social Media/Terezan Telhas/Carossel 2/slide 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/105-slide-1.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/105-slide-1",
+      "alt": {
+        "pt": "Trancista Camilla e perfil da Cassulinha apresentados sobre fundo azul.",
+        "en": "Braider Camilla and Cassulinha’s profile against blue."
+      }
+    },
+    "Social Media/Terezan Telhas/Carossel 2/slide 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/106-slide-2.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/106-slide-2",
+      "alt": {
+        "pt": "Retrato de Maria com chamada sobre seguidoras famosas da Cassulinha.",
+        "en": "Portrait of Maria in a post about well-known Cassulinha followers."
+      }
+    },
+    "Social Media/Terezan Telhas/Carossel 2/slide 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/107-slide-3.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/107-slide-3",
+      "alt": {
+        "pt": "Leidy Elin ao lado de uma captura de perfil nas redes sociais.",
+        "en": "Leidy Elin beside a social profile screenshot."
+      }
+    },
+    "Social Media/Terezan Telhas/Carossel 2/slide 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/108-slide-4.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/108-slide-4",
+      "alt": {
+        "pt": "Convite para conhecer a Cassulinha ao lado de uma captura de perfil.",
+        "en": "Invitation to discover Cassulinha beside a profile screenshot."
+      }
+    },
+    "Social Media/Terezan Telhas/Carossel 2/slide 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/109-slide-5.webp",
+      "width": 1080,
+      "height": 1080,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/109-slide-5",
+      "alt": {
+        "pt": "Grade da loja nas redes sociais acompanhada de chamada para seguir.",
+        "en": "The shop’s social feed with an invitation to follow."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 3/SLIDE 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/110-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/110-slide-1",
+      "alt": {
+        "pt": "Foto de Thaysa apresenta sua trajetória até a Cassulinha.",
+        "en": "A photograph of Thaysa introduces her path to Cassulinha."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 3/SLIDE 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/111-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/111-slide-2",
+      "alt": {
+        "pt": "Fotos do período de jovem aprendiz na empresa Açúcar União.",
+        "en": "Photos from an apprenticeship at Açúcar União."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 3/SLIDE 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/112-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/112-slide-3",
+      "alt": {
+        "pt": "Registro da bolsa de estudos e da turma no Senac.",
+        "en": "A record of the Senac scholarship and class."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 3/SLIDE 4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/113-slide-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/113-slide-4",
+      "alt": {
+        "pt": "Retrato de Thaysa lembra o segundo período como jovem aprendiz.",
+        "en": "Thaysa’s portrait recalls a second apprenticeship."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 3/SLIDE 5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/114-slide-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/114-slide-5",
+      "alt": {
+        "pt": "Fotos de sala de aula acompanham o relato do curso preparatório.",
+        "en": "Classroom photos accompany an account of exam preparation."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 3/SLIDE 6.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/115-slide-6.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/115-slide-6",
+      "alt": {
+        "pt": "Foto de fachada recorda a loja fundada com o irmão.",
+        "en": "A storefront photograph recalls the shop founded with her brother."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 3/SLIDE 7.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/116-slide-7.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/116-slide-7",
+      "alt": {
+        "pt": "Thaysa na loja de cabelos orgânicos em que trabalhou como vendedora.",
+        "en": "Thaysa in the hair shop where she worked as a salesperson."
+      }
+    },
+    "Social Media/Terezan Telhas/Carrossel 3/SLIDE 8.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/117-slide-8.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/117-slide-8",
+      "alt": {
+        "pt": "Fachada Cassulinha e retrato de equipe encerram a história da loja.",
+        "en": "Cassulinha storefront and team portrait close the shop’s story."
+      }
+    },
+    "Social Media/Vereador Homerinho/Carrossel 1/1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/118-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/118-1",
+      "alt": {
+        "pt": "Cão e gato apresentam a campanha de identificação animal SinPatinhas.",
+        "en": "A dog and cat introduce the SinPatinhas pet identification programme."
+      }
+    },
+    "Social Media/Vereador Homerinho/Carrossel 1/2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/119-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/119-2",
+      "alt": {
+        "pt": "Tela de cadastro apresenta o funcionamento do SinPatinhas.",
+        "en": "A registration screen presents the SinPatinhas programme."
+      }
+    },
+    "Social Media/Vereador Homerinho/Carrossel 1/3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/120-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/120-3",
+      "alt": {
+        "pt": "Foto de um gato e texto sobre políticas de bem-estar animal.",
+        "en": "A cat photograph and text about animal welfare policies."
+      }
+    },
+    "Social Media/Vereador Homerinho/Carrossel 1/4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/121-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/121-4",
+      "alt": {
+        "pt": "Retrato de cachorro sobre o texto que explica o programa ProPatinhas.",
+        "en": "A dog portrait alongside an explanation of the ProPatinhas programme."
+      }
+    },
+    "Social Media/Vereador Homerinho/Carrossel 1/5.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/122-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/122-5",
+      "alt": {
+        "pt": "Lista de benefícios do programa animal com identificação do vereador.",
+        "en": "Benefits of the animal welfare programme and the councillor’s signature."
+      }
+    },
+    "Social Media/Vereador Homerinho/Carrossel 1/6.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/123-6.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/123-6",
+      "alt": {
+        "pt": "Vereador Homerinho e cão ao lado de uma lista de leis da causa animal.",
+        "en": "Councillor Homerinho and a dog beside a list of animal welfare laws."
+      }
+    },
+    "Social Media/Vereador Homerinho/Carrossel 1/8.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/124-8.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/124-8",
+      "alt": {
+        "pt": "Encerramento em azul com a assinatura do vereador Homerinho.",
+        "en": "Blue closing panel with councillor Homerinho’s signature."
+      }
+    },
+    "Social Media/Vereador Homerinho/Post Único/1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/125-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/125-1",
+      "alt": {
+        "pt": "Menina usando fones de ouvido em um post sobre autismo.",
+        "en": "A girl wearing headphones in an autism awareness post."
+      }
+    },
+    "Social Media/Vereador Homerinho/Post Único/2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/126-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/126-2",
+      "alt": {
+        "pt": "Dois homens em um anúncio sobre vinte novas casas em Palmital.",
+        "en": "Two men in an announcement about twenty new homes in Palmital."
+      }
+    },
+    "Social Media/Vereador Homerinho/Post Único/3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/127-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/127-3",
+      "alt": {
+        "pt": "Polaroides de família ilustram a mensagem de Dia dos Pais.",
+        "en": "Family polaroids illustrate a Father’s Day greeting."
+      }
+    },
+    "Social Media/Vereador Homerinho/Post Único/4.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/128-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/128-4",
+      "alt": {
+        "pt": "Montagem de retratos em uma chamada sobre recursos para Palmital.",
+        "en": "Portrait montage in a post about funding for Palmital."
+      }
+    },
+    "Social Media/Vereador Francisco Arruda/SLIDE 1.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/129-slide-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/129-slide-1",
+      "alt": {
+        "pt": "Retrato de Francisco Arruda com a chamada sobre o projeto aprovado.",
+        "en": "Portrait of Francisco Arruda beside a headline about an approved bill."
+      }
+    },
+    "Social Media/Vereador Francisco Arruda/SLIDE 2.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/130-slide-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/130-slide-2",
+      "alt": {
+        "pt": "Fotografia e texto verde explicam a Procuradoria da Mulher.",
+        "en": "A photograph and green text introduce the Women’s Advocate Office."
+      }
+    },
+    "Social Media/Vereador Francisco Arruda/SLIDE 3.jpg": {
+      "kind": "image",
+      "asset": "cases/social-media/131-slide-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/social-media/131-slide-3",
+      "alt": {
+        "pt": "Retrato de duas mulheres ilustra quem pode utilizar o serviço.",
+        "en": "Portrait of two women illustrating who can use the service."
+      }
+    },
+    "Impressos/Amar.Elo Fotografia/Cover.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/01-cover.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/material-grafico/01-cover",
+      "alt": {
+        "pt": "Cartões de AmarElo Fotografia com câmera e QR code sobre fundo verde.",
+        "en": "AmarElo Fotografia cards with a camera and QR code against green."
+      }
+    },
+    "Impressos/Fale Seguro/Banner A0/Cover.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/02-cover.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/material-grafico/02-cover",
+      "alt": {
+        "pt": "Banner Fale Seguro instalado ao ar livre em estrutura urbana.",
+        "en": "Fale Seguro banner displayed on an outdoor advertising structure."
+      }
+    },
+    "Impressos/Fale Seguro/Banner A0/Mockup 1.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/03-mockup-1.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/material-grafico/03-mockup-1",
+      "alt": {
+        "pt": "Frente do banner Fale Seguro em um suporte portátil de tripé.",
+        "en": "Fale Seguro banner on a portable tripod stand."
+      }
+    },
+    "Impressos/Fale Seguro/Banner A0/Mockup 3.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/04-mockup-3.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/material-grafico/04-mockup-3",
+      "alt": {
+        "pt": "Simulação do banner de saúde e segurança em uma rua com carros.",
+        "en": "Workplace health and safety banner displayed on a street with cars."
+      }
+    },
+    "Impressos/Fale Seguro/Banner A0/Mockup 2.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/05-mockup-2.webp",
+      "width": 2560,
+      "height": 1920,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/material-grafico/05-mockup-2",
+      "alt": {
+        "pt": "Peça da Fale Seguro aplicada a um painel em frente a árvores.",
+        "en": "Fale Seguro artwork applied to a display in front of trees."
+      }
+    },
+    "Impressos/Fale Seguro/Folder 2 dobras/Cover.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/06-cover.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/material-grafico/06-cover",
+      "alt": {
+        "pt": "Folder branco e azul da Fale Seguro desdobrado sobre fundo azul.",
+        "en": "An unfolded blue and white Fale Seguro leaflet on blue."
+      }
+    },
+    "Impressos/Fale Seguro/Folder 2 dobras/Parte externa e capa mockup.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/07-parte-externa-e-capa-mockup.webp",
+      "width": 2560,
+      "height": 1920,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/material-grafico/07-parte-externa-e-capa-mockup",
+      "alt": {
+        "pt": "Folder aberto ao lado da versão fechada com o dashboard na capa.",
+        "en": "Open leaflet beside a folded copy featuring the dashboard."
+      }
+    },
+    "Impressos/Fale Seguro/Folder 2 dobras/Parte interna mockup.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/08-parte-interna-mockup.webp",
+      "width": 2560,
+      "height": 1920,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/material-grafico/08-parte-interna-mockup",
+      "alt": {
+        "pt": "Verso do folder de duas dobras, com gráficos e blocos de texto.",
+        "en": "Back of the bi-fold leaflet, showing charts and text panels."
+      }
+    },
+    "Impressos/Fale Seguro/Folder 2 dobras/Mockup em mãos.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/09-mockup-em-maos.webp",
+      "width": 2560,
+      "height": 1709,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/material-grafico/09-mockup-em-maos",
+      "alt": {
+        "pt": "Mãos seguram o folder aberto com a apresentação do Safe Scan.",
+        "en": "Hands holding the open Safe Scan information leaflet."
+      }
+    },
+    "Impressos/Amar.Elo Fotografia/Business Card.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/10-business-card.webp",
+      "width": 800,
+      "height": 600,
+      "widths": [
+        640,
+        800
+      ],
+      "url": "/media/cases/material-grafico/10-business-card",
+      "alt": {
+        "pt": "Frente e verso do cartão de AmarElo Fotografia, com câmera e QR code.",
+        "en": "Both sides of the yellow AmarElo Fotografia card, featuring a camera and QR code."
+      }
+    },
+    "Impressos/Capa de Livro Colagens - Ana Gonçalves/b5ab813d-7099-4363-93aa-81e01086441c.jpg": {
+      "kind": "image",
+      "asset": "cases/material-grafico/11-b5ab813d-7099-4363-93aa-81e01086441c.webp",
+      "width": 2560,
+      "height": 1920,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/material-grafico/11-b5ab813d-7099-4363-93aa-81e01086441c",
+      "alt": {
+        "pt": "Livro de Ana Gonçalves com colagem de fotografias na capa.",
+        "en": "Ana Gonçalves’s book with a photographic collage cover."
+      }
+    },
+    "Vídeos/2 Palitos Marketing Digital/1.mp4": {
+      "kind": "video",
+      "src": "/media/video/01-1.mp4",
+      "webm": "/media/video/01-1.webm",
+      "poster": "/media/video/01-1.jpg",
+      "width": 1080,
+      "height": 1920,
+      "alt": {
+        "pt": "Animação de uma moeda pixelada e chamada sobre vendas da 2 Palitos.",
+        "en": "A pixelated coin introduces a 2 Palitos animation about sales."
+      }
+    },
+    "Vídeos/2 Palitos Marketing Digital/2.mp4": {
+      "kind": "video",
+      "src": "/media/video/02-2.mp4",
+      "webm": "/media/video/02-2.webm",
+      "poster": "/media/video/02-2.jpg",
+      "width": 1080,
+      "height": 1920,
+      "alt": {
+        "pt": "Reel da 2 Palitos sobre avaliações no Google com tipografia pixelada.",
+        "en": "A 2 Palitos reel about Google reviews set in pixel lettering."
+      }
+    },
+    "Vídeos/2 Palitos Marketing Digital/3.mp4": {
+      "kind": "video",
+      "src": "/media/video/03-3.mp4",
+      "webm": "/media/video/03-3.webm",
+      "poster": "/media/video/03-3.jpg",
+      "width": 1080,
+      "height": 1920,
+      "alt": {
+        "pt": "Animação sobre a diferença entre lead e cliente sobre fundo turquesa.",
+        "en": "A turquoise animation about the difference between a lead and a customer."
+      }
+    },
+    "Vídeos/2 Palitos Marketing Digital/4.mp4": {
+      "kind": "video",
+      "src": "/media/video/04-4.mp4",
+      "webm": "/media/video/04-4.webm",
+      "poster": "/media/video/04-4.jpg",
+      "width": 1080,
+      "height": 1920,
+      "alt": {
+        "pt": "Chamada de marketing da 2 Palitos em letras grandes sobre magenta.",
+        "en": "A 2 Palitos marketing headline in large type against magenta."
+      }
+    },
+    "Vídeos/Zen Pensions/1.mp4": {
+      "kind": "video",
+      "src": "/media/video/05-1.mp4",
+      "webm": "/media/video/05-1.webm",
+      "poster": "/media/video/05-1.jpg",
+      "width": 1080,
+      "height": 1920,
+      "alt": {
+        "pt": "Anúncio animado da participação da Zen Pensions no encontro de empreendedores irlandeses.",
+        "en": "Animated announcement of Zen Pensions at the All-Ireland Entrepreneurs Summit."
+      }
+    },
+    "Vídeos/Zen Pensions/2.mp4": {
+      "kind": "video",
+      "src": "/media/video/06-2.mp4",
+      "webm": "/media/video/06-2.webm",
+      "poster": "/media/video/06-2.jpg",
+      "width": 1080,
+      "height": 1920,
+      "alt": {
+        "pt": "Reel da Zen Pensions sobre a experiência digital, com ilustrações de segurança.",
+        "en": "Zen Pensions reel about the digital experience, illustrated with security icons."
+      }
+    },
+    "Vídeos/Zen Pensions/3.mp4": {
+      "kind": "video",
+      "src": "/media/video/07-3.mp4",
+      "webm": "/media/video/07-3.webm",
+      "poster": "/media/video/07-3.jpg",
+      "width": 1080,
+      "height": 1920,
+      "alt": {
+        "pt": "Animação da Zen Pensions com exemplos de serviços digitais conhecidos.",
+        "en": "Zen Pensions animation comparing familiar digital services."
+      }
+    },
+    "Vídeos/Zen Pensions/4.mp4": {
+      "kind": "video",
+      "src": "/media/video/08-4.mp4",
+      "webm": "/media/video/08-4.webm",
+      "poster": "/media/video/08-4.jpg",
+      "width": 1080,
+      "height": 1920,
+      "alt": {
+        "pt": "Cronômetro ilustrado introduz um vídeo curto de previdência da Zen Pensions.",
+        "en": "An illustrated stopwatch introduces a short Zen Pensions video."
+      }
+    },
+    "capa-video": {
+      "kind": "image",
+      "asset": "cases/video/capa.webp",
+      "width": 640,
+      "height": 1138,
+      "widths": [
+        640
+      ],
+      "url": "/media/cases/video/capa",
+      "alt": {
+        "pt": "Frame de um reel da 2 Palitos Marketing Digital.",
+        "en": "A still from a reel for 2 Palitos Marketing Digital."
+      }
+    },
+    "Desenhos e Ilustrações/Desenhos tradicionais/Cover.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/01-cover.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/ilustracao/01-cover",
+      "alt": {
+        "pt": "Caderno aberto com dois retratos em grafite sobre a mesa.",
+        "en": "An open sketchbook with two pencil portraits on a desk."
+      }
+    },
+    "Desenhos e Ilustrações/Desenhos tradicionais/1.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/02-1.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/ilustracao/02-1",
+      "alt": {
+        "pt": "Retrato frontal em grafite com franja curta e olhos sombreados.",
+        "en": "Front-facing pencil portrait with a short fringe and shaded eyes."
+      }
+    },
+    "Desenhos e Ilustrações/Desenhos tradicionais/2.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/03-2.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/ilustracao/03-2",
+      "alt": {
+        "pt": "Retrato a lápis de uma figura de cabelo longo acompanhada por estrelas.",
+        "en": "Pencil portrait of a long-haired figure surrounded by stars."
+      }
+    },
+    "Desenhos e Ilustrações/Desenhos tradicionais/4.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/04-4.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/ilustracao/04-4",
+      "alt": {
+        "pt": "Rosto de personagem de cabelo curto em traço leve de grafite.",
+        "en": "Light pencil study of a short-haired character."
+      }
+    },
+    "Desenhos e Ilustrações/Desenhos tradicionais/5.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/05-5.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/ilustracao/05-5",
+      "alt": {
+        "pt": "Água-viva desenhada a lápis com tentáculos longos e curvos.",
+        "en": "A jellyfish drawn in pencil with long curling tentacles."
+      }
+    },
+    "Desenhos e Ilustrações/Desenhos tradicionais/3.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/06-3.webp",
+      "width": 1080,
+      "height": 1350,
+      "widths": [
+        640,
+        960,
+        1080
+      ],
+      "url": "/media/cases/ilustracao/06-3",
+      "alt": {
+        "pt": "Esboço de um gambá cercado por cogumelos.",
+        "en": "Pencil sketch of an opossum surrounded by mushrooms."
+      }
+    },
+    "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/1.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/07-1.webp",
+      "width": 1870,
+      "height": 2560,
+      "widths": [
+        640,
+        960,
+        1280,
+        1870
+      ],
+      "url": "/media/cases/ilustracao/07-1",
+      "alt": {
+        "pt": "Esboço a lápis de um javali com caneca para a Turma do Paiol.",
+        "en": "Pencil sketch of a boar holding a mug for Turma do Paiol."
+      }
+    },
+    "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/3.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/08-3.webp",
+      "width": 1870,
+      "height": 2560,
+      "widths": [
+        640,
+        960,
+        1280,
+        1870
+      ],
+      "url": "/media/cases/ilustracao/08-3",
+      "alt": {
+        "pt": "Versão vetorial vermelha e preta do javali com caneca amarela.",
+        "en": "Red and black vector boar holding a yellow mug."
+      }
+    },
+    "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/4.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/09-4.webp",
+      "width": 1870,
+      "height": 2560,
+      "widths": [
+        640,
+        960,
+        1280,
+        1870
+      ],
+      "url": "/media/cases/ilustracao/09-4",
+      "alt": {
+        "pt": "Mascote javali com colar de flores e caneca.",
+        "en": "The boar mascot wearing a flower garland and holding a mug."
+      }
+    },
+    "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/5.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/10-5.webp",
+      "width": 1870,
+      "height": 2560,
+      "widths": [
+        640,
+        960,
+        1280,
+        1870
+      ],
+      "url": "/media/cases/ilustracao/10-5",
+      "alt": {
+        "pt": "Arte da festa Turma do Paiol com o mascote e a data do baile.",
+        "en": "Turma do Paiol event artwork with the mascot and dance date."
+      }
+    },
+    "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/6.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/11-6.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/ilustracao/11-6",
+      "alt": {
+        "pt": "Copo amarelo com a ilustração do javali da Turma do Paiol.",
+        "en": "Yellow cup featuring the Turma do Paiol boar."
+      }
+    },
+    "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/7.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/12-7.webp",
+      "width": 2560,
+      "height": 2560,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/ilustracao/12-7",
+      "alt": {
+        "pt": "Camiseta preta de mangas vermelhas com a estampa da festa.",
+        "en": "Black T-shirt with red sleeves and the event illustration."
+      }
+    },
+    "Desenhos e Ilustrações/Ilustrações/Tattoo/2.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/13-2.webp",
+      "width": 1772,
+      "height": 1772,
+      "widths": [
+        640,
+        960,
+        1280,
+        1772
+      ],
+      "url": "/media/cases/ilustracao/13-2",
+      "alt": {
+        "pt": "Desenho linear de um gambá rodeado por cogumelos para tatuagem.",
+        "en": "Tattoo line art depicting an opossum surrounded by mushrooms."
+      }
+    },
+    "Desenhos e Ilustrações/Ilustrações/Tattoo/3.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/14-3.webp",
+      "width": 1772,
+      "height": 1772,
+      "widths": [
+        640,
+        960,
+        1280,
+        1772
+      ],
+      "url": "/media/cases/ilustracao/14-3",
+      "alt": {
+        "pt": "Versão colorida da tatuagem do gambá em azul, rosa e lilás.",
+        "en": "The opossum tattoo coloured in blue, pink and lilac."
+      }
+    },
+    "Desenhos e Ilustrações/Ilustrações/Estampa Formandos/1.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/15-1.webp",
+      "width": 2560,
+      "height": 1707,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/ilustracao/15-1",
+      "alt": {
+        "pt": "Aplicação da estampa verde de formandos em camisetas pretas.",
+        "en": "Green graduation artwork printed on black T-shirts."
+      }
+    },
+    "Desenhos e Ilustrações/Ilustrações/Estampa Formandos/2.jpg": {
+      "kind": "image",
+      "asset": "cases/ilustracao/16-2.webp",
+      "width": 2560,
+      "height": 1706,
+      "widths": [
+        640,
+        960,
+        1280,
+        1920,
+        2560
+      ],
+      "url": "/media/cases/ilustracao/16-2",
+      "alt": {
+        "pt": "Dois moletons pretos mostram a frente e o verso da estampa.",
+        "en": "Two black hoodies display the front and back of the design."
+      }
+    },
+    "sobre-slide-9": {
+      "kind": "image",
+      "asset": "isabelly/sobre-slide-9.webp",
+      "width": 864,
+      "height": 1080,
+      "widths": [
+        640,
+        864
+      ],
+      "url": "/media/isabelly/sobre-slide-9",
+      "alt": {
+        "pt": "Fotos dos gatos Sukito e Luna em uma colagem roxa da Isabelly.",
+        "en": "Photos of Sukito and Luna in Isabelly’s purple scrapbook collage."
+      }
+    },
+    "sobre-slide-10": {
+      "kind": "image",
+      "asset": "isabelly/sobre-slide-10.webp",
+      "width": 864,
+      "height": 1080,
+      "widths": [
+        640,
+        864
+      ],
+      "url": "/media/isabelly/sobre-slide-10",
+      "alt": {
+        "pt": "Isabelly encerra o carrossel sobre seu repertório criativo com uma polaroide.",
+        "en": "A taped portrait of Isabelly closes her scrapbook about her creative influences."
+      }
+    }
+  },
+  "covers": {
+    "vanessa-rosa": "Marcas/Identidade Visual - Manicure Vanessa Rosa/Cover.jpg",
+    "isys-karoline": "Marcas/Identidade Visual - Isys Karoline Personal/Cover.jpg",
+    "brucutu-chapeiro": "Marcas/Identidade Visual - Brucutu Chapeiro/5.png",
+    "social-media": "Social Media/2 Palitos Marketing Digital/Cover.jpg",
+    "material-grafico": "Impressos/Amar.Elo Fotografia/Cover.jpg",
+    "video": "capa-video",
+    "ilustracao": "Desenhos e Ilustrações/Desenhos tradicionais/Cover.jpg"
+  },
+  "photos": {
+    "1": "foto-1",
+    "2": "foto-2",
+    "3": "foto-3",
+    "4": "foto-4",
+    "5": "foto-5",
+    "6": "foto-6"
+  },
+  "slides": {
+    "9": "sobre-slide-9",
+    "10": "sobre-slide-10"
+  }
+}

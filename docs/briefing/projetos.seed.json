@@ -1,0 +1,1616 @@
+{
+  "_sobre": "Inventário de conteúdo do isabelly.des.br v2. Caminhos relativos à pasta 'Site Isabelly/' do zip (extrair em _material/isabelly/). Textos: 'reaproveitado' vem do projetos.js do site atual; 'rascunho' foi escrito para o briefing e precisa da validação da Isabelly.",
+  "layouts": {
+    "full": "1 mídia por linha na largura do conteúdo; 'largura: media' = 62% centralizado (peças pequenas ou de baixa resolução)",
+    "pair": "2 mídias lado a lado (verticais, ou imagem + vídeo vertical), mesma altura",
+    "strip": "carrossel do Instagram: faixa horizontal arrastável com scroll-snap, cada slide do tamanho de meia coluna (2 visíveis no desktop), título pequeno acima e contador 01/07",
+    "reel": "2 vídeos 9:16 lado a lado, altura máx. 85vh, autoplay mudo em loop ao entrar na tela, botão de som",
+    "frase": "frase curta centralizada em tipo grande entre as mídias",
+    "secao": "subseção de cliente nos cases-grupo: nome do cliente (display), contexto, tags, depois os blocos"
+  },
+  "home": {
+    "destaques": [
+      "vanessa-rosa",
+      "isys-karoline",
+      "social-media"
+    ]
+  },
+  "cases": [
+    {
+      "slug": "vanessa-rosa",
+      "ordem": 1,
+      "tipo": "marca",
+      "destaqueHome": true,
+      "slugsAntigos": [
+        "vanessa-rosa"
+      ],
+      "titulo": {
+        "pt": "Vanessa Rosa Manicure",
+        "en": "Vanessa Rosa Manicure"
+      },
+      "categoria": {
+        "pt": "Identidade Visual",
+        "en": "Visual Identity"
+      },
+      "ano": 2026,
+      "ferramentas": [
+        "Adobe Illustrator",
+        "Adobe Photoshop"
+      ],
+      "tags": {
+        "pt": [
+          "Identidade visual",
+          "Logotipo",
+          "Papelaria"
+        ],
+        "en": [
+          "Visual identity",
+          "Logo",
+          "Stationery"
+        ]
+      },
+      "linhaHover": {
+        "pt": "Marca minimalista para uma manicure, com bege, café e tipografia reta.",
+        "en": "A minimalist brand for a manicurist, built on beige, coffee tones and clean type."
+      },
+      "resumo": {
+        "pt": "A identidade da Vanessa Rosa foi um projeto autoral focado no posicionamento de alto padrão. Criei o conceito visual explorando o minimalismo para transmitir delicadeza e profissionalismo. O desenvolvimento incluiu desde o desenho original do símbolo até a estruturação técnica com grids e a definição da paleta de cores. O resultado é uma marca exclusiva e sofisticada, que traduz a essência do trabalho da profissional e se adapta perfeitamente a diferentes aplicações, do digital ao impresso.",
+        "en": "Vanessa Rosa's identity was an original project focused on high-end positioning. I built the visual concept around minimalism to convey delicacy and professionalism. The work went from drawing the original symbol to the technical structure with grids and the definition of the colour palette. The result is an exclusive, sophisticated brand that captures the essence of her work and adapts to every application, from digital to print."
+      },
+      "origemTexto": "reaproveitado de projetos.js (site atual) (EN completado; o original estava truncado)",
+      "marca": {
+        "cores": {
+          "Bege": "#EFE6D2",
+          "Café": "#281611",
+          "Palha": "#BF9150"
+        },
+        "tipografias": [
+          "Polymath (principal)",
+          "Spalla (apoio)"
+        ]
+      },
+      "corMarca": "#BF9150",
+      "capa": {
+        "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/Cover.jpg",
+        "nota": "1400×800: baixa resolução. Fazer upscale 2× com o módulo de imagem, sem alterar nada do conteúdo. Recorte quadrado centrado no monograma VR."
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 1.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 2.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "frase",
+          "texto": {
+            "pt": "Os rascunhos iniciais serviram como o alicerce para materializar os desejos da cliente.",
+            "en": "The first sketches were the foundation for turning the client's wishes into form."
+          }
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 3.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 5.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 4.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "frase",
+          "texto": {
+            "pt": "Linhas guia horizontais e verticais garantem que o espaçamento entre o nome e o descritivo “manicure” seja matematicamente exato.",
+            "en": "Horizontal and vertical guides keep the spacing between the name and the word “manicure” mathematically exact."
+          }
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 6.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 7.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "frase",
+          "texto": {
+            "pt": "Bege, café e palha: uma paleta quente que conversa com o universo da estética sem perder a sobriedade.",
+            "en": "Beige, coffee and straw: a warm palette that speaks the language of beauty without losing restraint."
+          }
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 8.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 9.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 10.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 11.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 12.jpg",
+          "largura": "total"
+        }
+      ],
+      "notas": [
+        "Todas as pranchas têm 1400×800. Upscale 2× (módulo de imagem, sem alterar conteúdo) ou limitar a largura de exibição a 1400px."
+      ]
+    },
+    {
+      "slug": "isys-karoline",
+      "ordem": 2,
+      "tipo": "marca",
+      "destaqueHome": true,
+      "slugsAntigos": [],
+      "titulo": {
+        "pt": "Isys Karoline Personal",
+        "en": "Isys Karoline Personal"
+      },
+      "categoria": {
+        "pt": "Identidade Visual",
+        "en": "Visual Identity"
+      },
+      "ano": "2026 (confirmar)",
+      "ferramentas": [
+        "Adobe Illustrator",
+        "Adobe Photoshop"
+      ],
+      "tags": {
+        "pt": [
+          "Identidade visual",
+          "Símbolo",
+          "Aplicações digitais"
+        ],
+        "en": [
+          "Visual identity",
+          "Symbol",
+          "Digital applications"
+        ]
+      },
+      "linhaHover": {
+        "pt": "Marca para personal trainer e pilates: um símbolo que é letra, pingo e movimento.",
+        "en": "A brand for a personal trainer and Pilates coach: one symbol that is a letter, a dot and a body in motion."
+      },
+      "resumo": {
+        "pt": "A Isys Karoline é personal trainer e instrutora de pilates, e precisava de uma marca com a mesma energia das aulas dela. Desenhei um símbolo que junta três leituras numa forma só: a letra K, o pingo do i e uma pessoa em movimento. O sistema usa azuis que vão do claro ao profundo, a Boldonse nos títulos e a Elms Sans no apoio, e foi aplicado da papelaria ao app, passando por uniforme, redes sociais e site.",
+        "en": "Isys Karoline is a personal trainer and Pilates instructor who needed a brand with the same energy as her classes. I drew a symbol that holds three readings in one shape: the letter K, the dot of the i and a person in motion. The system runs on blues from light to deep, with Boldonse for headlines and Elms Sans for support, and it was applied everywhere from stationery to the app, including uniforms, social media and the website."
+      },
+      "origemTexto": "rascunho — validar com a Isabelly (projeto novo; baseado nas pranchas do zip)",
+      "marca": {
+        "cores": {
+          "Azul principal": "#4D8EBF",
+          "Azul claro": "#60B1F0",
+          "Azul profundo": "#2F5775",
+          "Azul grafite": "#1F2A33",
+          "Preto profundo": "#04080A",
+          "Branco amarelado": "#FEF7E4"
+        },
+        "tipografias": [
+          "Boldonse (principal)",
+          "Elms Sans (secundária)"
+        ]
+      },
+      "corMarca": "#4D8EBF",
+      "capa": {
+        "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/Cover.jpg",
+        "nota": "Recorte quadrado mantendo o símbolo branco sobre azul à direita."
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/1.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/Ícone explicação.png",
+          "largura": "total"
+        },
+        {
+          "tipo": "frase",
+          "texto": {
+            "pt": "Três leituras numa forma só: a letra K, o pingo do i e uma pessoa em movimento.",
+            "en": "Three readings in a single shape: the letter K, the dot of the i and a person in motion."
+          }
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/6.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/5.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/4.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "frase",
+          "texto": {
+            "pt": "Azuis do claro ao profundo, com Boldonse nos títulos e Elms Sans no apoio.",
+            "en": "Blues from light to deep, with Boldonse for headlines and Elms Sans for support."
+          }
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/2.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/7.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/8.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/9.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/10.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/11.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "frase",
+          "texto": {
+            "pt": "A marca foi pensada para funcionar tanto na academia quanto na tela do celular.",
+            "en": "The brand was designed to work as well in the gym as on a phone screen."
+          }
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/12.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/13.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/14.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/15.png",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/16.jpg",
+          "largura": "total"
+        }
+      ],
+      "notas": [
+        "Não existe arquivo 3.jpg na pasta (numeração pula do 2 para o 4)."
+      ]
+    },
+    {
+      "slug": "brucutu-chapeiro",
+      "ordem": 3,
+      "tipo": "marca",
+      "destaqueHome": false,
+      "slugsAntigos": [
+        "brucutu-chapeiro"
+      ],
+      "titulo": {
+        "pt": "Brucutu Lanches",
+        "en": "Brucutu Lanches"
+      },
+      "categoria": {
+        "pt": "Identidade Visual",
+        "en": "Visual Identity"
+      },
+      "ano": 2024,
+      "ferramentas": [
+        "Adobe Illustrator",
+        "Adobe Photoshop"
+      ],
+      "tags": {
+        "pt": [
+          "Identidade visual",
+          "Embalagem",
+          "Fachada"
+        ],
+        "en": [
+          "Visual identity",
+          "Packaging",
+          "Signage"
+        ]
+      },
+      "linhaHover": {
+        "pt": "Marca robusta para uma hamburgueria de chapa, com laranja, vermelho e tipografia de impacto.",
+        "en": "A bold brand for a flat-top burger joint, with orange, red and high-impact type."
+      },
+      "resumo": {
+        "pt": "Para este projeto, desenvolvi toda a concepção criativa com o objetivo de resgatar a tradição dos hamburgueiros de chapa. Criei uma marca que transmite força e agilidade, utilizando uma tipografia de impacto e elementos visuais que remetem ao ambiente artesanal da cozinha. Fui responsável por todo o desenvolvimento, desde a ideia inicial até a finalização técnica, garantindo que a identidade tivesse personalidade própria e uma presença visual marcante.",
+        "en": "For this project, I developed the entire creative concept with the goal of reviving the tradition of flat-top burger cooks. I created a brand that conveys strength and agility, using impactful typography and visual elements that evoke the artisanal kitchen atmosphere. I was responsible for the whole development, from the initial idea to the technical finalization, making sure the identity had its own personality and a strong visual presence."
+      },
+      "origemTexto": "reaproveitado de projetos.js (site atual) (EN completado)",
+      "marca": {
+        "cores": {
+          "Laranja": "#F5A318",
+          "Vermelho": "#FA1D1D",
+          "Creme": "#FAF0EA",
+          "Marrom": "#150807"
+        },
+        "tipografias": [
+          "Bylander"
+        ]
+      },
+      "corMarca": "#F5A318",
+      "capa": {
+        "arquivo": "Marcas/Identidade Visual - Brucutu Chapeiro/5.png",
+        "nota": "A pasta não tem capa. Usar 5.png (embalagens sobre laranja), recorte quadrado. PNG de 16 MB: converter."
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Brucutu Chapeiro/2.png",
+          "largura": "total"
+        },
+        {
+          "tipo": "frase",
+          "texto": {
+            "pt": "Força e agilidade: uma marca que resgata a tradição dos hamburgueiros de chapa.",
+            "en": "Strength and speed: a brand that brings back the tradition of flat-top burger cooks."
+          }
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Brucutu Chapeiro/3.png",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Brucutu Chapeiro/4.png",
+          "largura": "total"
+        },
+        {
+          "tipo": "frase",
+          "texto": {
+            "pt": "Laranja e vermelho de cozinha, equilibrados por creme e um marrom quase preto.",
+            "en": "Kitchen orange and red, balanced by cream and an almost-black brown."
+          }
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Brucutu Chapeiro/5.png",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Brucutu Chapeiro/6.png",
+          "largura": "total"
+        }
+      ],
+      "notas": [
+        "1.png é o slide “OBRIGADA” de encerramento da apresentação: não usar.",
+        "5.png e 6.png são PNGs de 16–20 MB: converter para AVIF/WebP."
+      ]
+    },
+    {
+      "slug": "social-media",
+      "ordem": 4,
+      "tipo": "grupo",
+      "destaqueHome": true,
+      "slugsAntigos": [
+        "terezan-telhas",
+        "vereador-francisco-arruda",
+        "vereador-homerinho",
+        "influenciadora-thaysa-paixao",
+        "nutripet-black-friday",
+        "construzan",
+        "dr-giovani-advocacia",
+        "villas-burguer"
+      ],
+      "titulo": {
+        "pt": "Social Media",
+        "en": "Social Media"
+      },
+      "categoria": {
+        "pt": "Social Media",
+        "en": "Social Media"
+      },
+      "ano": "2023–2026",
+      "ferramentas": [
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Meta Business Suite",
+        "Notion",
+        "CapCut"
+      ],
+      "tags": {
+        "pt": [
+          "Carrossel",
+          "Post",
+          "Reels",
+          "Estratégia"
+        ],
+        "en": [
+          "Carousel",
+          "Post",
+          "Reels",
+          "Strategy"
+        ]
+      },
+      "linhaHover": {
+        "pt": "Oito marcas, um só cuidado: posts, carrosséis e reels com estratégia por trás do visual.",
+        "en": "Eight brands, one standard: posts, carousels and reels with strategy behind the visuals."
+      },
+      "resumo": {
+        "pt": "Social media é onde eu mais trabalhei desde 2023, como freelancer e em parceria com agências. Aqui estão marcas de setores bem diferentes, de previdência na Irlanda a vereadores do interior de São Paulo, mas o processo é o mesmo: entender o que a marca precisa comunicar e transformar isso em conteúdo que prende no feed e leva à ação.",
+        "en": "Social media is where I have worked the most since 2023, both freelance and with partner agencies. These brands come from very different fields, from pensions in Ireland to city councillors in inland São Paulo, but the process is the same: understand what the brand needs to say and turn it into content that stops the scroll and leads to action."
+      },
+      "origemTexto": "rascunho — validar com a Isabelly",
+      "corMarca": "#7F52AD",
+      "hoverBox": "#C7C7D1",
+      "capa": {
+        "arquivo": "Social Media/2 Palitos Marketing Digital/Cover.jpg",
+        "nota": "Mockup roxo neon, combina com a identidade do site. Recorte quadrado no celular central. Como a capa é roxa, a caixa do hover usa lavanda (#C7C7D1) com texto roxo-noite."
+      },
+      "blocos": [
+        {
+          "tipo": "secao",
+          "cliente": "Zen Pensions",
+          "contexto": {
+            "pt": "Fintech irlandesa de previdência. Conteúdo em inglês para empregadores e funcionários, com ilustração, dados e um tom leve para um assunto complicado.",
+            "en": "An Irish pensions fintech. English-language content for employers and employees, using illustration, data and a light tone for a complicated subject."
+          },
+          "tags": {
+            "pt": [
+              "Carrossel",
+              "Post",
+              "Conteúdo em inglês"
+            ],
+            "en": [
+              "Carousel",
+              "Post",
+              "English content"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Social Media/Zen Pensions/Post Único/6.jpg",
+                "Social Media/Zen Pensions/Post Único/2.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel · 5 perguntas sobre Auto-Enrolment",
+                "en": "Carousel · 5 questions about Auto-Enrolment"
+              },
+              "arquivos": [
+                "Social Media/Zen Pensions/Carrossel 1/Slide 1.jpg",
+                "Social Media/Zen Pensions/Carrossel 1/Slide 2.jpg",
+                "Social Media/Zen Pensions/Carrossel 1/Slide 3.jpg",
+                "Social Media/Zen Pensions/Carrossel 1/Slide 4.jpg",
+                "Social Media/Zen Pensions/Carrossel 1/Slide 5.jpg",
+                "Social Media/Zen Pensions/Carrossel 1/Slide 6.jpg",
+                "Social Media/Zen Pensions/Carrossel 1/Slide 7.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel · prêmios 2026",
+                "en": "Carousel · 2026 awards"
+              },
+              "arquivos": [
+                "Social Media/Zen Pensions/Carrossel 2/30 - Slide 1.jpg",
+                "Social Media/Zen Pensions/Carrossel 2/30 - Slide 3.jpg",
+                "Social Media/Zen Pensions/Carrossel 2/30 - Slide 4.jpg",
+                "Social Media/Zen Pensions/Carrossel 2/30 - Slide 5.jpg",
+                "Social Media/Zen Pensions/Carrossel 2/30 - Slide 6.jpg",
+                "Social Media/Zen Pensions/Carrossel 2/30 - Slide 7.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Posts",
+                "en": "Posts"
+              },
+              "arquivos": [
+                "Social Media/Zen Pensions/Post Único/1.jpg",
+                "Social Media/Zen Pensions/Post Único/3.jpg",
+                "Social Media/Zen Pensions/Post Único/4.jpg",
+                "Social Media/Zen Pensions/Post Único/5.jpg",
+                "Social Media/Zen Pensions/Post Único/7.jpg",
+                "Social Media/Zen Pensions/Post Único/8.jpg"
+              ]
+            }
+          ],
+          "nota": "Confirmar se o trabalho foi direto ou via agência parceira."
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Michelle Lasta",
+          "contexto": {
+            "pt": "Profissional de branding. Posts e reels em inglês com fotos dela, vidro e luz suave, falando de marca como estratégia.",
+            "en": "A branding professional. English posts and reels with her portraits, glass and soft light, talking about brand as strategy."
+          },
+          "tags": {
+            "pt": [
+              "Carrossel",
+              "Post",
+              "Reels"
+            ],
+            "en": [
+              "Carousel",
+              "Post",
+              "Reels"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "full",
+              "arquivo": "Social Media/Michelle Lasta - Profissional de Branding/Capa.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Social Media/Michelle Lasta - Profissional de Branding/Post Único/1.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Vídeo/Reels.mp4"
+              ],
+              "nota": "imagem 4:5 + vídeo 9:16 na mesma altura"
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel 1",
+                "en": "Carousel 1"
+              },
+              "arquivos": [
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 1.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 2.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 3.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 4.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 5.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 1/Slide 6.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel 2",
+                "en": "Carousel 2"
+              },
+              "arquivos": [
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 1.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 2.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 3.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 4.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 5.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 2/Slide 6.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel 3",
+                "en": "Carousel 3"
+              },
+              "arquivos": [
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 1.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 2.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 3.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 4.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 5.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Carrossel 3/Slide 6.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Posts",
+                "en": "Posts"
+              },
+              "arquivos": [
+                "Social Media/Michelle Lasta - Profissional de Branding/Post Único/2.jpg",
+                "Social Media/Michelle Lasta - Profissional de Branding/Post Único/3.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Forestry Services Ltd",
+          "contexto": {
+            "pt": "Empresa florestal da Irlanda. Posts em inglês sobre incentivos do governo e manejo de florestas, com verde forte e fotos de campo.",
+            "en": "An Irish forestry company. English posts about government grants and forest management, with strong greens and field photography."
+          },
+          "tags": {
+            "pt": [
+              "Carrossel",
+              "Post",
+              "Reels"
+            ],
+            "en": [
+              "Carousel",
+              "Post",
+              "Reels"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "full",
+              "arquivo": "Social Media/FORESTRY SERVICES LTD/Cover.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Social Media/FORESTRY SERVICES LTD/Post Único/2.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Vídeo/Reels.mp4"
+              ],
+              "nota": "imagem 4:5 + vídeo 9:16 na mesma altura"
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel 1",
+                "en": "Carousel 1"
+              },
+              "arquivos": [
+                "Social Media/FORESTRY SERVICES LTD/Carrossel 1/Slide 1.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Carrossel 1/Slide 2.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Carrossel 1/Slide 3.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Carrossel 1/Slide 4.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Carrossel 1/Slide 5.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel 2",
+                "en": "Carousel 2"
+              },
+              "arquivos": [
+                "Social Media/FORESTRY SERVICES LTD/Carrossel 2/Slide 1.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Carrossel 2/Slide 2.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Carrossel 2/Slide 3.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Carrossel 2/Slide 4.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Carrossel 2/Slide 5.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Posts",
+                "en": "Posts"
+              },
+              "arquivos": [
+                "Social Media/FORESTRY SERVICES LTD/Post Único/1.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Post Único/3.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Post Único/4.jpg",
+                "Social Media/FORESTRY SERVICES LTD/Post Único/5.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "cliente": "2 Palitos Marketing Digital",
+          "contexto": {
+            "pt": "Agência de marketing digital parceira. Estética pixel e retrô, memes e cores neon para falar de tráfego, growth e vendas.",
+            "en": "A partner digital marketing agency. Pixel and retro aesthetics, memes and neon colours to talk about traffic, growth and sales."
+          },
+          "tags": {
+            "pt": [
+              "Carrossel",
+              "Post",
+              "Agência"
+            ],
+            "en": [
+              "Carousel",
+              "Post",
+              "Agency"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "full",
+              "arquivo": "Social Media/2 Palitos Marketing Digital/Cover.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel 1",
+                "en": "Carousel 1"
+              },
+              "arquivos": [
+                "Social Media/2 Palitos Marketing Digital/Carrossel 1/Slide 1.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 1/Slide 2.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 1/Slide 3.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 1/Slide 4.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel 2",
+                "en": "Carousel 2"
+              },
+              "arquivos": [
+                "Social Media/2 Palitos Marketing Digital/Carrossel 2/Slide 1.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 2/Slide 2.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 2/Slide 3.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 2/Slide 4.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel 3",
+                "en": "Carousel 3"
+              },
+              "arquivos": [
+                "Social Media/2 Palitos Marketing Digital/Carrossel 3/Slide 1.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 3/Slide 2.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 3/Slide 3.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 3/Slide 4.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel 4",
+                "en": "Carousel 4"
+              },
+              "arquivos": [
+                "Social Media/2 Palitos Marketing Digital/Carrossel 4/Slide 1.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 4/Slide 2.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 4/Slide 3.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 4/Slide 4.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 4/Slide 5.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel 5",
+                "en": "Carousel 5"
+              },
+              "arquivos": [
+                "Social Media/2 Palitos Marketing Digital/Carrossel 5/Slide 1.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 5/Slide 2.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 5/Slide 3.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 5/Slide 4.jpg",
+                "Social Media/2 Palitos Marketing Digital/Carrossel 5/Slide 5.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Posts",
+                "en": "Posts"
+              },
+              "arquivos": [
+                "Social Media/2 Palitos Marketing Digital/Post único/1.jpg",
+                "Social Media/2 Palitos Marketing Digital/Post único/2.jpg",
+                "Social Media/2 Palitos Marketing Digital/Post único/3.jpg",
+                "Social Media/2 Palitos Marketing Digital/Post único/4.jpg",
+                "Social Media/2 Palitos Marketing Digital/Post único/5.jpg",
+                "Social Media/2 Palitos Marketing Digital/Post único/05.10.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Nutripet · Black Friday",
+          "contexto": {
+            "pt": "Em parceria com a agência 2Palitos, desenvolvi uma linha visual focada em clareza e velocidade de absorção. O desafio foi adaptar a identidade divertida da Nutripet ao universo da Black Friday, utilizando tons de preto e contrastes marcantes sem perder a essência da marca.",
+            "en": "In partnership with the 2Palitos agency, I developed a visual line focused on clarity and quick reading. The challenge was to adapt Nutripet's playful identity to Black Friday, using black tones and strong contrast without losing the brand's essence."
+          },
+          "tags": {
+            "pt": [
+              "Campanha",
+              "Feed",
+              "Stories",
+              "Banner"
+            ],
+            "en": [
+              "Campaign",
+              "Feed",
+              "Stories",
+              "Banner"
+            ]
+          },
+          "origemTexto": "reaproveitado de projetos.js (site atual) (nutripet-black-friday, resumido)",
+          "blocos": [
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Social Media/Black Friday Nutripet/1.jpg",
+                "Social Media/Black Friday Nutripet/3.jpg"
+              ]
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Social Media/Black Friday Nutripet/2.jpg",
+              "largura": "media"
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Social Media/Black Friday Nutripet/4.jpg",
+              "largura": "media"
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Thaysa Paixão · Cassulinha Cabelos",
+          "contexto": {
+            "pt": "Atuei de ponta a ponta na gestão das redes da influenciadora e da loja dela: planejamento, design, legendas e interação com a comunidade, num padrão visual básico e descontraído alinhado às trends do momento.",
+            "en": "I handled the influencer's and her shop's social media end to end: planning, design, captions and community management, with a casual visual style in step with current trends."
+          },
+          "tags": {
+            "pt": [
+              "Carrossel",
+              "Gestão de redes",
+              "Copy"
+            ],
+            "en": [
+              "Carousel",
+              "Social media management",
+              "Copy"
+            ]
+          },
+          "origemTexto": "reaproveitado de projetos.js (site atual) (influenciadora-thaysa-paixao, resumido)",
+          "blocos": [
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel · retrospectiva",
+                "en": "Carousel · year in review"
+              },
+              "arquivos": [
+                "Social Media/Terezan Telhas/Carrossel 1/Slide 1.jpg",
+                "Social Media/Terezan Telhas/Carrossel 1/Slide 2.jpg",
+                "Social Media/Terezan Telhas/Carrossel 1/Slide 3.jpg",
+                "Social Media/Terezan Telhas/Carrossel 1/Slide 4.jpg",
+                "Social Media/Terezan Telhas/Carrossel 1/Slide 5.jpg",
+                "Social Media/Terezan Telhas/Carrossel 1/Slide 6.jpg",
+                "Social Media/Terezan Telhas/Carrossel 1/Slide 7.jpg",
+                "Social Media/Terezan Telhas/Carrossel 1/Slide 8.jpg",
+                "Social Media/Terezan Telhas/Carrossel 1/Slide 9.jpg",
+                "Social Media/Terezan Telhas/Carrossel 1/Slide 10.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel · seguidoras famosas",
+                "en": "Carousel · famous followers"
+              },
+              "arquivos": [
+                "Social Media/Terezan Telhas/Carossel 2/slide 1.jpg",
+                "Social Media/Terezan Telhas/Carossel 2/slide 2.jpg",
+                "Social Media/Terezan Telhas/Carossel 2/slide 3.jpg",
+                "Social Media/Terezan Telhas/Carossel 2/slide 4.jpg",
+                "Social Media/Terezan Telhas/Carossel 2/slide 5.jpg"
+              ]
+            },
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel · a história da Cassulinha",
+                "en": "Carousel · the Cassulinha story"
+              },
+              "arquivos": [
+                "Social Media/Terezan Telhas/Carrossel 3/SLIDE 1.jpg",
+                "Social Media/Terezan Telhas/Carrossel 3/SLIDE 2.jpg",
+                "Social Media/Terezan Telhas/Carrossel 3/SLIDE 3.jpg",
+                "Social Media/Terezan Telhas/Carrossel 3/SLIDE 4.jpg",
+                "Social Media/Terezan Telhas/Carrossel 3/SLIDE 5.jpg",
+                "Social Media/Terezan Telhas/Carrossel 3/SLIDE 6.jpg",
+                "Social Media/Terezan Telhas/Carrossel 3/SLIDE 7.jpg",
+                "Social Media/Terezan Telhas/Carrossel 3/SLIDE 8.jpg"
+              ]
+            }
+          ],
+          "nota": "ATENÇÃO: no zip estes carrosséis estão na pasta “Terezan Telhas”, mas o conteúdo é da Thaysa Paixão / Cassulinha Cabelos. A subpasta “Post Único” está vazia. Confirmar com a Isabelly antes de publicar; se houver material da Terezan Telhas, ele entra como seção própria."
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Vereador Homerinho",
+          "contexto": {
+            "pt": "Gestão completa das redes para humanizar a figura do vereador, com design claro e acolhedor, planejamento de conteúdo, legendas e anúncios para ampliar o alcance das ações parlamentares.",
+            "en": "Full social media management to humanise the councillor, with clear and welcoming design, content planning, captions and ads to widen the reach of his work."
+          },
+          "tags": {
+            "pt": [
+              "Carrossel",
+              "Post",
+              "Meta Ads"
+            ],
+            "en": [
+              "Carousel",
+              "Post",
+              "Meta Ads"
+            ]
+          },
+          "origemTexto": "reaproveitado de projetos.js (site atual) (vereador-homerinho, resumido)",
+          "blocos": [
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel",
+                "en": "Carousel"
+              },
+              "arquivos": [
+                "Social Media/Vereador Homerinho/Carrossel 1/1.jpg",
+                "Social Media/Vereador Homerinho/Carrossel 1/2.jpg",
+                "Social Media/Vereador Homerinho/Carrossel 1/3.jpg",
+                "Social Media/Vereador Homerinho/Carrossel 1/4.jpg",
+                "Social Media/Vereador Homerinho/Carrossel 1/5.jpg",
+                "Social Media/Vereador Homerinho/Carrossel 1/6.jpg",
+                "Social Media/Vereador Homerinho/Carrossel 1/8.jpg"
+              ]
+            },
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Social Media/Vereador Homerinho/Post Único/1.jpg",
+                "Social Media/Vereador Homerinho/Post Único/2.jpg"
+              ]
+            },
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Social Media/Vereador Homerinho/Post Único/3.jpg",
+                "Social Media/Vereador Homerinho/Post Único/4.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Vereador Francisco Arruda",
+          "contexto": {
+            "pt": "A convite da agência Alumeia, desenvolvi um carrossel sobre a aprovação de um projeto de lei, traduzindo o conteúdo legislativo para uma linguagem visual clara para a população.",
+            "en": "Invited by the Alumeia agency, I designed a carousel about a newly approved bill, turning legislative content into clear visual language for the public."
+          },
+          "tags": {
+            "pt": [
+              "Carrossel",
+              "Agência parceira"
+            ],
+            "en": [
+              "Carousel",
+              "Partner agency"
+            ]
+          },
+          "origemTexto": "reaproveitado de projetos.js (site atual) (vereador-francisco-arruda, resumido)",
+          "blocos": [
+            {
+              "tipo": "strip",
+              "titulo": {
+                "pt": "Carrossel",
+                "en": "Carousel"
+              },
+              "arquivos": [
+                "Social Media/Vereador Francisco Arruda/SLIDE 1.jpg",
+                "Social Media/Vereador Francisco Arruda/SLIDE 2.jpg",
+                "Social Media/Vereador Francisco Arruda/SLIDE 3.jpg"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "material-grafico",
+      "ordem": 5,
+      "tipo": "grupo",
+      "destaqueHome": false,
+      "slugsAntigos": [
+        "cartao-visita-amarelo",
+        "capa-livro-colagens",
+        "cardapio-pesqueiro-cris",
+        "cartao-visita-ft",
+        "flyer-pan-queso",
+        "papel-timbrado-terezan"
+      ],
+      "titulo": {
+        "pt": "Material Gráfico",
+        "en": "Print Design"
+      },
+      "categoria": {
+        "pt": "Material Gráfico",
+        "en": "Print Design"
+      },
+      "ano": "2024–2026",
+      "ferramentas": [
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Adobe InDesign"
+      ],
+      "tags": {
+        "pt": [
+          "Banner",
+          "Folder",
+          "Cartão de visita",
+          "Capa de livro"
+        ],
+        "en": [
+          "Banner",
+          "Leaflet",
+          "Business card",
+          "Book cover"
+        ]
+      },
+      "linhaHover": {
+        "pt": "Banner, folder, cartão de visita e capa de livro: design que vai para o papel.",
+        "en": "Banner, leaflet, business card and book cover: design made for paper."
+      },
+      "resumo": {
+        "pt": "Quando o design sai da tela, cada detalhe pesa mais: tamanho de letra, dobra, papel, leitura à distância. Aqui estão peças impressas bem diferentes entre si, de um banner A0 institucional a uma capa de livro feita só com as memórias da cliente.",
+        "en": "When design leaves the screen, every detail weighs more: type size, folds, paper, reading from a distance. These printed pieces are very different from each other, from an institutional A0 banner to a book cover made only from the client's memories."
+      },
+      "origemTexto": "rascunho — validar com a Isabelly",
+      "corMarca": "#F2B705",
+      "capa": {
+        "arquivo": "Impressos/Amar.Elo Fotografia/Cover.jpg",
+        "nota": "Cartões amarelos sobre verde-água; recorte quadrado. Alternativa: Fale Seguro/Folder 2 dobras/Cover.jpg."
+      },
+      "blocos": [
+        {
+          "tipo": "secao",
+          "cliente": "Fale Seguro",
+          "contexto": {
+            "pt": "Banner A0 e folder de duas dobras para uma empresa de saúde e segurança psicossocial no trabalho, apresentando o Safe Scan, o dashboard de inteligência visual e o canal de ética.",
+            "en": "An A0 banner and a bi-fold leaflet for a workplace psychosocial health and safety company, presenting Safe Scan, its visual intelligence dashboard and its ethics channel."
+          },
+          "tags": {
+            "pt": [
+              "Banner A0",
+              "Folder 2 dobras"
+            ],
+            "en": [
+              "A0 banner",
+              "Bi-fold leaflet"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "full",
+              "arquivo": "Impressos/Fale Seguro/Banner A0/Cover.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Impressos/Fale Seguro/Banner A0/Mockup 1.jpg",
+                "Impressos/Fale Seguro/Banner A0/Mockup 3.jpg"
+              ]
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Impressos/Fale Seguro/Banner A0/Mockup 2.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Impressos/Fale Seguro/Folder 2 dobras/Cover.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Impressos/Fale Seguro/Folder 2 dobras/Parte externa e capa mockup.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Impressos/Fale Seguro/Folder 2 dobras/Parte interna mockup.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Impressos/Fale Seguro/Folder 2 dobras/Mockup em mãos.jpg",
+              "largura": "total"
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "cliente": "AmarElo Fotografia",
+          "contexto": {
+            "pt": "Cartão de visita com estética de colagem para a fotógrafa Ana Paula. Integrei a foto dela, elementos gráficos manuais e o QR Code de forma orgânica, com o amarelo vibrante da marca.",
+            "en": "A collage-style business card for photographer Ana Paula. I combined her photo, hand-made graphic elements and the QR code organically, using the brand's vibrant yellow."
+          },
+          "tags": {
+            "pt": [
+              "Cartão de visita"
+            ],
+            "en": [
+              "Business card"
+            ]
+          },
+          "origemTexto": "reaproveitado de projetos.js (site atual) (cartao-visita-amarelo, resumido)",
+          "blocos": [
+            {
+              "tipo": "full",
+              "arquivo": "Impressos/Amar.Elo Fotografia/Cover.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Impressos/Amar.Elo Fotografia/Business Card.jpg",
+              "largura": "media"
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Capa de livro · Ana Gonçalves",
+          "contexto": {
+            "pt": "Um projeto muito intimista: construí a capa com colagens digitais de fotos da própria cliente, com uma estética de álbum de recordações ao mesmo tempo profissional e emocionante.",
+            "en": "A very personal project: I built the cover from digital collages of the client's own photos, with a scrapbook feel that is both professional and moving."
+          },
+          "tags": {
+            "pt": [
+              "Capa de livro",
+              "Colagem"
+            ],
+            "en": [
+              "Book cover",
+              "Collage"
+            ]
+          },
+          "origemTexto": "reaproveitado de projetos.js (site atual) (capa-livro-colagens, resumido)",
+          "blocos": [
+            {
+              "tipo": "full",
+              "arquivo": "Impressos/Capa de Livro Colagens - Ana Gonçalves/b5ab813d-7099-4363-93aa-81e01086441c.jpg",
+              "largura": "total"
+            }
+          ],
+          "nota": "Cover.jpg e b5ab813d…jpg mostram a mesma cena; usar só o de maior resolução (b5ab813d…, 4000×3000)."
+        }
+      ]
+    },
+    {
+      "slug": "video",
+      "ordem": 6,
+      "tipo": "grupo",
+      "destaqueHome": false,
+      "slugsAntigos": [
+        "video-terezan-reels",
+        "video-plca-advogados"
+      ],
+      "titulo": {
+        "pt": "Vídeo",
+        "en": "Video"
+      },
+      "categoria": {
+        "pt": "Vídeo",
+        "en": "Video"
+      },
+      "ano": "2025–2026",
+      "ferramentas": [
+        "CapCut",
+        "Adobe After Effects",
+        "Adobe Premiere (confirmar)"
+      ],
+      "tags": {
+        "pt": [
+          "Reels",
+          "Motion",
+          "Legenda na tela"
+        ],
+        "en": [
+          "Reels",
+          "Motion",
+          "On-screen captions"
+        ]
+      },
+      "linhaHover": {
+        "pt": "Reels curtos para agência e fintech: ritmo, legenda na tela e motion que segura a atenção.",
+        "en": "Short reels for an agency and a fintech: pace, on-screen captions and motion that holds attention."
+      },
+      "resumo": {
+        "pt": "Vídeos curtos para redes sociais, pensados para quem assiste sem som e decide em dois segundos se continua. Ritmo de corte, tipografia em movimento e legendas que carregam a mensagem do começo ao fim.",
+        "en": "Short videos for social media, made for people who watch on mute and decide within two seconds whether to keep watching. Cutting rhythm, moving type and captions that carry the message from start to finish."
+      },
+      "origemTexto": "rascunho — validar com a Isabelly",
+      "corMarca": "#13F2C8",
+      "capa": {
+        "gerar": true,
+        "nota": "Não há capa. Gerar uma capa quadrada com o módulo de imagem combinando 3 frames dos vídeos (ex.: 2 Palitos/2.mp4 aos 10s, Zen Pensions/4.mp4 aos 10s, 2 Palitos/4.mp4 aos 2s). Só composição, sem alterar os frames."
+      },
+      "blocos": [
+        {
+          "tipo": "secao",
+          "cliente": "2 Palitos Marketing Digital",
+          "contexto": {
+            "pt": "Reels para a agência 2 Palitos com memes, estética pixel e chamadas diretas sobre vendas e tráfego.",
+            "en": "Reels for the 2 Palitos agency with memes, pixel aesthetics and direct calls about sales and traffic."
+          },
+          "tags": {
+            "pt": [
+              "Reels",
+              "Agência"
+            ],
+            "en": [
+              "Reels",
+              "Agency"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "reel",
+              "arquivos": [
+                "Vídeos/2 Palitos Marketing Digital/1.mp4",
+                "Vídeos/2 Palitos Marketing Digital/2.mp4"
+              ]
+            },
+            {
+              "tipo": "reel",
+              "arquivos": [
+                "Vídeos/2 Palitos Marketing Digital/3.mp4",
+                "Vídeos/2 Palitos Marketing Digital/4.mp4"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Zen Pensions",
+          "contexto": {
+            "pt": "Animações para a Zen Pensions explicando previdência com ilustração, tipografia e um ritmo leve.",
+            "en": "Animations for Zen Pensions explaining pensions with illustration, type and a light pace."
+          },
+          "tags": {
+            "pt": [
+              "Reels",
+              "Motion",
+              "Inglês"
+            ],
+            "en": [
+              "Reels",
+              "Motion",
+              "English"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "reel",
+              "arquivos": [
+                "Vídeos/Zen Pensions/1.mp4",
+                "Vídeos/Zen Pensions/2.mp4"
+              ]
+            },
+            {
+              "tipo": "reel",
+              "arquivos": [
+                "Vídeos/Zen Pensions/3.mp4",
+                "Vídeos/Zen Pensions/4.mp4"
+              ]
+            }
+          ]
+        }
+      ],
+      "notas": [
+        "Todos os vídeos são 1440×2560 (9:16), 12–52 s, 8–48 MB. Recomprimir (H.264 + WebM/AV1, 1080×1920 máx., ~2–4 Mbps), gerar poster de cada um.",
+        "Os reels da Michelle Lasta e da Forestry ficam na página Social Media, dentro das seções desses clientes."
+      ]
+    },
+    {
+      "slug": "ilustracao",
+      "ordem": 7,
+      "tipo": "grupo",
+      "destaqueHome": false,
+      "slugsAntigos": [],
+      "titulo": {
+        "pt": "Ilustração",
+        "en": "Illustration"
+      },
+      "categoria": {
+        "pt": "Ilustração",
+        "en": "Illustration"
+      },
+      "ano": "2024–2026 (confirmar)",
+      "ferramentas": [
+        "Grafite e papel",
+        "Adobe Illustrator",
+        "Adobe Photoshop"
+      ],
+      "tags": {
+        "pt": [
+          "Desenho à mão",
+          "Mascote",
+          "Tattoo",
+          "Estampa"
+        ],
+        "en": [
+          "Hand drawing",
+          "Mascot",
+          "Tattoo",
+          "Apparel print"
+        ]
+      },
+      "linhaHover": {
+        "pt": "Do grafite ao vetor: retratos, mascote, tattoo e estampa.",
+        "en": "From pencil to vector: portraits, a mascot, a tattoo and an apparel print."
+      },
+      "resumo": {
+        "pt": "Antes de qualquer marca, eu desenho. Aqui ficam os desenhos à mão, que é onde eu mais me divirto, e as ilustrações que viraram produto: o redesign do mascote de uma festa, uma tattoo e a estampa de uma turma de formandos.",
+        "en": "Before any brand, I draw. Here are my hand drawings, which is where I have the most fun, and the illustrations that became products: a party mascot redesign, a tattoo and a print for a graduating class."
+      },
+      "origemTexto": "rascunho — validar com a Isabelly",
+      "corMarca": "#C7C7D1",
+      "capa": {
+        "arquivo": "Desenhos e Ilustrações/Desenhos tradicionais/Cover.jpg",
+        "nota": "Caderno de desenho sobre a mesa, clima escuro: combina com a identidade. Recorte quadrado no caderno."
+      },
+      "blocos": [
+        {
+          "tipo": "secao",
+          "cliente": "Desenhos tradicionais",
+          "contexto": {
+            "pt": "Grafite sobre papel: retratos, personagens e estudos.",
+            "en": "Pencil on paper: portraits, characters and studies."
+          },
+          "tags": {
+            "pt": [
+              "Grafite"
+            ],
+            "en": [
+              "Pencil"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "full",
+              "arquivo": "Desenhos e Ilustrações/Desenhos tradicionais/Cover.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Desenhos e Ilustrações/Desenhos tradicionais/1.jpg",
+                "Desenhos e Ilustrações/Desenhos tradicionais/2.jpg"
+              ]
+            },
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Desenhos e Ilustrações/Desenhos tradicionais/4.jpg",
+                "Desenhos e Ilustrações/Desenhos tradicionais/5.jpg"
+              ]
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Desenhos e Ilustrações/Desenhos tradicionais/3.jpg",
+              "largura": "media"
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Redesign do mascote · Turma do Paiol",
+          "contexto": {
+            "pt": "Redesign do javali mascote da festa Turma do Paiol, do rascunho a lápis ao vetor final, aplicado no copo e na camiseta da 8ª festa (1º Baile do Hawaii, 21/12/2024).",
+            "en": "A redesign of the boar mascot for the Turma do Paiol party, from pencil sketch to final vector, applied to the cup and T-shirt of the 8th edition (1st Hawaiian Ball, 21/12/2024)."
+          },
+          "tags": {
+            "pt": [
+              "Mascote",
+              "Vetor",
+              "Aplicação"
+            ],
+            "en": [
+              "Mascot",
+              "Vector",
+              "Application"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/1.jpg",
+                "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/3.jpg"
+              ]
+            },
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/4.jpg",
+                "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/5.jpg"
+              ]
+            },
+            {
+              "tipo": "frase",
+              "texto": {
+                "pt": "Do rascunho a lápis ao vetor, sem perder o carisma do personagem.",
+                "en": "From pencil sketch to vector, without losing the character's charm."
+              }
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/6.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Desenhos e Ilustrações/Ilustrações/Redesign Mascote - Turma do Paiol/7.jpg",
+              "largura": "media"
+            }
+          ]
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Tattoo",
+          "contexto": {
+            "pt": "Um gambá entre cogumelos, do esboço à linha e à cor.",
+            "en": "An opossum among mushrooms, from sketch to line and colour."
+          },
+          "tags": {
+            "pt": [
+              "Tattoo",
+              "Ilustração"
+            ],
+            "en": [
+              "Tattoo",
+              "Illustration"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "pair",
+              "arquivos": [
+                "Desenhos e Ilustrações/Ilustrações/Tattoo/2.jpg",
+                "Desenhos e Ilustrações/Ilustrações/Tattoo/3.jpg"
+              ]
+            }
+          ],
+          "nota": "O esboço desta tattoo é o Desenhos tradicionais/3.jpg; Tattoo/1.jpeg é uma foto do mesmo esboço e não precisa entrar."
+        },
+        {
+          "tipo": "secao",
+          "cliente": "Estampa de formandos",
+          "contexto": {
+            "pt": "Estampa para camisetas e moletons de uma turma de formandos.",
+            "en": "A print for a graduating class's T-shirts and hoodies."
+          },
+          "tags": {
+            "pt": [
+              "Estampa",
+              "Vestuário"
+            ],
+            "en": [
+              "Apparel print",
+              "Clothing"
+            ]
+          },
+          "origemTexto": "rascunho — validar com a Isabelly",
+          "blocos": [
+            {
+              "tipo": "full",
+              "arquivo": "Desenhos e Ilustrações/Ilustrações/Estampa Formandos/1.jpg",
+              "largura": "total"
+            },
+            {
+              "tipo": "full",
+              "arquivo": "Desenhos e Ilustrações/Ilustrações/Estampa Formandos/2.jpg",
+              "largura": "total"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fotos": {
+    "_origem": "C:/Users/flori/Downloads/ (copiar para _material/fotos/ com os nomes novos)",
+    "itens": [
+      {
+        "original": "WhatsApp Image 2026-11-22 at 17.11.01.jpeg",
+        "novo": "isabelly-01-damask-roxo.jpg",
+        "uso": "Hero da home (foto central) e OG. Já tem fundo damask roxo da identidade."
+      },
+      {
+        "original": "WhatsApp Image 2026-11-22 at 17.11.00.jpeg",
+        "novo": "isabelly-02-camiseta-branca.jpg",
+        "uso": "Sobre (polaroide); parede damask escura ao fundo."
+      },
+      {
+        "original": "WhatsApp Image 2026-11-22 at 17.11.00 (1).jpeg",
+        "novo": "isabelly-03-carro-luz.jpg",
+        "uso": "Sobre (polaroide)."
+      },
+      {
+        "original": "WhatsApp Image 2026-11-22 at 17.11.00 (2).jpeg",
+        "novo": "isabelly-04-frontal-escuro.jpg",
+        "uso": "Contato ou rodapé."
+      },
+      {
+        "original": "WhatsApp Image 2026-11-22 at 17.11.00 (3).jpeg",
+        "novo": "isabelly-05-olhar-baixo.jpg",
+        "uso": "Sobre (polaroide) ou imagem alternativa do hover do hero."
+      },
+      {
+        "original": "WhatsApp Image 2026-11-22 at 17.11.00 (4).jpeg",
+        "novo": "isabelly-06-carro-frontal.jpg",
+        "uso": "Reserva."
+      }
+    ]
+  },
+  "pendencias": [
+    "Pasta Social Media/Terezan Telhas contém carrosséis da Thaysa Paixão / Cassulinha Cabelos, e a subpasta Post Único está vazia. Confirmar com a Isabelly.",
+    "Datas divergentes: o carrossel “sobre mim” diz formação em Design Gráfico de 2024 a 2026; o site atual diz Unicid 2022–2025 (index) e lista também Publicidade e Propaganda UNIP 2021–presente (sobre.html). Agência Dolivs aparece como 2024–2025 (sobre) e 2025–presente (index). Confirmar antes de publicar.",
+    "Ano e ferramentas de Isys Karoline, Vídeo e Ilustração: confirmar.",
+    "Nome e arquivos das fontes usadas nos carrosséis da identidade (a gótica dos títulos, a geométrica dos textos e a manuscrita das anotações).",
+    "Nome do gatinho mascote (no carrossel, o gato preto da Isabelly se chama Sukito).",
+    "Currículo em PDF (media/Currículo Isabelly Lima.pdf no repositório atual): conferir se está atualizado.",
+    "Vanessa Rosa: pranchas em 1400×800; ideal pedir os arquivos originais em maior resolução."
+  ],
+  "naoUsados": {
+    "_nota": "Arquivos do zip (fora da pasta de identidade) que ficaram de fora de propósito, com o motivo nas notas de cada case.",
+    "arquivos": [
+      "Desenhos e Ilustrações/Ilustrações/Tattoo/1.jpeg",
+      "Impressos/Capa de Livro Colagens - Ana Gonçalves/Cover.jpg",
+      "Marcas/Identidade Visual - Brucutu Chapeiro/1.png"
+    ]
+  }
+}

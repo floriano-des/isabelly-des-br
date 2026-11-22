@@ -1,0 +1,19 @@
+---
+import Site from '../../layouts/Site.astro';
+import Home from '../../components/Home.astro';
+import { getPhoto } from '../../lib/media';
+const photo = getPhoto(1);
+---
+
+<Site lang="en" section="home">
+  <link
+    slot="preload"
+    rel="preload"
+    as="image"
+    fetchpriority="high"
+    type="image/avif"
+    imagesrcset={photo.avifSrcset}
+    imagesizes="(max-width: 640px) 58vw, (max-width: 1000px) 37vw, 24vw"
+  />
+  <Home lang="en" />
+</Site>

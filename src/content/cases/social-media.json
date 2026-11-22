@@ -1,0 +1,607 @@
+{
+  "slug": "social-media",
+  "ordem": 4,
+  "tipo": "grupo",
+  "destaqueHome": true,
+  "slugsAntigos": [
+    "terezan-telhas",
+    "vereador-francisco-arruda",
+    "vereador-homerinho",
+    "influenciadora-thaysa-paixao",
+    "nutripet-black-friday",
+    "construzan",
+    "dr-giovani-advocacia",
+    "villas-burguer"
+  ],
+  "titulo": {
+    "pt": "Social Media",
+    "en": "Social Media"
+  },
+  "categoria": {
+    "pt": "Social Media",
+    "en": "Social Media"
+  },
+  "ano": "2023–2026",
+  "ferramentas": [
+    "Adobe Photoshop",
+    "Adobe Illustrator",
+    "Meta Business Suite",
+    "Notion",
+    "CapCut"
+  ],
+  "tags": {
+    "pt": [
+      "Carrossel",
+      "Post",
+      "Reels",
+      "Estratégia"
+    ],
+    "en": [
+      "Carousel",
+      "Post",
+      "Reels",
+      "Strategy"
+    ]
+  },
+  "linhaHover": {
+    "pt": "Oito marcas, um só cuidado: posts, carrosséis e reels com estratégia por trás do visual.",
+    "en": "Eight brands, one standard: posts, carousels and reels with strategy behind the visuals."
+  },
+  "resumo": {
+    "pt": "Social media é onde eu mais trabalhei desde 2023, como freelancer e em parceria com agências. Aqui estão marcas de setores bem diferentes, de previdência na Irlanda a vereadores do interior de São Paulo, mas o processo é o mesmo: entender o que a marca precisa comunicar e transformar isso em conteúdo que prende no feed e leva à ação.",
+    "en": "Social media is where I have worked the most since 2023, both freelance and with partner agencies. These brands come from very different fields, from pensions in Ireland to city councillors in inland São Paulo, but the process is the same: understand what the brand needs to say and turn it into content that stops the scroll and leads to action."
+  },
+  "corMarca": "#7F52AD",
+  "hoverBox": "#C7C7D1",
+  "capa": {
+    "arquivo": "src/assets/cases/social-media/01-cover.webp"
+  },
+  "blocos": [
+    {
+      "tipo": "secao",
+      "cliente": "Zen Pensions",
+      "contexto": {
+        "pt": "Fintech irlandesa de previdência. Conteúdo em inglês para empregadores e funcionários, com ilustração, dados e um tom leve para um assunto complicado.",
+        "en": "An Irish pensions fintech. English-language content for employers and employees, using illustration, data and a light tone for a complicated subject."
+      },
+      "tags": {
+        "pt": [
+          "Carrossel",
+          "Post",
+          "Conteúdo em inglês"
+        ],
+        "en": [
+          "Carousel",
+          "Post",
+          "English content"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/social-media/02-6.webp",
+            "src/assets/cases/social-media/03-2.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel · 5 perguntas sobre Auto-Enrolment",
+            "en": "Carousel · 5 questions about Auto-Enrolment"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/04-slide-1.webp",
+            "src/assets/cases/social-media/05-slide-2.webp",
+            "src/assets/cases/social-media/06-slide-3.webp",
+            "src/assets/cases/social-media/07-slide-4.webp",
+            "src/assets/cases/social-media/08-slide-5.webp",
+            "src/assets/cases/social-media/09-slide-6.webp",
+            "src/assets/cases/social-media/10-slide-7.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel · prêmios 2026",
+            "en": "Carousel · 2026 awards"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/11-30-slide-1.webp",
+            "src/assets/cases/social-media/12-30-slide-3.webp",
+            "src/assets/cases/social-media/13-30-slide-4.webp",
+            "src/assets/cases/social-media/14-30-slide-5.webp",
+            "src/assets/cases/social-media/15-30-slide-6.webp",
+            "src/assets/cases/social-media/16-30-slide-7.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Posts",
+            "en": "Posts"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/17-1.webp",
+            "src/assets/cases/social-media/18-3.webp",
+            "src/assets/cases/social-media/19-4.webp",
+            "src/assets/cases/social-media/20-5.webp",
+            "src/assets/cases/social-media/21-7.webp",
+            "src/assets/cases/social-media/22-8.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Michelle Lasta",
+      "contexto": {
+        "pt": "Profissional de branding. Posts e reels em inglês com fotos dela, vidro e luz suave, falando de marca como estratégia.",
+        "en": "A branding professional. English posts and reels with her portraits, glass and soft light, talking about brand as strategy."
+      },
+      "tags": {
+        "pt": [
+          "Carrossel",
+          "Post",
+          "Reels"
+        ],
+        "en": [
+          "Carousel",
+          "Post",
+          "Reels"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/social-media/23-capa.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/social-media/24-1.webp",
+            "/media/social-media/25-reels.mp4"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel 1",
+            "en": "Carousel 1"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/26-slide-1.webp",
+            "src/assets/cases/social-media/27-slide-2.webp",
+            "src/assets/cases/social-media/28-slide-3.webp",
+            "src/assets/cases/social-media/29-slide-4.webp",
+            "src/assets/cases/social-media/30-slide-5.webp",
+            "src/assets/cases/social-media/31-slide-6.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel 2",
+            "en": "Carousel 2"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/32-slide-1.webp",
+            "src/assets/cases/social-media/33-slide-2.webp",
+            "src/assets/cases/social-media/34-slide-3.webp",
+            "src/assets/cases/social-media/35-slide-4.webp",
+            "src/assets/cases/social-media/36-slide-5.webp",
+            "src/assets/cases/social-media/37-slide-6.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel 3",
+            "en": "Carousel 3"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/38-slide-1.webp",
+            "src/assets/cases/social-media/39-slide-2.webp",
+            "src/assets/cases/social-media/40-slide-3.webp",
+            "src/assets/cases/social-media/41-slide-4.webp",
+            "src/assets/cases/social-media/42-slide-5.webp",
+            "src/assets/cases/social-media/43-slide-6.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Posts",
+            "en": "Posts"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/44-2.webp",
+            "src/assets/cases/social-media/45-3.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Forestry Services Ltd",
+      "contexto": {
+        "pt": "Empresa florestal da Irlanda. Posts em inglês sobre incentivos do governo e manejo de florestas, com verde forte e fotos de campo.",
+        "en": "An Irish forestry company. English posts about government grants and forest management, with strong greens and field photography."
+      },
+      "tags": {
+        "pt": [
+          "Carrossel",
+          "Post",
+          "Reels"
+        ],
+        "en": [
+          "Carousel",
+          "Post",
+          "Reels"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/social-media/46-cover.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/social-media/47-2.webp",
+            "/media/social-media/48-reels.mp4"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel 1",
+            "en": "Carousel 1"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/49-slide-1.webp",
+            "src/assets/cases/social-media/50-slide-2.webp",
+            "src/assets/cases/social-media/51-slide-3.webp",
+            "src/assets/cases/social-media/52-slide-4.webp",
+            "src/assets/cases/social-media/53-slide-5.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel 2",
+            "en": "Carousel 2"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/54-slide-1.webp",
+            "src/assets/cases/social-media/55-slide-2.webp",
+            "src/assets/cases/social-media/56-slide-3.webp",
+            "src/assets/cases/social-media/57-slide-4.webp",
+            "src/assets/cases/social-media/58-slide-5.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Posts",
+            "en": "Posts"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/59-1.webp",
+            "src/assets/cases/social-media/60-3.webp",
+            "src/assets/cases/social-media/61-4.webp",
+            "src/assets/cases/social-media/62-5.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "2 Palitos Marketing Digital",
+      "contexto": {
+        "pt": "Agência de marketing digital parceira. Estética pixel e retrô, memes e cores neon para falar de tráfego, growth e vendas.",
+        "en": "A partner digital marketing agency. Pixel and retro aesthetics, memes and neon colours to talk about traffic, growth and sales."
+      },
+      "tags": {
+        "pt": [
+          "Carrossel",
+          "Post",
+          "Agência"
+        ],
+        "en": [
+          "Carousel",
+          "Post",
+          "Agency"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/social-media/01-cover.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel 1",
+            "en": "Carousel 1"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/63-slide-1.webp",
+            "src/assets/cases/social-media/64-slide-2.webp",
+            "src/assets/cases/social-media/65-slide-3.webp",
+            "src/assets/cases/social-media/66-slide-4.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel 2",
+            "en": "Carousel 2"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/67-slide-1.webp",
+            "src/assets/cases/social-media/68-slide-2.webp",
+            "src/assets/cases/social-media/69-slide-3.webp",
+            "src/assets/cases/social-media/70-slide-4.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel 3",
+            "en": "Carousel 3"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/71-slide-1.webp",
+            "src/assets/cases/social-media/72-slide-2.webp",
+            "src/assets/cases/social-media/73-slide-3.webp",
+            "src/assets/cases/social-media/74-slide-4.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel 4",
+            "en": "Carousel 4"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/75-slide-1.webp",
+            "src/assets/cases/social-media/76-slide-2.webp",
+            "src/assets/cases/social-media/77-slide-3.webp",
+            "src/assets/cases/social-media/78-slide-4.webp",
+            "src/assets/cases/social-media/79-slide-5.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel 5",
+            "en": "Carousel 5"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/80-slide-1.webp",
+            "src/assets/cases/social-media/81-slide-2.webp",
+            "src/assets/cases/social-media/82-slide-3.webp",
+            "src/assets/cases/social-media/83-slide-4.webp",
+            "src/assets/cases/social-media/84-slide-5.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Posts",
+            "en": "Posts"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/85-1.webp",
+            "src/assets/cases/social-media/86-2.webp",
+            "src/assets/cases/social-media/87-3.webp",
+            "src/assets/cases/social-media/88-4.webp",
+            "src/assets/cases/social-media/89-5.webp",
+            "src/assets/cases/social-media/90-05-10.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Nutripet · Black Friday",
+      "contexto": {
+        "pt": "Em parceria com a agência 2Palitos, desenvolvi uma linha visual focada em clareza e velocidade de absorção. O desafio foi adaptar a identidade divertida da Nutripet ao universo da Black Friday, utilizando tons de preto e contrastes marcantes sem perder a essência da marca.",
+        "en": "In partnership with the 2Palitos agency, I developed a visual line focused on clarity and quick reading. The challenge was to adapt Nutripet's playful identity to Black Friday, using black tones and strong contrast without losing the brand's essence."
+      },
+      "tags": {
+        "pt": [
+          "Campanha",
+          "Feed",
+          "Stories",
+          "Banner"
+        ],
+        "en": [
+          "Campaign",
+          "Feed",
+          "Stories",
+          "Banner"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/social-media/91-1.webp",
+            "src/assets/cases/social-media/92-3.webp"
+          ]
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/social-media/93-2.webp",
+          "largura": "media"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/social-media/94-4.webp",
+          "largura": "media"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Thaysa Paixão · Cassulinha Cabelos",
+      "contexto": {
+        "pt": "Atuei de ponta a ponta na gestão das redes da influenciadora e da loja dela: planejamento, design, legendas e interação com a comunidade, num padrão visual básico e descontraído alinhado às trends do momento.",
+        "en": "I handled the influencer's and her shop's social media end to end: planning, design, captions and community management, with a casual visual style in step with current trends."
+      },
+      "tags": {
+        "pt": [
+          "Carrossel",
+          "Gestão de redes",
+          "Copy"
+        ],
+        "en": [
+          "Carousel",
+          "Social media management",
+          "Copy"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel · retrospectiva",
+            "en": "Carousel · year in review"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/95-slide-1.webp",
+            "src/assets/cases/social-media/96-slide-2.webp",
+            "src/assets/cases/social-media/97-slide-3.webp",
+            "src/assets/cases/social-media/98-slide-4.webp",
+            "src/assets/cases/social-media/99-slide-5.webp",
+            "src/assets/cases/social-media/100-slide-6.webp",
+            "src/assets/cases/social-media/101-slide-7.webp",
+            "src/assets/cases/social-media/102-slide-8.webp",
+            "src/assets/cases/social-media/103-slide-9.webp",
+            "src/assets/cases/social-media/104-slide-10.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel · seguidoras famosas",
+            "en": "Carousel · famous followers"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/105-slide-1.webp",
+            "src/assets/cases/social-media/106-slide-2.webp",
+            "src/assets/cases/social-media/107-slide-3.webp",
+            "src/assets/cases/social-media/108-slide-4.webp",
+            "src/assets/cases/social-media/109-slide-5.webp"
+          ]
+        },
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel · a história da Cassulinha",
+            "en": "Carousel · the Cassulinha story"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/110-slide-1.webp",
+            "src/assets/cases/social-media/111-slide-2.webp",
+            "src/assets/cases/social-media/112-slide-3.webp",
+            "src/assets/cases/social-media/113-slide-4.webp",
+            "src/assets/cases/social-media/114-slide-5.webp",
+            "src/assets/cases/social-media/115-slide-6.webp",
+            "src/assets/cases/social-media/116-slide-7.webp",
+            "src/assets/cases/social-media/117-slide-8.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Vereador Homerinho",
+      "contexto": {
+        "pt": "Gestão completa das redes para humanizar a figura do vereador, com design claro e acolhedor, planejamento de conteúdo, legendas e anúncios para ampliar o alcance das ações parlamentares.",
+        "en": "Full social media management to humanise the councillor, with clear and welcoming design, content planning, captions and ads to widen the reach of his work."
+      },
+      "tags": {
+        "pt": [
+          "Carrossel",
+          "Post",
+          "Meta Ads"
+        ],
+        "en": [
+          "Carousel",
+          "Post",
+          "Meta Ads"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel",
+            "en": "Carousel"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/118-1.webp",
+            "src/assets/cases/social-media/119-2.webp",
+            "src/assets/cases/social-media/120-3.webp",
+            "src/assets/cases/social-media/121-4.webp",
+            "src/assets/cases/social-media/122-5.webp",
+            "src/assets/cases/social-media/123-6.webp",
+            "src/assets/cases/social-media/124-8.webp"
+          ]
+        },
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/social-media/125-1.webp",
+            "src/assets/cases/social-media/126-2.webp"
+          ]
+        },
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/social-media/127-3.webp",
+            "src/assets/cases/social-media/128-4.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Vereador Francisco Arruda",
+      "contexto": {
+        "pt": "A convite da agência Alumeia, desenvolvi um carrossel sobre a aprovação de um projeto de lei, traduzindo o conteúdo legislativo para uma linguagem visual clara para a população.",
+        "en": "Invited by the Alumeia agency, I designed a carousel about a newly approved bill, turning legislative content into clear visual language for the public."
+      },
+      "tags": {
+        "pt": [
+          "Carrossel",
+          "Agência parceira"
+        ],
+        "en": [
+          "Carousel",
+          "Partner agency"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "strip",
+          "titulo": {
+            "pt": "Carrossel",
+            "en": "Carousel"
+          },
+          "arquivos": [
+            "src/assets/cases/social-media/129-slide-1.webp",
+            "src/assets/cases/social-media/130-slide-2.webp",
+            "src/assets/cases/social-media/131-slide-3.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}

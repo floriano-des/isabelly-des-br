@@ -1,0 +1,13 @@
+---
+import Site from '../../layouts/Site.astro';
+import Case from '../../components/Case.astro';
+import { projects } from '../../lib/site';
+export function getStaticPaths() {
+  return projects.map((project) => ({ params: { slug: project.slug }, props: { project } }));
+}
+const { project } = Astro.props;
+---
+
+<Site lang="pt" section="case" {project}>
+  <Case lang="pt" {project} />
+</Site>

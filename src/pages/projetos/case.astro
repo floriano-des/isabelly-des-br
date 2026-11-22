@@ -1,0 +1,30 @@
+---
+import { legacySlugs } from '../../lib/legacy.js';
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex,follow" />
+    <title>Trabalhos · Isabelly Lima</title>
+    <link rel="canonical" href="https://isabelly.des.br/trabalhos/" />
+  </head>
+  <body>
+    <main>
+      <p>
+        <a href="/trabalhos/">Ver todos os trabalhos de Isabelly Lima</a>
+      </p>
+    </main>
+    <script define:vars={{ legacySlugs }}>
+      const slug = new URLSearchParams(location.search).get('slug');
+      const dest =
+        slug && Object.hasOwn(legacySlugs, slug)
+          ? legacySlugs[slug]
+          : slug?.startsWith('video-')
+            ? 'video'
+            : '';
+      location.replace(dest ? '/trabalhos/' + dest + '/' : '/trabalhos/');
+    </script>
+  </body>
+</html>

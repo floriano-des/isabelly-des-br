@@ -1,0 +1,98 @@
+{
+  "slug": "brucutu-chapeiro",
+  "ordem": 3,
+  "tipo": "marca",
+  "destaqueHome": false,
+  "slugsAntigos": [
+    "brucutu-chapeiro"
+  ],
+  "titulo": {
+    "pt": "Brucutu Lanches",
+    "en": "Brucutu Lanches"
+  },
+  "categoria": {
+    "pt": "Identidade Visual",
+    "en": "Visual Identity"
+  },
+  "ano": 2024,
+  "ferramentas": [
+    "Adobe Illustrator",
+    "Adobe Photoshop"
+  ],
+  "tags": {
+    "pt": [
+      "Identidade visual",
+      "Embalagem",
+      "Fachada"
+    ],
+    "en": [
+      "Visual identity",
+      "Packaging",
+      "Signage"
+    ]
+  },
+  "linhaHover": {
+    "pt": "Marca robusta para uma hamburgueria de chapa, com laranja, vermelho e tipografia de impacto.",
+    "en": "A bold brand for a flat-top burger joint, with orange, red and high-impact type."
+  },
+  "resumo": {
+    "pt": "Para este projeto, desenvolvi toda a concepção criativa com o objetivo de resgatar a tradição dos hamburgueiros de chapa. Criei uma marca que transmite força e agilidade, utilizando uma tipografia de impacto e elementos visuais que remetem ao ambiente artesanal da cozinha. Fui responsável por todo o desenvolvimento, desde a ideia inicial até a finalização técnica, garantindo que a identidade tivesse personalidade própria e uma presença visual marcante.",
+    "en": "For this project, I developed the entire creative concept with the goal of reviving the tradition of flat-top burger cooks. I created a brand that conveys strength and agility, using impactful typography and visual elements that evoke the artisanal kitchen atmosphere. I was responsible for the whole development, from the initial idea to the technical finalization, making sure the identity had its own personality and a strong visual presence."
+  },
+  "marca": {
+    "cores": {
+      "Laranja": "#F5A318",
+      "Vermelho": "#FA1D1D",
+      "Creme": "#FAF0EA",
+      "Marrom": "#150807"
+    },
+    "tipografias": [
+      "Bylander"
+    ]
+  },
+  "corMarca": "#F5A318",
+  "capa": {
+    "arquivo": "src/assets/cases/brucutu-chapeiro/01-5.webp"
+  },
+  "blocos": [
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/brucutu-chapeiro/02-2.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "frase",
+      "texto": {
+        "pt": "Força e agilidade: uma marca que resgata a tradição dos hamburgueiros de chapa.",
+        "en": "Strength and speed: a brand that brings back the tradition of flat-top burger cooks."
+      }
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/brucutu-chapeiro/03-3.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/brucutu-chapeiro/04-4.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "frase",
+      "texto": {
+        "pt": "Laranja e vermelho de cozinha, equilibrados por creme e um marrom quase preto.",
+        "en": "Kitchen orange and red, balanced by cream and an almost-black brown."
+      }
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/brucutu-chapeiro/01-5.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/brucutu-chapeiro/05-6.webp",
+      "largura": "total"
+    }
+  ]
+}

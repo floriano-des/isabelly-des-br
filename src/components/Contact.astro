@@ -1,0 +1,191 @@
+---
+import { getPhoto } from '../lib/media';
+import Photo from './HomePicture.astro';
+import { copy, email, socials, whatsApp, type Lang } from '../lib/site';
+import '../styles/info.css';
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props,
+  pt = lang === 'pt',
+  t = copy[lang];
+const f = pt
+  ? {
+      name: 'Nome completo',
+      email: 'E-mail',
+      phone: 'WhatsApp',
+      msg: 'Descreva seu projeto',
+      send: 'Enviar mensagem',
+      sending: 'Enviando…',
+      success: 'Mensagem enviada. Obrigada por me contar sobre o seu projeto!',
+      fail: 'O envio falhou. Tente novamente ou fale comigo por e-mail.',
+      required: 'Preencha este campo.',
+      invalid: 'Digite um e-mail válido.',
+      hint: '* Campos obrigatórios',
+    }
+  : {
+      name: 'Full name',
+      email: 'Email',
+      phone: 'WhatsApp',
+      msg: 'Tell me about your project',
+      send: 'Send message',
+      sending: 'Sending…',
+      success: 'Message sent. Thank you for telling me about your project!',
+      fail: 'The message could not be sent. Please try again or contact me by email.',
+      required: 'Please fill in this field.',
+      invalid: 'Please enter a valid email address.',
+      hint: '* Required fields',
+    };
+const fields = [
+  ['name', f.name, 'text', 'name'],
+  ['email', f.email, 'email', 'email'],
+  ['whatsapp', f.phone, 'tel', 'tel'],
+] as const;
+---
+
+<article class="contact-page info-wrap">
+  <div class="contact-intro">
+    <p class="info-kicker">{t.contact}</p>
+    <h1>
+      {t.ctaBefore} <em>{t.ctaEm}</em> {t.ctaAfter}
+    </h1>
+  </div>
+  <div class="contact-columns">
+    <form
+      id="project-form"
+      action="https://formspree.io/f/mzdjqaeg"
+      method="POST"
+      data-sending={f.sending}
+      data-success={f.success}
+      data-fail={f.fail}
+      data-empty={f.required}
+      data-invalid={f.invalid}
+    >
+      <p class="form-hint">{f.hint}</p>
+      {fields.map(([name, label, type, auto]) => (
+        <div class="field">
+          <label for={'field-' + name}>
+            {label}
+            {name !== 'whatsapp' && ' *'}
+          </label>
+          <input
+            id={'field-' + name}
+            {name}
+            {type}
+            autocomplete={auto}
+            required={name !== 'whatsapp'}
+            aria-describedby={'err-' + name}
+          />
+          <small id={'err-' + name}></small>
+        </div>
+      ))}
+      <div class="field">
+        <label for="field-message">{f.msg} *</label>
+        <textarea
+          name="message"
+          id="field-message"
+          rows="4"
+          required
+          aria-describedby="err-message"
+        ></textarea>
+        <small id="err-message"></small>
+      </div>
+      <div hidden aria-hidden="true">
+        <label>
+          Website
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+        </label>
+      </div>
+      <button class="button-fill" type="submit">
+        {f.send}
+      </button>
+      <p class="form-outcome" role="status" aria-live="polite"></p>
+    </form>
+    <aside class="direct-contact">
+      <div class="direct-portrait">
+        <Photo asset={getPhoto(4)} {lang} sizes="(max-width:767px) 22vw, 10vw" />
+        <div>
+          <strong>Isabelly Lima</strong>
+          <small>
+            Palmital · SP <time data-clock></time>
+          </small>
+        </div>
+      </div>
+      <p class="contact-email">
+        <a href={'mailto:' + email}>{email}</a>{' '}
+        <button type="button" data-copy-email aria-label={t.email}>
+          {pt ? 'Copiar' : 'Copy'}
+        </button>
+      </p>
+      <a class="contact-whats" href={whatsApp(lang)}>
+        WhatsApp <span>+55 18 99650-5565</span>
+      </a>
+      <div class="social-links">
+        {Object.entries(socials).map(([name, url]) => (
+          <a href={url}>{name}</a>
+        ))}
+      </div>
+    </aside>
+  </div>
+</article>
+<script>
+  function bindForm() {
+    const form = document.querySelector<HTMLFormElement>('#project-form');
+    if (!form || form.dataset.ready) return;
+    form.dataset.ready = 'true';
+    form.noValidate = true;
+    const submit = form.querySelector<HTMLButtonElement>('[type=submit]')!;
+    const outcome = form.querySelector<HTMLElement>('.form-outcome')!;
+    const fields = Array.from(
+      form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('[aria-describedby]'),
+    );
+    const check = (field: HTMLInputElement | HTMLTextAreaElement) => {
+      const err = document.getElementById(field.getAttribute('aria-describedby')!)!;
+      const msg =
+        field.required && !field.value.trim()
+          ? form.dataset.empty
+          : field.validity.typeMismatch
+            ? form.dataset.invalid
+            : '';
+      field.setAttribute('aria-invalid', String(!!msg));
+      err.textContent = msg || '';
+      return !msg;
+    };
+    fields.forEach((field) => {
+      field.addEventListener('blur', () => check(field));
+      field.addEventListener('input', () => {
+        if (field.getAttribute('aria-invalid') === 'true') check(field);
+      });
+    });
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (submit.disabled) return;
+      const invalid = fields.filter((field) => !check(field));
+      if (invalid.length) {
+        outcome.textContent = '';
+        invalid[0].focus();
+        return;
+      }
+      submit.disabled = true;
+      form.setAttribute('aria-busy', 'true');
+      outcome.textContent = form.dataset.sending!;
+      try {
+        const result = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+        if (!result.ok) throw new Error(String(result.status));
+        form.reset();
+        outcome.textContent = form.dataset.success!;
+      } catch {
+        outcome.textContent = form.dataset.fail!;
+      } finally {
+        submit.disabled = false;
+        form.removeAttribute('aria-busy');
+      }
+    });
+  }
+  document.addEventListener('astro:page-load', bindForm);
+  bindForm();
+</script>

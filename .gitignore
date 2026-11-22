@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+_material/
+docs/briefing/referencias/
+.claude/settings.local.json
+curadoria/
+.wrangler/

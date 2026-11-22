@@ -1,0 +1,32 @@
+---
+import { getMedia } from '../lib/media';
+import { copy } from '../lib/site';
+import type { CaseLanguage } from '../lib/case-content';
+import CasePicture from './CasePicture.astro';
+
+interface Props {
+  file: string;
+  lang: CaseLanguage;
+  sizes: string;
+}
+
+const { file, lang, sizes } = Astro.props;
+const media = getMedia(file);
+const labels = copy[lang].portfolio;
+---
+
+{media.kind === 'video' ? (
+  <case-reel class="case-reel" data-cursor="sound">
+    <video width={media.width} height={media.height} controls muted loop playsinline preload="none" poster={media.poster}
+      aria-label={media.alt[lang]}>
+      {media.webm && <source type="video/webm" src={media.webm} />}
+      <source type="video/mp4" src={media.src} />
+      <a href={media.src}>{labels.openVideo}</a>
+    </video>
+    <button type="button" class="case-sound" aria-pressed="false" hidden
+      data-on={labels.soundOn}
+      data-off={labels.soundOff}>
+      {labels.soundOff}
+    </button>
+  </case-reel>
+) : <CasePicture media={media} lang={lang} sizes={sizes} />}

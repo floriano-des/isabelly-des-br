@@ -1,0 +1,30 @@
+---
+import type { getCover } from '../lib/media';
+import type { CaseLanguage } from '../lib/case-content';
+
+interface Props {
+  media: ReturnType<typeof getCover>;
+  lang: CaseLanguage;
+  sizes: string;
+  priority?: boolean;
+  decorative?: boolean;
+}
+
+const { media, lang, sizes, priority = false, decorative = false } = Astro.props;
+---
+
+<picture class="case-picture">
+  {media.avifSrcset && <source type="image/avif" srcset={media.avifSrcset} sizes={sizes} />}
+  <img
+    src={media.src}
+    srcset={media.srcset}
+    sizes={sizes}
+    width={media.width}
+    height={media.height}
+    alt={decorative ? '' : media.alt[lang]}
+    loading={priority ? 'eager' : 'lazy'}
+    fetchpriority={priority ? 'high' : undefined}
+    decoding="async"
+    draggable="false"
+  />
+</picture>

@@ -1,0 +1,64 @@
+---
+import { copy, pathFor, socials, type Lang, type Section } from '../lib/site';
+interface Props {
+  lang: Lang;
+  section: Section;
+  slug?: string;
+}
+const { lang, section, slug } = Astro.props;
+const t = copy[lang];
+const links = [
+  [t.about, t.aboutHint, pathFor(lang, 'about'), 'about'],
+  [t.work, t.workHint, pathFor(lang, 'work'), 'work'],
+  [t.services, t.servicesHint, pathFor(lang, 'home') + '#servicos', 'services'],
+  [t.contact, t.contactHint, pathFor(lang, 'contact'), 'contact'],
+];
+---
+
+<header class:list={['site-header', { 'over-cover': section === 'case' }]}>
+  <a class="brand" href={pathFor(lang, 'home')} aria-label={'Isabelly Lima · ' + t.home}>
+    <img src="/cursor/gato-lavanda.svg" width="34" height="35" alt="" /> <span>Isabelly Lima</span>
+  </a>
+  <nav aria-label={t.nav} class="desktop-nav">
+    {links.map(([label, hint, url, key]) => (
+      <a href={url} aria-current={key === section ? 'page' : undefined}>
+        <span>{label}</span>
+        <small>{hint}</small>
+      </a>
+    ))}
+  </nav>
+  <div class="language-nav" aria-label={t.language}>
+    {(['pt', 'en'] as const).map((l) => (
+      <a
+        href={pathFor(l, section, slug)}
+        lang={l}
+        hreflang={l}
+        aria-label={l === 'pt' ? 'PT · Português' : 'EN · English'}
+        aria-current={lang === l ? 'true' : undefined}
+      >
+        {l.toUpperCase()}
+      </a>
+    ))}
+  </div>
+  <details class="mobile-menu">
+    <summary aria-label={t.menu} data-open-label={t.menu} data-close-label={t.close}>
+      <span class="menu-mark"></span>
+    </summary>
+    <div class="mobile-panel">
+      <img alt="" src="/cursor/gato-lavanda.svg" width="52" height="54" />
+      <nav aria-label={t.nav}>
+        {links.map(([label, hint, url]) => (
+          <a href={url}>
+            {label}
+            <small>{hint}</small>
+          </a>
+        ))}
+      </nav>
+      <div class="social-links">
+        {Object.entries(socials).map(([name, url]) => (
+          <a href={url}>{name}</a>
+        ))}
+      </div>
+    </div>
+  </details>
+</header>

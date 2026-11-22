@@ -1,0 +1,70 @@
+---
+import { projects, projectUrl, projectYear, sectionName, type CaseLanguage, type PortfolioProject, type ProjectBlock } from '../lib/case-content';
+import { getCover } from '../lib/media';
+import { copy, pathFor } from '../lib/site';
+import CasePicture from './CasePicture.astro';
+import CaseBlocks from './CaseBlocks.astro';
+import '../styles/work.css';
+
+interface Props { lang: CaseLanguage; project: PortfolioProject }
+const { lang, project } = Astro.props;
+const t = copy[lang];
+const labels = t.portfolio;
+const blocks: ProjectBlock[] = project.blocos;
+const next = projects[(projects.findIndex(item => item.slug === project.slug) + 1) % projects.length];
+const year = projectYear(project.ano);
+const tools = project.ferramentas.filter(tool => !tool.includes('(confirmar)')).map(tool =>
+  lang === 'en' && tool === 'Grafite e papel' ? 'Graphite on paper' : tool);
+const clients = blocks.filter(block => block.tipo === 'secao' && block.cliente).map(block => sectionName(block.cliente!, lang));
+const facts = [
+  [clients.length ? labels.sections : labels.client, clients.length ? clients.join(' · ') : project.titulo[lang]],
+  [labels.year, year],
+  [labels.category, project.categoria[lang]],
+  [labels.tools, tools.join(', ')],
+  ...(project.slug === 'social-media' ? [[labels.partners, '2 Palitos · Alumeia']] : []),
+  [labels.deliverables, project.tags[lang].join(' · ')],
+];
+---
+
+<article class={'portfolio-case case-' + project.slug}>
+  <div class="case-gutter">
+    <div class="case-hero">
+      <div class="case-hero-art" transition:name={`capa-${project.slug}`}>
+        <CasePicture media={getCover(project.slug)} lang={lang} sizes="95vw" priority />
+      </div>
+      <div class="case-stamp" aria-hidden="true">
+        <svg viewBox="0 0 110 110" focusable="false">
+          <defs><path id="selo-case" d="M55,55 m-41,0 a41,41 0 1,1 82,0 a41,41 0 1,1 -82,0" /></defs>
+          <text><textPath href="#selo-case" textLength="255">{labels.stamp}</textPath></text>
+        </svg>
+        <img src="/cursor/gato-96.png" alt="" width="48" height="48" />
+      </div>
+    </div>
+    <header class="case-summary">
+      <div class="case-summary-name">
+        <p class="case-label"><a href={pathFor(lang,'work')}>{t.work}</a> <span aria-hidden="true">/</span> {String(project.ordem).padStart(2,'0')}</p>
+        <h1>{project.titulo[lang]}</h1>
+      </div>
+      <div class="case-summary-copy">
+        <p>{project.resumo[lang]}</p>
+        <details class="case-facts">
+          <summary><span aria-hidden="true">+</span>{labels.facts}</summary>
+          <dl>{facts.map(([term, value]) => value && <div><dt>{term}</dt><dd>{value}</dd></div>)}</dl>
+        </details>
+      </div>
+    </header>
+    <div class="case-blocks"><CaseBlocks blocks={blocks} lang={lang} slug={project.slug} prefix="obra" /></div>
+  </div>
+
+  <a class="case-next" href={projectUrl(lang, next.slug)} data-cursor="case">
+    <div class="case-next-image" aria-hidden="true"><CasePicture media={getCover(next.slug)} lang={lang} sizes="100vw" decorative /></div>
+    <div class="case-next-copy">
+      <span class="case-label">{labels.nextProject} <span aria-hidden="true">/</span> {String(next.ordem).padStart(2, '0')}</span>
+      <h2>{next.titulo[lang]} <span aria-hidden="true">→</span></h2>
+    </div>
+  </a>
+</article>
+
+<script>
+  import '../scripts/case';
+</script>

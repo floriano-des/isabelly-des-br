@@ -1,0 +1,140 @@
+{
+  "slug": "vanessa-rosa",
+  "ordem": 1,
+  "tipo": "marca",
+  "destaqueHome": true,
+  "slugsAntigos": [
+    "vanessa-rosa"
+  ],
+  "titulo": {
+    "pt": "Vanessa Rosa Manicure",
+    "en": "Vanessa Rosa Manicure"
+  },
+  "categoria": {
+    "pt": "Identidade Visual",
+    "en": "Visual Identity"
+  },
+  "ano": 2026,
+  "ferramentas": [
+    "Adobe Illustrator",
+    "Adobe Photoshop"
+  ],
+  "tags": {
+    "pt": [
+      "Identidade visual",
+      "Logotipo",
+      "Papelaria"
+    ],
+    "en": [
+      "Visual identity",
+      "Logo",
+      "Stationery"
+    ]
+  },
+  "linhaHover": {
+    "pt": "Marca minimalista para uma manicure, com bege, café e tipografia reta.",
+    "en": "A minimalist brand for a manicurist, built on beige, coffee tones and clean type."
+  },
+  "resumo": {
+    "pt": "A identidade da Vanessa Rosa foi um projeto autoral focado no posicionamento de alto padrão. Criei o conceito visual explorando o minimalismo para transmitir delicadeza e profissionalismo. O desenvolvimento incluiu desde o desenho original do símbolo até a estruturação técnica com grids e a definição da paleta de cores. O resultado é uma marca exclusiva e sofisticada, que traduz a essência do trabalho da profissional e se adapta perfeitamente a diferentes aplicações, do digital ao impresso.",
+    "en": "Vanessa Rosa's identity was an original project focused on high-end positioning. I built the visual concept around minimalism to convey delicacy and professionalism. The work went from drawing the original symbol to the technical structure with grids and the definition of the colour palette. The result is an exclusive, sophisticated brand that captures the essence of her work and adapts to every application, from digital to print."
+  },
+  "marca": {
+    "cores": {
+      "Bege": "#EFE6D2",
+      "Café": "#281611",
+      "Palha": "#BF9150"
+    },
+    "tipografias": [
+      "Polymath (principal)",
+      "Spalla (apoio)"
+    ]
+  },
+  "corMarca": "#BF9150",
+  "capa": {
+    "arquivo": "src/assets/cases/vanessa-rosa/01-cover.webp"
+  },
+  "blocos": [
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/02-pag-1.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/03-pag-2.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "frase",
+      "texto": {
+        "pt": "Os rascunhos iniciais serviram como o alicerce para materializar os desejos da cliente.",
+        "en": "The first sketches were the foundation for turning the client's wishes into form."
+      }
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/04-pag-3.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/05-pag-5.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/06-pag-4.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "frase",
+      "texto": {
+        "pt": "Linhas guia horizontais e verticais garantem que o espaçamento entre o nome e o descritivo “manicure” seja matematicamente exato.",
+        "en": "Horizontal and vertical guides keep the spacing between the name and the word “manicure” mathematically exact."
+      }
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/07-pag-6.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/08-pag-7.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "frase",
+      "texto": {
+        "pt": "Bege, café e palha: uma paleta quente que conversa com o universo da estética sem perder a sobriedade.",
+        "en": "Beige, coffee and straw: a warm palette that speaks the language of beauty without losing restraint."
+      }
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/09-pag-8.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/10-pag-9.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/11-pag-10.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/12-pag-11.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/vanessa-rosa/13-pag-12.webp",
+      "largura": "total"
+    }
+  ]
+}

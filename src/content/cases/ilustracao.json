@@ -1,0 +1,201 @@
+{
+  "slug": "ilustracao",
+  "ordem": 7,
+  "tipo": "grupo",
+  "destaqueHome": false,
+  "slugsAntigos": [],
+  "titulo": {
+    "pt": "Ilustração",
+    "en": "Illustration"
+  },
+  "categoria": {
+    "pt": "Ilustração",
+    "en": "Illustration"
+  },
+  "ano": "",
+  "ferramentas": [
+    "Grafite e papel",
+    "Adobe Illustrator",
+    "Adobe Photoshop"
+  ],
+  "tags": {
+    "pt": [
+      "Desenho à mão",
+      "Mascote",
+      "Tattoo",
+      "Estampa"
+    ],
+    "en": [
+      "Hand drawing",
+      "Mascot",
+      "Tattoo",
+      "Apparel print"
+    ]
+  },
+  "linhaHover": {
+    "pt": "Do grafite ao vetor: retratos, mascote, tattoo e estampa.",
+    "en": "From pencil to vector: portraits, a mascot, a tattoo and an apparel print."
+  },
+  "resumo": {
+    "pt": "Antes de qualquer marca, eu desenho. Aqui ficam os desenhos à mão, que é onde eu mais me divirto, e as ilustrações que viraram produto: o redesign do mascote de uma festa, uma tattoo e a estampa de uma turma de formandos.",
+    "en": "Before any brand, I draw. Here are my hand drawings, which is where I have the most fun, and the illustrations that became products: a party mascot redesign, a tattoo and a print for a graduating class."
+  },
+  "corMarca": "#C7C7D1",
+  "capa": {
+    "arquivo": "src/assets/cases/ilustracao/01-cover.webp"
+  },
+  "blocos": [
+    {
+      "tipo": "secao",
+      "cliente": "Desenhos tradicionais",
+      "contexto": {
+        "pt": "Grafite sobre papel: retratos, personagens e estudos.",
+        "en": "Pencil on paper: portraits, characters and studies."
+      },
+      "tags": {
+        "pt": [
+          "Grafite"
+        ],
+        "en": [
+          "Pencil"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/ilustracao/01-cover.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/ilustracao/02-1.webp",
+            "src/assets/cases/ilustracao/03-2.webp"
+          ]
+        },
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/ilustracao/04-4.webp",
+            "src/assets/cases/ilustracao/05-5.webp"
+          ]
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/ilustracao/06-3.webp",
+          "largura": "media"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Redesign do mascote · Turma do Paiol",
+      "contexto": {
+        "pt": "Redesign do javali mascote da festa Turma do Paiol, do rascunho a lápis ao vetor final, aplicado no copo e na camiseta da 8ª festa (1º Baile do Hawaii, 21/12/2024).",
+        "en": "A redesign of the boar mascot for the Turma do Paiol party, from pencil sketch to final vector, applied to the cup and T-shirt of the 8th edition (1st Hawaiian Ball, 21/12/2024)."
+      },
+      "tags": {
+        "pt": [
+          "Mascote",
+          "Vetor",
+          "Aplicação"
+        ],
+        "en": [
+          "Mascot",
+          "Vector",
+          "Application"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/ilustracao/07-1.webp",
+            "src/assets/cases/ilustracao/08-3.webp"
+          ]
+        },
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/ilustracao/09-4.webp",
+            "src/assets/cases/ilustracao/10-5.webp"
+          ]
+        },
+        {
+          "tipo": "frase",
+          "texto": {
+            "pt": "Do rascunho a lápis ao vetor, sem perder o carisma do personagem.",
+            "en": "From pencil sketch to vector, without losing the character's charm."
+          }
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/ilustracao/11-6.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/ilustracao/12-7.webp",
+          "largura": "media"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Tattoo",
+      "contexto": {
+        "pt": "Um gambá entre cogumelos, do esboço à linha e à cor.",
+        "en": "An opossum among mushrooms, from sketch to line and colour."
+      },
+      "tags": {
+        "pt": [
+          "Tattoo",
+          "Ilustração"
+        ],
+        "en": [
+          "Tattoo",
+          "Illustration"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/ilustracao/13-2.webp",
+            "src/assets/cases/ilustracao/14-3.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Estampa de formandos",
+      "contexto": {
+        "pt": "Estampa para camisetas e moletons de uma turma de formandos.",
+        "en": "A print for a graduating class's T-shirts and hoodies."
+      },
+      "tags": {
+        "pt": [
+          "Estampa",
+          "Vestuário"
+        ],
+        "en": [
+          "Apparel print",
+          "Clothing"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/ilustracao/15-1.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/ilustracao/16-2.webp",
+          "largura": "total"
+        }
+      ]
+    }
+  ]
+}

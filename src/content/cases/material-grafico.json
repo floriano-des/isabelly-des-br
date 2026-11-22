@@ -1,0 +1,166 @@
+{
+  "slug": "material-grafico",
+  "ordem": 5,
+  "tipo": "grupo",
+  "destaqueHome": false,
+  "slugsAntigos": [
+    "cartao-visita-amarelo",
+    "capa-livro-colagens",
+    "cardapio-pesqueiro-cris",
+    "cartao-visita-ft",
+    "flyer-pan-queso",
+    "papel-timbrado-terezan"
+  ],
+  "titulo": {
+    "pt": "Material Gráfico",
+    "en": "Print Design"
+  },
+  "categoria": {
+    "pt": "Material Gráfico",
+    "en": "Print Design"
+  },
+  "ano": "2024–2026",
+  "ferramentas": [
+    "Adobe Illustrator",
+    "Adobe Photoshop",
+    "Adobe InDesign"
+  ],
+  "tags": {
+    "pt": [
+      "Banner",
+      "Folder",
+      "Cartão de visita",
+      "Capa de livro"
+    ],
+    "en": [
+      "Banner",
+      "Leaflet",
+      "Business card",
+      "Book cover"
+    ]
+  },
+  "linhaHover": {
+    "pt": "Banner, folder, cartão de visita e capa de livro: design que vai para o papel.",
+    "en": "Banner, leaflet, business card and book cover: design made for paper."
+  },
+  "resumo": {
+    "pt": "Quando o design sai da tela, cada detalhe pesa mais: tamanho de letra, dobra, papel, leitura à distância. Aqui estão peças impressas bem diferentes entre si, de um banner A0 institucional a uma capa de livro feita só com as memórias da cliente.",
+    "en": "When design leaves the screen, every detail weighs more: type size, folds, paper, reading from a distance. These printed pieces are very different from each other, from an institutional A0 banner to a book cover made only from the client's memories."
+  },
+  "corMarca": "#F2B705",
+  "capa": {
+    "arquivo": "src/assets/cases/material-grafico/01-cover.webp"
+  },
+  "blocos": [
+    {
+      "tipo": "secao",
+      "cliente": "Fale Seguro",
+      "contexto": {
+        "pt": "Banner A0 e folder de duas dobras para uma empresa de saúde e segurança psicossocial no trabalho, apresentando o Safe Scan, o dashboard de inteligência visual e o canal de ética.",
+        "en": "An A0 banner and a bi-fold leaflet for a workplace psychosocial health and safety company, presenting Safe Scan, its visual intelligence dashboard and its ethics channel."
+      },
+      "tags": {
+        "pt": [
+          "Banner A0",
+          "Folder 2 dobras"
+        ],
+        "en": [
+          "A0 banner",
+          "Bi-fold leaflet"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/material-grafico/02-cover.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "pair",
+          "arquivos": [
+            "src/assets/cases/material-grafico/03-mockup-1.webp",
+            "src/assets/cases/material-grafico/04-mockup-3.webp"
+          ]
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/material-grafico/05-mockup-2.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/material-grafico/06-cover.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/material-grafico/07-parte-externa-e-capa-mockup.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/material-grafico/08-parte-interna-mockup.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/material-grafico/09-mockup-em-maos.webp",
+          "largura": "total"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "AmarElo Fotografia",
+      "contexto": {
+        "pt": "Cartão de visita com estética de colagem para a fotógrafa Ana Paula. Integrei a foto dela, elementos gráficos manuais e o QR Code de forma orgânica, com o amarelo vibrante da marca.",
+        "en": "A collage-style business card for photographer Ana Paula. I combined her photo, hand-made graphic elements and the QR code organically, using the brand's vibrant yellow."
+      },
+      "tags": {
+        "pt": [
+          "Cartão de visita"
+        ],
+        "en": [
+          "Business card"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/material-grafico/01-cover.webp",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/material-grafico/10-business-card.webp",
+          "largura": "media"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Capa de livro · Ana Gonçalves",
+      "contexto": {
+        "pt": "Um projeto muito intimista: construí a capa com colagens digitais de fotos da própria cliente, com uma estética de álbum de recordações ao mesmo tempo profissional e emocionante.",
+        "en": "A very personal project: I built the cover from digital collages of the client's own photos, with a scrapbook feel that is both professional and moving."
+      },
+      "tags": {
+        "pt": [
+          "Capa de livro",
+          "Colagem"
+        ],
+        "en": [
+          "Book cover",
+          "Collage"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "full",
+          "arquivo": "src/assets/cases/material-grafico/11-b5ab813d-7099-4363-93aa-81e01086441c.webp",
+          "largura": "total"
+        }
+      ]
+    }
+  ]
+}

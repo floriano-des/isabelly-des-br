@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /treino
+Sitemap: https://isabelly.des.br/sitemap-index.xml

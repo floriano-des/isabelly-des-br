@@ -1,0 +1,213 @@
+---
+import { getPhoto, getAboutSlide } from '../lib/media';
+import Photo from './HomePicture.astro';
+import { copy, pathFor, type Lang } from '../lib/site';
+import '../styles/info.css';
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props,
+  pt = lang === 'pt',
+  t = copy[lang];
+const notes = pt
+  ? [
+      'Trabalho como designer e ilustradora freelancer desde 2023, aqui de Palmital, no interior de São Paulo.',
+      'Antes do design, comecei uma graduação em Enfermagem. Passei um ano tentando me convencer de que aquele era o meu caminho. Eu queria ajudar as pessoas e também precisava de espaço para criar.',
+      'Comecei trabalhando principalmente com social media e design de posts. Hoje me especializo em branding e identidade visual.',
+      'Gosto de entender como as marcas se comunicam. Trabalho bem em equipe e por conta própria, principalmente quando o projeto tem uma história para contar.',
+    ]
+  : [
+      'I’ve worked as a freelance designer and illustrator since 2023, from my hometown of Palmital in the state of São Paulo, Brazil.',
+      'Before design, I studied nursing. I spent a year trying to convince myself it was the right path. I wanted to help people and I needed room to create, too.',
+      'I started out designing social media posts. These days I’m specialising in branding and visual identity.',
+      'I’m curious about how brands communicate. I enjoy working both independently and as part of a team, especially when a project has a story to tell.',
+    ];
+const timeline = pt
+  ? [
+      ['2023', 'Freelancer', 'Design gráfico e ilustração'],
+      ['', 'Design Gráfico', 'Formação em design'],
+      ['', 'Agência Dolivs', 'Design para marcas e redes sociais'],
+      ['2026', 'Jack Usephot', 'Ambientação e Manipulação de Imagens'],
+    ]
+  : [
+      ['2023', 'Freelance', 'Graphic design and illustration'],
+      ['', 'Graphic design', 'Design studies'],
+      ['', 'Agência Dolivs', 'Design for brands and social media'],
+      ['2026', 'Jack Usephot', 'Image composition and manipulation'],
+    ];
+const off = pt
+  ? [
+      ['Na cozinha', 'Gosto de experimentar receitas.'],
+      ['Na tela', 'Terror psicológico, fantasia e animação ocupam boa parte da minha lista.'],
+      ['Nos fones', 'A minha playlist é mega aleatória.'],
+      ['Sukito e Luna', 'Sukito faz jus à cor, tira minha paz.'],
+      ['Meu repertório', 'Agora você conhece um pouco do meu repertório criativo :)'],
+    ]
+  : [
+      ['In the kitchen', 'I like trying out recipes.'],
+      ['On screen', 'My watchlist is full of psychological horror, fantasy and animation.'],
+      ['In my headphones', 'My playlist is all over the place.'],
+      ['Sukito and Luna', 'Sukito, my little black cat, is always up to something.'],
+      ['My creative world', 'Now you know a little more about what inspires me :)'],
+    ];
+---
+
+<article class="about-page">
+  <div class="about-opening info-wrap">
+    <div>
+      <p class="info-kicker">{t.about}</p>
+      <h1>
+        {pt ? 'Me chamo' : 'My name is'} <strong>Isabelly</strong>
+        <span>
+          {pt ? 'mas pode me chamar de' : 'but you can call me'} <i>Isa</i> {pt ? 'ou' : 'or'}{' '}
+          <i>Bella.</i>
+        </span>
+      </h1>
+    </div>
+    <div class="polaroids">
+      {[2, 3, 5].map((n, i) => (
+        <figure class={'polaroid pic-' + i}>
+          <Photo asset={getPhoto(n)} {lang} sizes="(max-width: 767px) 42vw, 18vw" />
+          <figcaption>{['Isa', 'Palmital · SP', 'Bella'][i]}</figcaption>
+        </figure>
+      ))}
+      <img class="collage-cat" src="/cursor/gato-96.png" alt="" width="50" height="50" />
+    </div>
+  </div>
+  <section class="about-notes info-wrap" aria-label={pt ? 'Minha história' : 'My story'}>
+    {notes.map((note) => (
+      <p class="paper-note">{note}</p>
+    ))}
+  </section>
+  <section class="about-process info-wrap">
+    <div>
+      <h2>{pt ? 'Na minha mesa' : 'On my desk'}</h2>
+      <ul class="tool-list">
+        {[
+          'Photoshop',
+          'Illustrator',
+          'InDesign',
+          'After Effects',
+          'Premiere',
+          'Notion',
+          pt ? 'IA generativa' : 'Generative AI',
+        ].map((x) => (
+          <li>{x}</li>
+        ))}
+      </ul>
+    </div>
+    <div>
+      <h2>{pt ? 'Meu percurso' : 'My background'}</h2>
+      <dl class="timeline">
+        {timeline.map(([year, name, detail]) => (
+          <div>
+            <dt>
+              {name} {year && <small>{year}</small>}
+            </dt>
+            <dd>{detail}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+  <section class="outside info-wrap" aria-labelledby="outside-title">
+    <div class="outside-title">
+      <h2 id="outside-title">{pt ? 'Fora do design' : 'Away from my desk'}</h2>
+      <div class="strip-controls" hidden>
+        <button type="button" data-step="-1" aria-label={pt ? 'Voltar uma nota' : 'Previous note'}>
+          ←
+        </button>
+        <button type="button" data-step="1" aria-label={pt ? 'Avançar uma nota' : 'Next note'}>
+          →
+        </button>
+      </div>
+    </div>
+    <div
+      class="personal-strip"
+      tabindex="0"
+      data-cursor="drag"
+      role="region"
+      aria-labelledby="outside-title"
+    >
+      {off.map(([title, body], i) => (
+        <article class="personal-note">
+          {i >= 3 && <Photo asset={getAboutSlide(i + 6)} {lang} sizes="(max-width: 767px) 75vw, 24vw" />}
+          <div>
+            <h3>{title}</h3>
+            <p>{body}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+  <div class="info-actions info-wrap">
+    <a class="button-fill" href="/cv/isabelly-lima-curriculo.pdf" download>
+      {pt ? 'Baixar CV' : 'Download CV'}
+    </a>
+    <a class="button-line" href={pathFor(lang, 'contact')}>
+      {t.chat}
+    </a>
+  </div>
+</article>
+<script>
+  function bindAbout() {
+    const controls = document.querySelector<HTMLElement>('.strip-controls');
+    const strip = document.querySelector<HTMLElement>('.personal-strip');
+    if (!strip || !controls || !controls.hidden) return;
+    controls.hidden = false;
+    const buttons = controls.querySelectorAll<HTMLButtonElement>('button');
+    function sync() {
+      if (strip) {
+        buttons[0].disabled = strip.scrollLeft < 2;
+        buttons[1].disabled = strip.scrollLeft >= strip.scrollWidth - strip.clientWidth - 2;
+      }
+    }
+    buttons.forEach((btn) =>
+      btn.addEventListener('click', () =>
+        strip.scrollBy({
+          left:
+            Number(btn.dataset.step) *
+            (strip.children[1].getBoundingClientRect().left -
+              strip.children[0].getBoundingClientRect().left),
+          behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+        }),
+      ),
+    );
+    strip.addEventListener('scroll', sync, { passive: true });
+    sync();
+    let drag: { x: number; scroll: number } | undefined;
+    strip.addEventListener('pointerdown', (event) => {
+      if (event.pointerType !== 'mouse' || event.button !== 0) return;
+      drag = { x: event.clientX, scroll: strip.scrollLeft };
+      strip.setPointerCapture(event.pointerId);
+      strip.classList.add('dragging');
+    });
+    strip.addEventListener('pointermove', (event) => {
+      if (drag) strip.scrollLeft = drag.scroll - (event.clientX - drag.x);
+    });
+    strip.addEventListener('lostpointercapture', () => {
+      drag = undefined;
+      strip.classList.remove('dragging');
+    });
+    const collage = document.querySelector<HTMLElement>('.polaroids');
+    if (collage && matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) {
+      collage.addEventListener('pointermove', (event) => {
+        const area = collage.getBoundingClientRect();
+        collage.style.setProperty(
+          '--drift-x',
+          ((event.clientX - area.left) / area.width - 0.5) * 10 + 'px',
+        );
+        collage.style.setProperty(
+          '--drift-y',
+          ((event.clientY - area.top) / area.height - 0.5) * 8 + 'px',
+        );
+      });
+      collage.addEventListener('pointerleave', () => {
+        collage.style.removeProperty('--drift-x');
+        collage.style.removeProperty('--drift-y');
+      });
+    }
+  }
+  document.addEventListener('astro:page-load', bindAbout);
+  bindAbout();
+</script>

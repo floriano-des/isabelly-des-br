@@ -1,0 +1,524 @@
+@import '@fontsource/pirata-one/latin-400.css';
+@import '@fontsource/urbanist/latin-400.css';
+@import '@fontsource/urbanist/latin-600.css';
+@import '@fontsource/urbanist/latin-700.css';
+@import '@fontsource/caveat/latin-500.css';
+@import '@fontsource/cormorant-garamond/latin-500-italic.css';
+@import '@fontsource/ibm-plex-mono/latin-400.css';
+@import 'lenis/dist/lenis.css';
+:root {
+  --noite-profunda: #13071d;
+  --noite: #1d082f;
+  --ameixa: #4e2a72;
+  --roxo-carrossel: #452067;
+  --violeta: #7f52ad;
+  --eletrico: #8b3dff;
+  --lavanda: #c7c7d1;
+  --papel: #e5d8d3;
+  --texto: #f1ecf4;
+  --preto: #000;
+  --display: 'Pirata One', 'Old English Text MT', Georgia, serif;
+  --sans: 'Urbanist', 'Century Gothic', Arial, sans-serif;
+  --mono: 'IBM Plex Mono', Consolas, monospace;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --hand: 'Caveat', 'Segoe Print', cursive;
+  --gutter: max(16px, 2.6vw);
+  --header-height: 80px;
+  --rule: rgb(207 185 224 / 21%);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-zhenya: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  color-scheme: dark;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background: var(--noite-profunda);
+  scroll-padding-top: var(--header-height);
+}
+body {
+  margin: 0;
+  background: var(--noite-profunda);
+  color: var(--texto);
+  font: 400 1.1rem/1.55 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url('/media/texturas/damask.webp') center/640px;
+  opacity: 0.08;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+main,
+.site-footer {
+  position: relative;
+}
+main:focus {
+  outline: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+textarea {
+  font: inherit;
+}
+button,
+summary {
+  cursor: pointer;
+}
+button {
+  color: inherit;
+}
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+button,
+a,
+input,
+textarea,
+summary {
+  touch-action: manipulation;
+}
+:focus-visible {
+  outline: 2px solid #bc8aff;
+  outline-offset: 4px;
+}
+::selection {
+  background: #b88be5;
+  color: #1d082f;
+}
+.sr-only,
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.skip {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 5000;
+  padding: 0.65rem 1rem;
+  background: var(--texto);
+  color: var(--noite-profunda);
+  transform: translateY(-160%);
+}
+.skip:focus {
+  transform: none;
+}
+.site-header {
+  height: var(--header-height);
+  padding: 0 var(--gutter);
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 3.3vw, 72px);
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  border-bottom: 1px solid var(--rule);
+  background: var(--noite-profunda);
+  transition: transform 0.3s var(--ease-out);
+}
+.site-header.is-away:not(:focus-within) {
+  transform: translateY(-105%);
+}
+.site-header.over-cover {
+  position: sticky;
+  margin-bottom: calc(-1 * var(--header-height));
+  background: linear-gradient(var(--noite-profunda), rgb(19 7 29 / 0.76) 55%, rgb(19 7 29 / 0.12));
+  border-color: transparent;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  white-space: nowrap;
+  font: 600 1.33rem/1.1 var(--sans);
+  letter-spacing: -0.045em;
+}
+.brand img {
+  flex-shrink: 0;
+}
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(16px, 3.8vw, 80px);
+  margin-left: auto;
+}
+.desktop-nav a {
+  display: grid;
+  align-content: center;
+  line-height: 1.16;
+  position: relative;
+  min-height: 48px;
+}
+.desktop-nav a span {
+  font-size: 1.055rem;
+  font-weight: 600;
+}
+.desktop-nav small,
+.mobile-panel small {
+  font: 400 0.61rem/1.4 var(--mono);
+  letter-spacing: 0.07em;
+  color: #b6a6c0;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+.desktop-nav a:hover span,
+.desktop-nav a[aria-current] span {
+  color: #d9b1f9;
+}
+.language-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  border: 1px solid #615268;
+  border-radius: 99px;
+  padding: 3px;
+}
+.language-nav a {
+  padding: 0.29rem 0.5rem;
+  font: 400 0.69rem/1.25 var(--mono);
+  border-radius: 99px;
+  color: #c0afcb;
+}
+.language-nav a[aria-current] {
+  background: #d9c9e3;
+  color: #25162e;
+}
+.mobile-menu {
+  display: none;
+}
+.site-footer {
+  border-top: 1px solid var(--rule);
+  background: #160c1e;
+}
+.footer-invite {
+  display: flex;
+  min-height: 56vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(60px, 9vw, 150px) var(--gutter);
+  background:
+    linear-gradient(#170b21e9, #170b21e0),
+    url('/media/texturas/damask-folhas.webp') center/650px;
+}
+.footer-invite h2 {
+  margin: 1rem auto;
+  font: 400 clamp(2.2rem, 5vw, 6rem)/1.07 var(--display);
+  max-width: 15em;
+}
+.footer-invite em {
+  font: italic 500 1.05em var(--serif);
+}
+.footer-email {
+  font-size: clamp(1.1rem, 4.5vw, 7rem);
+  font-weight: 600;
+  color: #c7a1ee;
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+.footer-email:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
+}
+.footer-links,
+.social-links {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-links {
+  font-size: 0.96rem;
+  margin-top: 2rem;
+}
+.footer-links span {
+  color: #b88be5;
+}
+.footer-links a,
+.social-links a,
+.colophon a {
+  text-underline-offset: 4px;
+}
+.footer-links a:hover,
+.social-links a:hover,
+.colophon a:hover {
+  text-decoration: underline;
+}
+.compact-footer .footer-invite {
+  min-height: auto;
+  padding: 4rem var(--gutter);
+}
+.compact-footer .footer-invite h2 {
+  font-size: clamp(2.2rem, 3.8vw, 4.2rem);
+}
+.compact-footer .footer-email {
+  font-size: clamp(1.2rem, 2.7vw, 3rem);
+}
+.footer-meta,
+.colophon {
+  padding: 24px var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid var(--rule);
+}
+.footer-meta {
+  background:
+    linear-gradient(#140c1be8, #140c1be8),
+    url('/media/texturas/tartan.webp') center/310px;
+}
+.footer-meta .brand {
+  font-size: 1.1rem;
+}
+.social-links {
+  font-size: 0.95rem;
+}
+.local-stamp,
+.colophon {
+  font: 400 0.71rem/1.5 var(--mono);
+  color: #c3b6cc;
+}
+.colophon {
+  padding-block: 15px;
+}
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--papel);
+  color: var(--noite-profunda);
+  z-index: 90;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 3px;
+}
+.toast:empty {
+  display: none;
+}
+.page-curtain {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: var(--ameixa);
+  transform: translateY(101%);
+  pointer-events: none;
+  z-index: 120;
+  visibility: hidden;
+}
+.cat-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  pointer-events: none;
+  display: none;
+}
+.cursor-shape {
+  position: absolute;
+  inset: -18px;
+  width: 36px;
+  height: 36px;
+  background: url('/cursor/gato-96.png') center/contain no-repeat;
+  transition:
+    scale 0.16s,
+    rotate 0.16s;
+}
+.cursor-label {
+  position: absolute;
+  left: 26px;
+  top: -9px;
+  font: 0.7rem/1.3 var(--mono);
+  white-space: nowrap;
+  background: var(--eletrico);
+  color: white;
+  border-radius: 30px;
+  padding: 3px 8px;
+}
+.cursor-label:empty {
+  display: none;
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html.has-cursor,
+  html.has-cursor * {
+    cursor: none !important;
+  }
+  html.has-cursor :is(textarea, input[type='text'], input[type='email'], input[type='tel']) {
+    cursor: text !important;
+  }
+  .has-cursor .cat-cursor {
+    display: block;
+  }
+  .cat-cursor[data-hover] .cursor-shape {
+    scale: 1.32;
+    rotate: -8deg;
+  }
+  .cat-cursor[data-down] .cursor-shape {
+    scale: 0.85;
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: reduce) {
+  body,
+  a,
+  button,
+  summary {
+    cursor:
+      url('/cursor/gato-48.png') 24 24,
+      auto;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --header-height: 66px;
+  }
+  .site-header {
+    gap: 12px;
+  }
+  .brand {
+    font-size: 1.17rem;
+    gap: 8px;
+  }
+  .brand img {
+    width: 27px;
+    height: auto;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .language-nav {
+    margin-left: auto;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu summary {
+    list-style: none;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  .mobile-menu summary::-webkit-details-marker {
+    display: none;
+  }
+  .menu-mark,
+  .menu-mark::before {
+    width: 22px;
+    height: 1px;
+    background: var(--texto);
+    display: block;
+    transition: transform 0.2s;
+  }
+  .menu-mark {
+    transform: translateY(-3px);
+  }
+  .menu-mark::before {
+    content: '';
+    transform: translateY(7px);
+  }
+  .mobile-menu[open] .menu-mark {
+    transform: rotate(45deg);
+  }
+  .mobile-menu[open] .menu-mark::before {
+    transform: rotate(-90deg);
+  }
+  .mobile-panel {
+    position: fixed;
+    inset: 0;
+    min-height: 100dvh;
+    background: var(--ameixa);
+    padding: clamp(22px, 7vh, 80px) 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    overflow: auto;
+  }
+  .mobile-panel nav {
+    display: grid;
+  }
+  .mobile-panel nav a {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    border-top: 1px solid #ffffff42;
+    padding: 0.22em 0;
+    font: 400 clamp(2.5rem, 10vw, 4.5rem)/1.05 var(--display);
+  }
+  .mobile-panel small {
+    color: var(--texto);
+    text-align: right;
+  }
+  html:has(.mobile-menu[open]) {
+    overflow: hidden;
+  }
+  .footer-meta,
+  .colophon {
+    flex-wrap: wrap;
+  }
+  .footer-meta {
+    align-items: flex-start;
+  }
+  .footer-meta .social-links {
+    order: 3;
+    flex-basis: 100%;
+  }
+  .colophon {
+    gap: 0.6rem 1rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  ::view-transition-group(*),
+  ::view-transition-new(*),
+  ::view-transition-old(*) {
+    animation: none !important;
+  }
+}
+.site-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 560px;
+}
+.compact-footer {
+  contain-intrinsic-size: auto 380px;
+}

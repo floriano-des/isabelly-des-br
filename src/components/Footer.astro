@@ -1,0 +1,54 @@
+---
+import { copy, pathFor, whatsApp, email, socials, type Lang, type Section } from '../lib/site';
+interface Props {
+  lang: Lang;
+  section: Section;
+}
+const { lang, section } = Astro.props;
+const t = copy[lang];
+---
+
+<footer class:list={['site-footer', { 'compact-footer': section !== 'home' }]}>
+  {section !== 'contact' && (
+    <div class="footer-invite">
+      <img src="/cursor/gato-lavanda.svg" width="42" height="44" alt="" loading="lazy" />
+      <h2>
+        {t.ctaBefore} <em>{t.ctaEm}</em> {t.ctaAfter}
+      </h2>
+      <a class="footer-email" href={'mailto:' + email} data-copy-email>
+        {email}
+      </a>
+      <div class="footer-links">
+        <a href={whatsApp(lang)}>WhatsApp</a>
+        <span aria-hidden="true">✦</span>
+        <a href={pathFor(lang, 'contact')}>{t.footerContact}</a>
+      </div>
+    </div>
+  )}
+  <div class="footer-meta">
+    <a class="brand" href={pathFor(lang, 'home')}>
+      <img src="/cursor/gato-lavanda.svg" width="23" height="24" alt="" />
+      Isabelly Lima
+    </a>
+    <div class="social-links">
+      {Object.entries(socials).map(([name, url]) => (
+        <a href={url}>{name}</a>
+      ))}
+    </div>
+    <span class="local-stamp">
+      Palmital · SP <time data-clock aria-label={t.time}></time>
+    </span>
+  </div>
+  <div class="colophon">
+    <span>© 2026 Isabelly Lima</span>
+    <span>{t.textures} · Freepik</span>
+    <a href="https://floriano.des.br">{t.credit} Floriano Silva</a>
+  </div>
+</footer>
+<div
+  class="toast"
+  role="status"
+  aria-live="polite"
+  data-copied={t.copied}
+  data-copy-fail={t.copyFail}
+></div>

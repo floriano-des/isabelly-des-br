@@ -1,0 +1,161 @@
+{
+  "slug": "isys-karoline",
+  "ordem": 2,
+  "tipo": "marca",
+  "destaqueHome": true,
+  "slugsAntigos": [],
+  "titulo": {
+    "pt": "Isys Karoline Personal",
+    "en": "Isys Karoline Personal"
+  },
+  "categoria": {
+    "pt": "Identidade Visual",
+    "en": "Visual Identity"
+  },
+  "ano": "",
+  "ferramentas": [
+    "Adobe Illustrator",
+    "Adobe Photoshop"
+  ],
+  "tags": {
+    "pt": [
+      "Identidade visual",
+      "Símbolo",
+      "Aplicações digitais"
+    ],
+    "en": [
+      "Visual identity",
+      "Symbol",
+      "Digital applications"
+    ]
+  },
+  "linhaHover": {
+    "pt": "Marca para personal trainer e pilates: um símbolo que é letra, pingo e movimento.",
+    "en": "A brand for a personal trainer and Pilates coach: one symbol that is a letter, a dot and a body in motion."
+  },
+  "resumo": {
+    "pt": "A Isys Karoline é personal trainer e instrutora de pilates, e precisava de uma marca com a mesma energia das aulas dela. Desenhei um símbolo que junta três leituras numa forma só: a letra K, o pingo do i e uma pessoa em movimento. O sistema usa azuis que vão do claro ao profundo, a Boldonse nos títulos e a Elms Sans no apoio, e foi aplicado da papelaria ao app, passando por uniforme, redes sociais e site.",
+    "en": "Isys Karoline is a personal trainer and Pilates instructor who needed a brand with the same energy as her classes. I drew a symbol that holds three readings in one shape: the letter K, the dot of the i and a person in motion. The system runs on blues from light to deep, with Boldonse for headlines and Elms Sans for support, and it was applied everywhere from stationery to the app, including uniforms, social media and the website."
+  },
+  "marca": {
+    "cores": {
+      "Azul principal": "#4D8EBF",
+      "Azul claro": "#60B1F0",
+      "Azul profundo": "#2F5775",
+      "Azul grafite": "#1F2A33",
+      "Preto profundo": "#04080A",
+      "Branco amarelado": "#FEF7E4"
+    },
+    "tipografias": [
+      "Boldonse (principal)",
+      "Elms Sans (secundária)"
+    ]
+  },
+  "corMarca": "#4D8EBF",
+  "capa": {
+    "arquivo": "src/assets/cases/isys-karoline/01-cover.webp"
+  },
+  "blocos": [
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/02-1.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/03-icone-explicacao.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "frase",
+      "texto": {
+        "pt": "Três leituras numa forma só: a letra K, o pingo do i e uma pessoa em movimento.",
+        "en": "Three readings in a single shape: the letter K, the dot of the i and a person in motion."
+      }
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/04-6.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/05-5.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/06-4.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "frase",
+      "texto": {
+        "pt": "Azuis do claro ao profundo, com Boldonse nos títulos e Elms Sans no apoio.",
+        "en": "Blues from light to deep, with Boldonse for headlines and Elms Sans for support."
+      }
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/07-2.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/08-7.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/09-8.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/10-9.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/11-10.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/12-11.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "frase",
+      "texto": {
+        "pt": "A marca foi pensada para funcionar tanto na academia quanto na tela do celular.",
+        "en": "The brand was designed to work as well in the gym as on a phone screen."
+      }
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/13-12.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/14-13.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/15-14.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/16-15.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/17-16.webp",
+      "largura": "total"
+    }
+  ]
+}

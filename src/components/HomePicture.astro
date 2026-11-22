@@ -1,0 +1,17 @@
+---
+import type { getMedia } from '../lib/media';
+
+interface Props {
+  asset: ReturnType<typeof getMedia>;
+  lang: 'pt' | 'en';
+  sizes: string;
+  alt?: string;
+  eager?: boolean;
+}
+const { asset, lang, sizes, alt = asset.alt[lang], eager = false } = Astro.props;
+---
+<picture>
+  {asset.avifSrcset && <source type="image/avif" srcset={asset.avifSrcset} sizes={sizes} />}
+  <img src={asset.src} srcset={asset.srcset} sizes={sizes} width={asset.width} height={asset.height}
+    alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : undefined} />
+</picture>

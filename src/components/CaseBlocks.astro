@@ -1,0 +1,79 @@
+---
+import type { CaseLanguage, ProjectBlock } from '../lib/case-content';
+import { sectionName } from '../lib/case-content';
+import { copy } from '../lib/site';
+import CaseMedia from './CaseMedia.astro';
+interface Props {
+  blocks: ProjectBlock[];
+  lang: CaseLanguage;
+  slug: string;
+  prefix: string;
+  sectionHeading?: string;
+}
+
+const { blocks, lang, slug, prefix, sectionHeading } = Astro.props;
+const labels = copy[lang].portfolio;
+const narrow = '(max-width: 767px) 92vw, 59vw';
+const paired = '(max-width: 600px) 92vw, 46vw';
+---
+
+{blocks.map((block, index) => {
+  const id = `${prefix}-${index}`;
+  const files = block.arquivos ?? [];
+  if (block.tipo === 'frase' && block.texto) {
+    return <p class="case-phrase" data-phrase>{block.texto[lang]}</p>;
+  }
+  if (block.tipo === 'secao' && block.cliente) {
+    return (
+      <section class="case-section" aria-labelledby={id}>
+        <header class="case-section-header">
+          <h2 id={id}>{sectionName(block.cliente, lang)}</h2>
+          <div>
+            {block.contexto && <p>{block.contexto[lang]}</p>}
+            {block.tags && <div class="case-tags">{block.tags[lang].map(tag => <span>{tag}</span>)}</div>}
+          </div>
+        </header>
+        <div class="case-blocks">
+          <Astro.self blocks={block.blocos ?? []} lang={lang} slug={slug} prefix={id} sectionHeading={id} />
+        </div>
+      </section>
+    );
+  }
+  if (block.tipo === 'full' && block.arquivo) {
+    const isNarrow = block.largura === 'media' || slug === 'vanessa-rosa';
+    return (
+      <figure class:list={['case-full', { 'case-medium': isNarrow }]} data-case-media>
+        <CaseMedia file={block.arquivo} lang={lang} sizes={isNarrow ? narrow : '95vw'} />
+      </figure>
+    );
+  }
+  if (block.tipo === 'pair' || block.tipo === 'reel') {
+    return (
+      <div class:list={['case-pair', { 'case-reels': block.tipo === 'reel' }]} data-case-media>
+        {files.map(file => <figure><CaseMedia file={file} lang={lang} sizes={paired} /></figure>)}
+      </div>
+    );
+  }
+  if (block.tipo === 'strip' && block.titulo) {
+    const title = block.titulo[lang];
+    return (
+      <case-strip class="case-strip" role="region" aria-labelledby={sectionHeading ? `${sectionHeading} ${id}` : id}>
+        <div class="case-strip-head">
+          <h3 class="case-label" id={id}>{title}</h3>
+          <div class="case-strip-nav" hidden>
+            <output aria-live="off"><span data-counter>01</span> / {String(files.length).padStart(2, '0')}</output>
+            <button type="button" data-prev aria-label={labels.previousSlide} aria-controls={`${id}-slides`}>←</button>
+            <button type="button" data-next aria-label={labels.nextSlide} aria-controls={`${id}-slides`}>→</button>
+          </div>
+        </div>
+        <div id={`${id}-slides`} class="case-strip-track" tabindex="0" role="group" aria-label={title} data-cursor="drag" data-lenis-prevent-horizontal>
+          {files.map((file, n) => (
+            <figure tabindex="0" role="group" aria-label={`Slide ${n + 1} / ${files.length}`}>
+              <CaseMedia file={file} lang={lang} sizes="(max-width: 767px) 77vw, 46vw" />
+            </figure>
+          ))}
+        </div>
+      </case-strip>
+    );
+  }
+})}

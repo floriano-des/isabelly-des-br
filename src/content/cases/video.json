@@ -1,0 +1,119 @@
+{
+  "slug": "video",
+  "ordem": 6,
+  "tipo": "grupo",
+  "destaqueHome": false,
+  "slugsAntigos": [
+    "video-terezan-reels",
+    "video-plca-advogados"
+  ],
+  "titulo": {
+    "pt": "Vídeo",
+    "en": "Video"
+  },
+  "categoria": {
+    "pt": "Vídeo",
+    "en": "Video"
+  },
+  "ano": "2025–2026",
+  "ferramentas": [
+    "CapCut",
+    "Adobe After Effects"
+  ],
+  "tags": {
+    "pt": [
+      "Reels",
+      "Motion",
+      "Legenda na tela"
+    ],
+    "en": [
+      "Reels",
+      "Motion",
+      "On-screen captions"
+    ]
+  },
+  "linhaHover": {
+    "pt": "Reels curtos para agência e fintech: ritmo, legenda na tela e motion que segura a atenção.",
+    "en": "Short reels for an agency and a fintech: pace, on-screen captions and motion that holds attention."
+  },
+  "resumo": {
+    "pt": "Vídeos curtos para redes sociais, pensados para quem assiste sem som e decide em dois segundos se continua. Ritmo de corte, tipografia em movimento e legendas que carregam a mensagem do começo ao fim.",
+    "en": "Short videos for social media, made for people who watch on mute and decide within two seconds whether to keep watching. Cutting rhythm, moving type and captions that carry the message from start to finish."
+  },
+  "corMarca": "#13F2C8",
+  "capa": {
+    "arquivo": "src/assets/cases/video/capa.webp"
+  },
+  "blocos": [
+    {
+      "tipo": "secao",
+      "cliente": "2 Palitos Marketing Digital",
+      "contexto": {
+        "pt": "Reels para a agência 2 Palitos com memes, estética pixel e chamadas diretas sobre vendas e tráfego.",
+        "en": "Reels for the 2 Palitos agency with memes, pixel aesthetics and direct calls about sales and traffic."
+      },
+      "tags": {
+        "pt": [
+          "Reels",
+          "Agência"
+        ],
+        "en": [
+          "Reels",
+          "Agency"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "reel",
+          "arquivos": [
+            "/media/video/01-1.mp4",
+            "/media/video/02-2.mp4"
+          ]
+        },
+        {
+          "tipo": "reel",
+          "arquivos": [
+            "/media/video/03-3.mp4",
+            "/media/video/04-4.mp4"
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "cliente": "Zen Pensions",
+      "contexto": {
+        "pt": "Animações para a Zen Pensions explicando previdência com ilustração, tipografia e um ritmo leve.",
+        "en": "Animations for Zen Pensions explaining pensions with illustration, type and a light pace."
+      },
+      "tags": {
+        "pt": [
+          "Reels",
+          "Motion",
+          "Inglês"
+        ],
+        "en": [
+          "Reels",
+          "Motion",
+          "English"
+        ]
+      },
+      "blocos": [
+        {
+          "tipo": "reel",
+          "arquivos": [
+            "/media/video/05-1.mp4",
+            "/media/video/06-2.mp4"
+          ]
+        },
+        {
+          "tipo": "reel",
+          "arquivos": [
+            "/media/video/07-3.mp4",
+            "/media/video/08-4.mp4"
+          ]
+        }
+      ]
+    }
+  ]
+}
