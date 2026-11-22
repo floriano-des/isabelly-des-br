@@ -1,15 +1,17 @@
-import { readFile, writeFile, mkdir, stat, rename, rm } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, stat, rm } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
-import { extractCoverFrame, prepareFile, prepareVideo, probeVideo } from './media-files.mjs';
+import { extractCoverFrame, prepareFile, prepareVideo, probeVideo, publishFile } from './media-files.mjs';
 import { altFor, photoDescriptions } from './media-alt.mjs';
 import { prepareOpenGraph } from './media-og.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const projectPath = (...parts) => path.join(root, ...parts);
 const seed = JSON.parse(await readFile(projectPath('docs/briefing/projetos.seed.json'), 'utf8'));
+// Os números já publicados continuam associados aos mesmos originais quando a ordem editorial muda.
+const fileSlots = JSON.parse(await readFile(projectPath('scripts/media-slots.json'), 'utf8'));
 const originals = projectPath('_material/isabelly');
 const publicDir = projectPath('public');
 const manifest = { items: {}, covers: {}, gridCovers: {}, videoFrames: [], photos: {}, slides: {} };
@@ -51,11 +53,12 @@ async function registerImage(key, input, directory, name, alt, options = {}) {
   });
 }
 
-async function registerGridCover(slug, input, alt) {
-  const focus = { 'isys-karoline': 1, 'brucutu-chapeiro': .45, 'social-media': .3, 'material-grafico': .46 };
+async function registerGridCover(slug, input, alt, cover = {}) {
+  const focus = { 'brucutu-chapeiro': .45, 'social-media': .3, 'material-grafico': .46 };
   const key = `grid-${slug}`;
-  await registerImage(key, input, `cases/${slug}`, 'capa-quadrada', alt, {
-    cover: true, max: 1920, focusX: focus[slug] ?? .5
+  const name = cover.variante ? `capa-quadrada-${ascii(cover.variante)}` : 'capa-quadrada';
+  await registerImage(key, input, `cases/${slug}`, name, alt, {
+    cover: true, max: 1920, focusX: cover.focoX ?? focus[slug] ?? .5
   });
   manifest.gridCovers[slug] = key;
 }
@@ -116,7 +119,7 @@ async function jsonFile(name, data) {
   const temporary = path.join(path.dirname(file), '.' + randomUUID() + '.tmp');
   try {
     await writeFile(temporary, serialized);
-    await rename(temporary, file);
+    await publishFile(temporary, file);
   } finally {
     await rm(temporary, { force: true });
   }
@@ -146,14 +149,16 @@ for (const [index, photo] of seed.fotos.itens.entries()) {
 
 for (const page of seed.cases) {
   const files = references([page.capa, ...page.blocos]);
-  for (const [index, file] of files.entries()) {
-    const name = `${String(index + 1).padStart(2, '0')}-${ascii(path.parse(file).name)}`;
+  let nextSlot = Math.max(0, ...files.map(file => fileSlots[file] ?? 0));
+  for (const file of files) {
+    const slot = fileSlots[file] ?? ++nextSlot;
+    const name = `${String(slot).padStart(2, '0')}-${ascii(path.parse(file).name)}`;
     const input = path.join(originals, file);
     const alt = altFor(file);
     if (path.extname(file).toLowerCase() === '.mp4') await registerVideo(file, input, page.slug, name, alt);
     else if (file === page.capa.arquivo) {
       await registerImage(file, input, `cases/${page.slug}`, name, alt, { cover: true, max: 3840 });
-      await registerGridCover(page.slug, input, alt);
+      await registerGridCover(page.slug, input, alt, page.capa);
       manifest.covers[page.slug] = file;
     }
     else await registerImage(file, input, `cases/${page.slug}`, name, alt);
@@ -182,6 +187,12 @@ for (const n of [9, 10]) {
   await registerImage(key, path.join(originals, `Identidade Visual do Site/Carrossel 1 (sobre mim)/Slide ${n}.png`), 'isabelly', key, alt, { max: 1080 });
   manifest.slides[n] = key;
 }
+
+const instagramSlide = 'Identidade Visual do Site/Carrossel 3/Slide 7.jpg';
+await registerImage(instagramSlide, path.join(originals, instagramSlide), 'isabelly', 'carrossel-design-slide-7', {
+  pt: 'Um selo de coração prende um papel sobre o fundo roxo. Nele se lê “Um designer não serve só pra fazer post ou cartaz bonitinho pra você”.',
+  en: 'A note with a heart-shaped wax seal on a purple background explains that a designer does more than make a good-looking post or poster.'
+}, { max: 1080 });
 
 await Promise.all([
   prepareTexture('damask', '1283323_381.jpg', 480, 50),

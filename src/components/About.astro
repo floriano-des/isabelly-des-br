@@ -1,6 +1,7 @@
 ---
 import { getPhoto, getAboutSlide } from '../lib/media';
 import Photo from './HomePicture.astro';
+import AboutInstagram from './AboutInstagram.astro';
 import { copy, pathFor, type Lang } from '../lib/site';
 import '../styles/info.css';
 interface Props {
@@ -22,6 +23,12 @@ const notes = pt
       'I started out designing social media posts. These days I’m specialising in branding and visual identity.',
       'I’m curious about how brands communicate. I enjoy working both independently and as part of a team, especially when a project has a story to tell.',
     ];
+const sections = [
+  { id: 'historia', label: pt ? 'Minha história' : 'My story', preview: getPhoto(3) },
+  { id: 'percurso', label: pt ? 'Meu percurso' : 'My background', preview: getPhoto(5) },
+  { id: 'fora-do-design', label: pt ? 'Fora do design' : 'Away from my desk', preview: getAboutSlide(9) },
+  { id: 'instagram', label: pt ? 'No Instagram' : 'On Instagram' },
+];
 const timeline = pt
   ? [
       ['2023', 'Freelancer', 'Design gráfico e ilustração'],
@@ -53,33 +60,42 @@ const off = pt
 ---
 
 <article class="about-page">
-  <div class="about-opening info-wrap">
-    <div>
-      <p class="info-kicker">{t.about}</p>
-      <h1>
-        {pt ? 'Me chamo' : 'My name is'} <strong>Isabelly</strong>
-        <span>
-          {pt ? 'mas pode me chamar de' : 'but you can call me'} <i>Isa</i> {pt ? 'ou' : 'or'}{' '}
-          <i>Bella.</i>
-        </span>
-      </h1>
-    </div>
-    <div class="polaroids">
-      {[2, 3, 5].map((n, i) => (
-        <figure class={'polaroid pic-' + i}>
-          <Photo asset={getPhoto(n)} {lang} sizes="(max-width: 767px) 42vw, 18vw" />
-          <figcaption>{['Isa', 'Palmital · SP', 'Bella'][i]}</figcaption>
+  <header class="about-cover">
+    <div class="info-wrap">
+      <h1 class="about-masthead">{pt ? 'Sobre' : 'About'} <em>{pt ? 'mim' : 'me'}</em></h1>
+      <div class="about-opening">
+        <figure class="about-portrait">
+          <div class="portrait-print">
+            <Photo asset={getPhoto(2)} {lang} sizes="(max-width: 600px) 75vw, (max-width: 1000px) 38vw, 28vw" eager />
+          </div>
+          <figcaption><span>Isabelly Lima</span><img src="/cursor/gato-lavanda.svg" alt="" width="30" height="30" /></figcaption>
         </figure>
-      ))}
-      <img class="collage-cat" src="/cursor/gato-96.png" alt="" width="50" height="50" />
+        <div class="about-introduction">
+          <h2>{pt ? 'Me chamo' : 'My name is'} <strong>Isabelly.</strong></h2>
+          <p class="about-alias">{pt ? 'Mas pode me chamar de' : 'You can call me'} <i>Isa</i> {pt ? 'ou' : 'or'} <i>Bella.</i></p>
+          <p class="about-lead">{notes[0]}</p>
+        </div>
+        <nav class="about-index" aria-label={pt ? 'Nesta página' : 'On this page'}>
+          {sections.map(({ id, label, preview }) => (
+            <a href={`#${id}`}>
+              <span>{label}</span>
+              <span class="index-picture" aria-hidden="true">
+                {preview ? <Photo asset={preview} {lang} alt="" sizes="56px" /> : <img class="index-cat" src="/cursor/gato-lavanda.svg" alt="" width="28" height="28" />}
+              </span>
+              <span class="index-arrow" aria-hidden="true">↘</span>
+            </a>
+          ))}
+        </nav>
+      </div>
     </div>
-  </div>
-  <section class="about-notes info-wrap" aria-label={pt ? 'Minha história' : 'My story'}>
-    {notes.map((note) => (
-      <p class="paper-note">{note}</p>
-    ))}
+  </header>
+  <section class="about-story info-wrap" id="historia" aria-labelledby="story-title">
+    <h2 id="story-title">{sections[0].label}</h2>
+    <div class="story-note">
+      {notes.slice(1).map((note) => <p>{note}</p>)}
+    </div>
   </section>
-  <section class="about-process info-wrap">
+  <section class="about-process info-wrap" id="percurso" aria-label={sections[1].label}>
     <div>
       <h2>{pt ? 'Na minha mesa' : 'On my desk'}</h2>
       <ul class="tool-list">
@@ -110,7 +126,7 @@ const off = pt
       </dl>
     </div>
   </section>
-  <section class="outside info-wrap" aria-labelledby="outside-title">
+  <section class="outside info-wrap" id="fora-do-design" aria-labelledby="outside-title">
     <div class="outside-title">
       <h2 id="outside-title">{pt ? 'Fora do design' : 'Away from my desk'}</h2>
       <div class="strip-controls" hidden>
@@ -140,6 +156,7 @@ const off = pt
       ))}
     </div>
   </section>
+  <AboutInstagram {lang} />
   <div class="info-actions info-wrap">
     <a class="button-fill" href="/cv/isabelly-lima-curriculo.pdf" download>
       {pt ? 'Baixar CV' : 'Download CV'}
@@ -189,7 +206,7 @@ const off = pt
       drag = undefined;
       strip.classList.remove('dragging');
     });
-    const collage = document.querySelector<HTMLElement>('.polaroids');
+    const collage = document.querySelector<HTMLElement>('.about-portrait');
     if (collage && matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) {
       collage.addEventListener('pointermove', (event) => {
         const area = collage.getBoundingClientRect();

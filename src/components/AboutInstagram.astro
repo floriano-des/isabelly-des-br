@@ -1,0 +1,144 @@
+---
+import { getMedia } from '../lib/media';
+import { socials, type Lang } from '../lib/site';
+import HomePicture from './HomePicture.astro';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const pt = lang === 'pt';
+const imageSizes = '(max-width: 44rem) 90vw, 30vw';
+const isys = 'Marcas/Identidade Visual - Isys Karoline Personal';
+const posts = [
+  {
+    url: 'https://www.instagram.com/p/Dfua3aTGy4V/?img_index=7',
+    layout: 'two-works',
+    title: 'Isys Karoline',
+    category: pt ? 'Identidade visual' : 'Visual identity',
+    images: [
+      { asset: getMedia(isys + '/9.jpg'), alt: pt ? 'Crachá com o símbolo da Isys Karoline em branco e azul.' : 'An ID badge with the white and blue Isys Karoline symbol.' },
+      { asset: getMedia(isys + '/10.jpg'), alt: pt ? 'Cartões de visita da marca em azul e preto.' : 'Blue and black business cards for the same brand.' },
+    ],
+  },
+  {
+    url: 'https://www.instagram.com/p/DfsQgttn5TY/',
+    layout: 'illustration',
+    title: pt ? 'Um saruê entre cogumelos' : 'An opossum among mushrooms',
+    category: pt ? 'Ilustração para tattoo' : 'Tattoo illustration',
+    images: [
+      { asset: getMedia('Desenhos e Ilustrações/Ilustrações/Tattoo/3.jpg'), alt: pt ? 'Um saruê azul enrolado entre cogumelos rosa e lilás.' : 'A blue opossum curled up among pink and lilac mushrooms.' },
+    ],
+  },
+  {
+    url: 'https://www.instagram.com/p/DcEWmpgkT9d/?img_index=7',
+    layout: 'poster',
+    title: pt ? 'Fundamentos do design' : 'Design fundamentals',
+    category: pt ? 'Processo criativo' : 'Creative process',
+    images: [
+      { asset: getMedia('Identidade Visual do Site/Carrossel 3/Slide 7.jpg'), alt: pt ? 'Recorte de papel com um lacre sobre fundo roxo. O texto fala do papel de quem projeta um cartaz.' : 'A torn paper note with a wax seal on purple, discussing the decisions behind a poster.' },
+    ],
+  },
+];
+---
+
+<section id="instagram" class="instagram-section" aria-labelledby="instagram-heading">
+  <div class="instagram-heading">
+    <h2 id="instagram-heading">{pt ? 'No meu' : 'From my'} <em>Instagram</em></h2>
+    <a class="instagram-profile" href={socials.Instagram}>
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6" />
+        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6" />
+        <circle cx="17.5" cy="6.8" r="1" fill="currentColor" />
+      </svg>
+      @bella_designbr
+    </a>
+  </div>
+  <ul class="instagram-posts">
+    {posts.map(post => (
+      <li>
+        <a class="instagram-post" href={post.url}>
+          <div class:list={['instagram-art', post.layout]}>
+            {post.images.map(image => <HomePicture asset={image.asset} alt={image.alt} lang={lang} sizes={imageSizes} />)}
+          </div>
+          <div class="instagram-caption">
+            <p>{post.category}</p>
+            <h3>{post.title}<span class="sr-only">{pt ? ' no Instagram' : ' on Instagram'}</span></h3>
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .instagram-section {
+    color: var(--texto);
+    background: var(--noite-profunda);
+    border-top: 1px solid var(--rule);
+    padding: clamp(4.5rem, 8vw, 10rem) clamp(1.25rem, 5vw, 7.5rem);
+  }
+  .instagram-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: clamp(2rem, 3.4vw, 4rem);
+  }
+  .instagram-heading h2 {
+    margin: 0;
+    font: 400 clamp(2.8rem, 5.85vw, 7.2rem)/.99 var(--display);
+    letter-spacing: -.035em;
+  }
+  .instagram-heading em { color: #dac4ec; font: italic 500 1em/.99 var(--serif); }
+  .instagram-profile {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    min-height: 44px;
+    color: var(--texto);
+    font: 400 .875rem/1.3 var(--mono);
+    text-underline-offset: .25em;
+  }
+  .instagram-profile:hover { text-decoration: underline; }
+  .instagram-posts {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1rem, 1.9vw, 2.5rem);
+    margin: 0;
+    padding: 0;
+  }
+  .instagram-post { display: block; color: inherit; text-decoration: none; }
+  .instagram-art {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    aspect-ratio: 4/5;
+    background: var(--noite);
+    overflow: hidden;
+  }
+  .instagram-art.two-works { grid-template-rows: repeat(2, minmax(0, 1fr)); }
+  .instagram-art :global(picture), .instagram-art :global(img) { display: block; width: 100%; height: 100%; }
+  .instagram-art :global(img) { object-fit: cover; }
+  .instagram-art.illustration { background: #fff5e9; }
+  .instagram-art.illustration :global(img) { object-fit: contain; }
+  .instagram-caption { padding: clamp(.85rem, 1.4vw, 1.6rem) 0 .35rem; }
+  .instagram-caption p {
+    margin: 0 0 .4rem;
+    color: #c8b5d5;
+    font: 400 .75rem/1.4 var(--mono);
+    text-transform: uppercase;
+    letter-spacing: .065em;
+  }
+  .instagram-caption h3 {
+    margin: 0;
+    font: 500 clamp(1.4rem, 2vw, 2.45rem)/1.12 var(--sans);
+    letter-spacing: -.035em;
+  }
+  .instagram-post:is(:hover, :focus-visible) h3 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .17em; }
+  @media (max-width: 44rem) {
+    .instagram-posts { grid-template-columns: minmax(0, 1fr); gap: 2.4rem; }
+    .instagram-heading { display: grid; gap: .45rem; }
+    .instagram-profile { justify-self: start; }
+  }
+</style>

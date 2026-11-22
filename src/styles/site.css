@@ -236,7 +236,7 @@ summary {
   font: italic 500 1.05em var(--serif);
 }
 .footer-email {
-  font-size: clamp(1.1rem, 4.5vw, 7rem);
+  font-size: clamp(1.0625rem, 3.8vw, 5.9rem);
   font-weight: 600;
   color: #c7a1ee;
   letter-spacing: -0.05em;
@@ -280,7 +280,7 @@ summary {
   font-size: clamp(2.2rem, 3.8vw, 4.2rem);
 }
 .compact-footer .footer-email {
-  font-size: clamp(1.2rem, 2.7vw, 3rem);
+  font-size: clamp(1.0625rem, 2.35vw, 2.65rem);
 }
 .footer-meta,
 .colophon {

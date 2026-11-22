@@ -1,10 +1,31 @@
-import { stat, mkdir, rename, rm } from 'node:fs/promises';
+import { stat, mkdir, rename, rm, readFile, utimes } from 'node:fs/promises';
 import { basename, dirname, join } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
+import { setTimeout as delay } from 'node:timers/promises';
 
 const exec = promisify(execFile);
+
+// No Windows, a prévia ou o antivírus pode manter o destino aberto durante a troca.
+export async function publishFile(temporary, output) {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      await rename(temporary, output);
+      return;
+    } catch (error) {
+      if (!['EBUSY', 'EPERM', 'EACCES', 'UNKNOWN'].includes(error.code)) throw error;
+      const [next, existing] = await Promise.all([readFile(temporary), readFile(output).catch(() => undefined)]);
+      if (existing?.equals(next)) {
+        const now = new Date();
+        await utimes(output, now, now).catch(() => {});
+        return;
+      }
+      if (attempt >= 8) throw error;
+      await delay(125 * (attempt + 1));
+    }
+  }
+}
 
 // Publica apenas arquivos completos; uma conversão interrompida pode ser repetida.
 export async function prepareFile(input, output, writer, recipeTime = 0) {
@@ -15,7 +36,7 @@ export async function prepareFile(input, output, writer, recipeTime = 0) {
   const temporary = join(dirname(output), `.${randomUUID()}-${basename(output)}`);
   try {
     await writer(temporary);
-    await rename(temporary, output);
+    await publishFile(temporary, output);
   } finally {
     await rm(temporary, { force: true });
   }

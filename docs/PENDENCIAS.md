@@ -14,7 +14,7 @@ Atualizado em 22/11/2026. Este registro acompanha a prévia local. A revisão ed
 | Texturas | O rodapé credita Freepik. Os tiles preservam o enquadramento das imagens selecionadas. | Verificar as licenças e a forma de atribuição de cada textura antes de publicar. |
 | Mascote | O site usa a cabeça do gato da identidade. O nome Sukito aparece na seção sobre os animais da Isa. | Confirmar se a mascote representa Sukito. |
 | Currículo | O download entrega o PDF da v1. | Conferir a versão vigente. |
-| Vanessa Rosa | As pranchas de 1400 × 800 aparecem em largura contida. | Disponibilidade dos originais em resolução maior. |
+| Vanessa Rosa | As 12 pranchas originais de 1400 × 800 ocupam toda a largura do celular e chegam a 1400 px no desktop. | Disponibilidade dos originais em resolução maior. |
 
 ## Textos de projeto para revisar nos dois idiomas
 
@@ -28,6 +28,8 @@ Atualizado em 22/11/2026. Este registro acompanha a prévia local. A revisão ed
 
 ## Seleção de imagens
 
+- A capa de Isys Karoline usa o crachá azul com cordão esportivo (`9.jpg`). Na sequência interna, o painel de referências (`2.jpg`) vem antes da prancha de cores e tipografia (`4.jpg`).
+- A seção Fale Seguro encerra o folder com o mockup da parte interna. A fotografia do folder nas mãos ficou fora da seleção.
 - Na capa do livro de Ana Gonçalves, dois arquivos mostram a mesma cena. A seleção usa a fotografia de 4000 × 3000.
 - O esboço da tattoo já integra a seção Desenhos tradicionais. A segunda fotografia do mesmo esboço ficou fora.
 - A abertura de Vídeo reúne três frames originais dos reels da 2 Palitos e da Zen Pensions em uma faixa de HTML e CSS. A miniatura quadrada vem de um dos reels da 2 Palitos.

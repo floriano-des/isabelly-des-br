@@ -53,7 +53,7 @@
   },
   "corMarca": "#4D8EBF",
   "capa": {
-    "arquivo": "src/assets/cases/isys-karoline/01-cover.webp"
+    "arquivo": "src/assets/cases/isys-karoline/10-9.webp"
   },
   "blocos": [
     {
@@ -85,6 +85,11 @@
     },
     {
       "tipo": "full",
+      "arquivo": "src/assets/cases/isys-karoline/07-2.webp",
+      "largura": "total"
+    },
+    {
+      "tipo": "full",
       "arquivo": "src/assets/cases/isys-karoline/06-4.webp",
       "largura": "total"
     },
@@ -94,11 +99,6 @@
         "pt": "Azuis do claro ao profundo, com Boldonse nos títulos e Elms Sans no apoio.",
         "en": "Blues from light to deep, with Boldonse for headlines and Elms Sans for support."
       }
-    },
-    {
-      "tipo": "full",
-      "arquivo": "src/assets/cases/isys-karoline/07-2.webp",
-      "largura": "total"
     },
     {
       "tipo": "full",

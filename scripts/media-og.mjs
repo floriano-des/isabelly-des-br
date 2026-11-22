@@ -1,8 +1,9 @@
-import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { inflateSync } from 'node:zlib';
 import sharp from 'sharp';
+import { publishFile } from './media-files.mjs';
 
 const pages = {
   home: { pt: 'Isabelly Lima', en: 'Isabelly Lima', photo: 1 },
@@ -86,7 +87,7 @@ export async function prepareOpenGraph(root, seed, manifest) {
     });
     for (const { key, title, caption, image } of layouts) {
       const source = path.join(root, 'src/assets', manifest.items[image].asset);
-      const visual = await sharp(source).resize(530, 630, { fit: 'cover', position: key === 'isys-karoline' ? 'right' : 'centre' }).toBuffer();
+      const visual = await sharp(source).resize(530, 630, { fit: 'cover', position: 'centre' }).toBuffer();
       const label = key === 'home' ? (lang === 'pt' ? 'PORTFÓLIO' : 'PORTFOLIO') : 'ISABELLY LIMA';
       const [heading, eyebrow, description] = await Promise.all([
         textLayer(fonts, title, 'display', title.length > 16 ? 76 : 96, 580, '#f1ecf4'),
@@ -102,7 +103,7 @@ export async function prepareOpenGraph(root, seed, manifest) {
           { input: heading.data, left: 44, top: Math.round(316 - heading.info.height / 2) },
           { input: description.data, left: 44, top: 561 }
         ]).jpeg({ quality: 86, mozjpeg: true }).toFile(temporary);
-        await rename(temporary, output);
+        await publishFile(temporary, output);
       } finally {
         await rm(temporary, { force: true });
       }

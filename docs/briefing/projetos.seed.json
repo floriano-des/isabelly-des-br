@@ -217,8 +217,10 @@
       },
       "corMarca": "#4D8EBF",
       "capa": {
-        "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/Cover.jpg",
-        "nota": "Recorte quadrado mantendo o símbolo branco sobre azul à direita."
+        "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/9.jpg",
+        "variante": "cracha",
+        "focoX": 0.53,
+        "nota": "Crachá Isys Karoline em fundo azul, com o símbolo central e o cordão no canto superior esquerdo. Também integra as aplicações da marca."
       },
       "blocos": [
         {
@@ -250,6 +252,11 @@
         },
         {
           "tipo": "full",
+          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/2.jpg",
+          "largura": "total"
+        },
+        {
+          "tipo": "full",
           "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/4.jpg",
           "largura": "total"
         },
@@ -259,11 +266,6 @@
             "pt": "Azuis do claro ao profundo, com Boldonse nos títulos e Elms Sans no apoio.",
             "en": "Blues from light to deep, with Boldonse for headlines and Elms Sans for support."
           }
-        },
-        {
-          "tipo": "full",
-          "arquivo": "Marcas/Identidade Visual - Isys Karoline Personal/2.jpg",
-          "largura": "total"
         },
         {
           "tipo": "full",
@@ -1158,11 +1160,6 @@
               "tipo": "full",
               "arquivo": "Impressos/Fale Seguro/Folder 2 dobras/Parte interna mockup.jpg",
               "largura": "total"
-            },
-            {
-              "tipo": "full",
-              "arquivo": "Impressos/Fale Seguro/Folder 2 dobras/Mockup em mãos.jpg",
-              "largura": "total"
             }
           ]
         },
@@ -1610,7 +1607,9 @@
     "arquivos": [
       "Desenhos e Ilustrações/Ilustrações/Tattoo/1.jpeg",
       "Impressos/Capa de Livro Colagens - Ana Gonçalves/Cover.jpg",
-      "Marcas/Identidade Visual - Brucutu Chapeiro/1.png"
+      "Marcas/Identidade Visual - Brucutu Chapeiro/1.png",
+      "Marcas/Identidade Visual - Isys Karoline Personal/Cover.jpg",
+      "Impressos/Fale Seguro/Folder 2 dobras/Mockup em mãos.jpg"
     ]
   }
 }

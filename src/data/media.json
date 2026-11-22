@@ -338,11 +338,11 @@
         "en": "The brand profile on a phone beside a black Vanessa Rosa T-shirt."
       }
     },
-    "Marcas/Identidade Visual - Isys Karoline Personal/Cover.jpg": {
+    "Marcas/Identidade Visual - Isys Karoline Personal/9.jpg": {
       "kind": "image",
-      "asset": "cases/isys-karoline/01-cover.webp",
-      "width": 3000,
-      "height": 2000,
+      "asset": "cases/isys-karoline/10-9.webp",
+      "width": 3600,
+      "height": 2688,
       "widths": [
         360,
         480,
@@ -353,17 +353,18 @@
         1600,
         1920,
         2560,
-        3000
+        3200,
+        3600
       ],
-      "url": "/media/cases/isys-karoline/01-cover",
+      "url": "/media/cases/isys-karoline/10-9",
       "alt": {
-        "pt": "Colagem de exercícios com o símbolo branco de Isys Karoline sobre azul.",
-        "en": "An exercise collage with the white Isys Karoline symbol on blue."
+        "pt": "Crachá com o símbolo sobre azul, preso a um cordão esportivo.",
+        "en": "Branded badge on a sports lanyard against a blue background."
       }
     },
     "grid-isys-karoline": {
       "kind": "image",
-      "asset": "cases/isys-karoline/capa-quadrada.webp",
+      "asset": "cases/isys-karoline/capa-quadrada-cracha.webp",
       "width": 1920,
       "height": 1920,
       "widths": [
@@ -376,10 +377,10 @@
         1600,
         1920
       ],
-      "url": "/media/cases/isys-karoline/capa-quadrada",
+      "url": "/media/cases/isys-karoline/capa-quadrada-cracha",
       "alt": {
-        "pt": "Colagem de exercícios com o símbolo branco de Isys Karoline sobre azul.",
-        "en": "An exercise collage with the white Isys Karoline symbol on blue."
+        "pt": "Crachá com o símbolo sobre azul, preso a um cordão esportivo.",
+        "en": "Branded badge on a sports lanyard against a blue background."
       }
     },
     "Marcas/Identidade Visual - Isys Karoline Personal/1.jpg": {
@@ -450,23 +451,6 @@
         "en": "Positive and reversed versions of the symbol and wordmark."
       }
     },
-    "Marcas/Identidade Visual - Isys Karoline Personal/4.jpg": {
-      "kind": "image",
-      "asset": "cases/isys-karoline/06-4.webp",
-      "width": 1686,
-      "height": 905,
-      "widths": [
-        640,
-        960,
-        1280,
-        1686
-      ],
-      "url": "/media/cases/isys-karoline/06-4",
-      "alt": {
-        "pt": "Paleta de azuis e as famílias tipográficas Boldonse e Elms Sans.",
-        "en": "Blue colour palette with the Boldonse and Elms Sans typefaces."
-      }
-    },
     "Marcas/Identidade Visual - Isys Karoline Personal/2.jpg": {
       "kind": "image",
       "asset": "cases/isys-karoline/07-2.webp",
@@ -482,6 +466,23 @@
       "alt": {
         "pt": "Painel visual com halteres, treino, roupa esportiva e cores da marca.",
         "en": "A moodboard of dumbbells, training, sportswear and brand colours."
+      }
+    },
+    "Marcas/Identidade Visual - Isys Karoline Personal/4.jpg": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/06-4.webp",
+      "width": 1686,
+      "height": 905,
+      "widths": [
+        640,
+        960,
+        1280,
+        1686
+      ],
+      "url": "/media/cases/isys-karoline/06-4",
+      "alt": {
+        "pt": "Paleta de azuis e as famílias tipográficas Boldonse e Elms Sans.",
+        "en": "Blue colour palette with the Boldonse and Elms Sans typefaces."
       }
     },
     "Marcas/Identidade Visual - Isys Karoline Personal/7.jpg": {
@@ -518,24 +519,6 @@
       "alt": {
         "pt": "Papelaria azul com prancheta, folha timbrada e cartões.",
         "en": "Blue stationery including a clipboard, letterhead and cards."
-      }
-    },
-    "Marcas/Identidade Visual - Isys Karoline Personal/9.jpg": {
-      "kind": "image",
-      "asset": "cases/isys-karoline/10-9.webp",
-      "width": 2560,
-      "height": 1911,
-      "widths": [
-        640,
-        960,
-        1280,
-        1920,
-        2560
-      ],
-      "url": "/media/cases/isys-karoline/10-9",
-      "alt": {
-        "pt": "Crachá com o símbolo sobre azul, preso a um cordão esportivo.",
-        "en": "Branded badge on a sports lanyard against a blue background."
       }
     },
     "Marcas/Identidade Visual - Isys Karoline Personal/10.jpg": {
@@ -3067,24 +3050,6 @@
         "en": "Back of the bi-fold leaflet, showing charts and text panels."
       }
     },
-    "Impressos/Fale Seguro/Folder 2 dobras/Mockup em mãos.jpg": {
-      "kind": "image",
-      "asset": "cases/material-grafico/09-mockup-em-maos.webp",
-      "width": 2560,
-      "height": 1709,
-      "widths": [
-        640,
-        960,
-        1280,
-        1920,
-        2560
-      ],
-      "url": "/media/cases/material-grafico/09-mockup-em-maos",
-      "alt": {
-        "pt": "Mãos seguram o folder aberto com a apresentação do Safe Scan.",
-        "en": "Hands holding the open Safe Scan information leaflet."
-      }
-    },
     "Impressos/Amar.Elo Fotografia/Business Card.jpg": {
       "kind": "image",
       "asset": "cases/material-grafico/10-business-card.webp",
@@ -3621,11 +3586,26 @@
         "pt": "Isabelly encerra o carrossel sobre seu repertório criativo com uma polaroide.",
         "en": "A taped portrait of Isabelly closes her scrapbook about her creative influences."
       }
+    },
+    "Identidade Visual do Site/Carrossel 3/Slide 7.jpg": {
+      "kind": "image",
+      "asset": "isabelly/carrossel-design-slide-7.webp",
+      "width": 864,
+      "height": 1080,
+      "widths": [
+        640,
+        864
+      ],
+      "url": "/media/isabelly/carrossel-design-slide-7",
+      "alt": {
+        "pt": "Um selo de coração prende um papel sobre o fundo roxo. Nele se lê “Um designer não serve só pra fazer post ou cartaz bonitinho pra você”.",
+        "en": "A note with a heart-shaped wax seal on a purple background explains that a designer does more than make a good-looking post or poster."
+      }
     }
   },
   "covers": {
     "vanessa-rosa": "Marcas/Identidade Visual - Manicure Vanessa Rosa/Cover.jpg",
-    "isys-karoline": "Marcas/Identidade Visual - Isys Karoline Personal/Cover.jpg",
+    "isys-karoline": "Marcas/Identidade Visual - Isys Karoline Personal/9.jpg",
     "brucutu-chapeiro": "Marcas/Identidade Visual - Brucutu Chapeiro/5.png",
     "social-media": "Social Media/2 Palitos Marketing Digital/Cover.jpg",
     "material-grafico": "Impressos/Amar.Elo Fotografia/Cover.jpg",
