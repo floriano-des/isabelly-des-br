@@ -30,7 +30,7 @@ export function description(lang: Lang, section: Section, project?: Project) {
     work: t.workDesc,
     about: t.aboutDesc,
     contact: t.contactDesc,
-    error: t.errorText,
+    error: t.errorDesc,
     case: project?.linhaHover[lang],
   }[section];
 }

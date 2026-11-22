@@ -19,7 +19,7 @@
   "time": "Local time",
   "siteDesc": "The portfolio of Isabelly Lima, a graphic designer and illustrator from Palmital, Brazil. Explore my visual identities, social media, print, video and illustration.",
   "workDesc": "Seven projects by Isabelly Lima, spanning visual identity, social media, print, video and illustration.",
-  "aboutDesc": "Get to know Isa, a graphic designer and illustrator from Palmital, Brazil, and discover what inspires her work.",
+  "aboutDesc": "Meet Isabelly Lima, a graphic designer and illustrator from Palmital, Brazil. Explore her work experience, education and interests outside design.",
   "contactDesc": "Get in touch with Isabelly Lima about your project by WhatsApp, email or the contact form.",
   "waMessage": "Hi Isabelly! I saw your portfolio and would love to talk about a project.",
   "ctaBefore": "Shall we create something",
@@ -33,6 +33,7 @@
   "linkedin": "LinkedIn",
   "error": "Page lost",
   "errorText": "The cat knows the way home.",
+  "errorDesc": "Page not found. Return to Isabelly Lima’s portfolio to explore her graphic design and illustration projects.",
   "homeLink": "Back to home",
   "chat": "Let’s talk",
   "portfolio": {

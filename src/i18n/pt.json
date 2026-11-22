@@ -19,7 +19,7 @@
   "time": "Hora local",
   "siteDesc": "Portfólio de Isabelly Lima, designer gráfica e ilustradora de Palmital. Conheça meus trabalhos em identidade visual, social media, impresso, vídeo e ilustração.",
   "workDesc": "Sete projetos da designer Isabelly Lima, de marcas e campanhas a impressos, vídeos e ilustrações.",
-  "aboutDesc": "Conheça a Isa, designer e ilustradora de Palmital, seu percurso criativo e o que a inspira.",
+  "aboutDesc": "Conheça Isabelly Lima, designer e ilustradora de Palmital. Veja sua trajetória profissional, sua formação e o que a inspira fora do design.",
   "contactDesc": "Converse com Isabelly Lima sobre seu projeto por WhatsApp, e-mail ou formulário.",
   "waMessage": "Oi, Isabelly! Vi seu portfólio e quero conversar sobre um projeto.",
   "ctaBefore": "Vamos criar algo",
@@ -33,6 +33,7 @@
   "linkedin": "LinkedIn",
   "error": "Página perdida",
   "errorText": "O gato conhece o caminho de volta.",
+  "errorDesc": "Página não encontrada. Volte ao portfólio de Isabelly Lima para explorar os projetos de design e ilustração.",
   "homeLink": "Voltar ao início",
   "chat": "Vamos conversar",
   "portfolio": {

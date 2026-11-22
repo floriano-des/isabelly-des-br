@@ -12,7 +12,8 @@
     "preview": "astro preview",
     "media": "node scripts/prepare-media.mjs",
     "check": "astro check",
-    "check:work": "node scripts/check-work.mjs"
+    "check:work": "node scripts/check-work.mjs",
+    "check:og": "node scripts/check-og.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.6",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
-    "typescript": "~5.9"
+    "typescript": "~5.9",
+    "ultrahtml": "1.7.0"
   }
 }

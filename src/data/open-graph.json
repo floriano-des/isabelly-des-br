@@ -1,0 +1,102 @@
+{
+  "pt": {
+    "home": {
+      "image": "/og/pt/home.jpg?v=3d64260aad54",
+      "alt": "PORTFÓLIO · Isabelly Lima · Designer gráfica e ilustradora. Isabelly Lima de óculos, com cabelo preto e batom escuro, diante de um damasco roxo."
+    },
+    "work": {
+      "image": "/og/pt/work.jpg?v=ba292b678cb2",
+      "alt": "Isabelly Lima · Trabalhos · Marcas, impressos e ilustrações. Monograma de Vanessa Rosa sobre mãos, cartões de AmarElo Fotografia e retratos em grafite num caderno."
+    },
+    "about": {
+      "image": "/og/pt/about.jpg?v=3cae60cd563e",
+      "alt": "Isabelly Lima · Sobre mim · Percurso e influências. Isabelly na infância, de vestido jeans e com presilhas coloridas no cabelo."
+    },
+    "contact": {
+      "image": "/og/pt/contact.jpg?v=a7fca74b6337",
+      "alt": "Isabelly Lima · Vamos conversar? · Contato. Retrato frontal de Isabelly com óculos e roupa escura."
+    },
+    "error": {
+      "image": "/og/pt/error.jpg?v=3dd553f68dd7",
+      "alt": "Isabelly Lima · 404 · Página perdida. Gravura de um morcego de asas abertas sobre papel lilás."
+    },
+    "vanessa-rosa": {
+      "image": "/og/pt/vanessa-rosa.jpg?v=d5be88735360",
+      "alt": "Isabelly Lima · Vanessa Rosa Manicure · Identidade Visual. O monograma VR sobre uma fotografia de mãos com unhas naturais."
+    },
+    "isys-karoline": {
+      "image": "/og/pt/isys-karoline.jpg?v=fd77a7e40dcc",
+      "alt": "Isabelly Lima · Isys Karoline Personal · Identidade Visual. Crachá com o símbolo sobre azul, preso a um cordão esportivo."
+    },
+    "brucutu-chapeiro": {
+      "image": "/og/pt/brucutu-chapeiro.jpg?v=9b608540a5e0",
+      "alt": "Isabelly Lima · Brucutu Lanches · Identidade Visual. Embalagens de batata, hambúrguer e sacola kraft com a marca Brucutu."
+    },
+    "social-media": {
+      "image": "/og/pt/social-media.jpg?v=e1bbbeae14a3",
+      "alt": "Isabelly Lima · Social Media · Posts, carrosséis e reels. Peças coloridas da 2 Palitos ao redor de um celular sobre fundo roxo."
+    },
+    "material-grafico": {
+      "image": "/og/pt/material-grafico.jpg?v=28a562d55a41",
+      "alt": "Isabelly Lima · Material Gráfico · Cartões, folders e capas. Cartões de AmarElo Fotografia com câmera e QR code sobre fundo verde."
+    },
+    "video": {
+      "image": "/og/pt/video.jpg?v=c338107afb6e",
+      "alt": "Isabelly Lima · Vídeo · Reels e motion design. Três quadros verticais de reels mostram rostos em pixel art, um cronômetro e letras sobre magenta."
+    },
+    "ilustracao": {
+      "image": "/og/pt/ilustracao.jpg?v=78ca81afad6d",
+      "alt": "Isabelly Lima · Ilustração · Do grafite ao vetor. Caderno aberto com dois retratos em grafite sobre a mesa."
+    }
+  },
+  "en": {
+    "home": {
+      "image": "/og/en/home.jpg?v=a611f421f7bd",
+      "alt": "PORTFOLIO · Isabelly Lima · Graphic designer and illustrator. Isabelly Lima wearing glasses and dark lipstick against a purple damask background."
+    },
+    "work": {
+      "image": "/og/en/work.jpg?v=32290eff392e",
+      "alt": "Isabelly Lima · Work · Branding, print and illustration. Vanessa Rosa’s monogram over a photograph of hands, AmarElo Fotografia business cards and pencil portraits in a sketchbook."
+    },
+    "about": {
+      "image": "/og/en/about.jpg?v=0895faa26964",
+      "alt": "Isabelly Lima · About me · Background and influences. Isabelly as a child, wearing a denim dress and colourful hair clips."
+    },
+    "contact": {
+      "image": "/og/en/contact.jpg?v=bc255e539c8a",
+      "alt": "Isabelly Lima · Let’s talk · Contact. Front-facing portrait of Isabelly wearing glasses and dark clothing."
+    },
+    "error": {
+      "image": "/og/en/error.jpg?v=edab60d37d5e",
+      "alt": "Isabelly Lima · 404 · Page not found. An engraving of a bat with outstretched wings on lilac paper."
+    },
+    "vanessa-rosa": {
+      "image": "/og/en/vanessa-rosa.jpg?v=6e86eaad9d3a",
+      "alt": "Isabelly Lima · Vanessa Rosa Manicure · Visual Identity. The VR monogram over a photograph of hands with natural nails."
+    },
+    "isys-karoline": {
+      "image": "/og/en/isys-karoline.jpg?v=f80e629ae753",
+      "alt": "Isabelly Lima · Isys Karoline Personal · Visual Identity. Branded badge on a sports lanyard against a blue background."
+    },
+    "brucutu-chapeiro": {
+      "image": "/og/en/brucutu-chapeiro.jpg?v=ff5a439d10ae",
+      "alt": "Isabelly Lima · Brucutu Lanches · Visual Identity. Brucutu fries carton, burger packaging and kraft takeaway bag."
+    },
+    "social-media": {
+      "image": "/og/en/social-media.jpg?v=245755eaf463",
+      "alt": "Isabelly Lima · Social Media · Posts, carousels and reels. Colourful 2 Palitos posts arranged around a phone against purple."
+    },
+    "material-grafico": {
+      "image": "/og/en/material-grafico.jpg?v=0fee03abfa02",
+      "alt": "Isabelly Lima · Print Design · Cards, leaflets and covers. AmarElo Fotografia cards with a camera and QR code against green."
+    },
+    "video": {
+      "image": "/og/en/video.jpg?v=9831fad45f57",
+      "alt": "Isabelly Lima · Video · Reels and motion design. Three vertical reel frames show pixel-art faces, a stopwatch and lettering on magenta."
+    },
+    "ilustracao": {
+      "image": "/og/en/ilustracao.jpg?v=4b8e73439606",
+      "alt": "Isabelly Lima · Illustration · From pencil to vector. An open sketchbook with two pencil portraits on a desk."
+    }
+  }
+}

@@ -2,28 +2,37 @@
 import { ClientRouter } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import shareCards from '../data/open-graph.json';
 import { copy, pathFor, description, socials, type Lang, type Section, type Project } from '../lib/site';
 import displayFont from '@fontsource/pirata-one/files/pirata-one-latin-400-normal.woff2?url';
 import sansFont from '@fontsource/urbanist/files/urbanist-latin-400-normal.woff2?url';
 import '../styles/site.css';
-interface Props {
-  lang: Lang;
-  section: Section;
-  project?: Project;
-}
+type Props = { lang: Lang } & (
+  | { section: 'case'; project: Project }
+  | { section: Exclude<Section, 'case'>; project?: never }
+);
 const { lang, section, project } = Astro.props;
 const t = copy[lang];
-const pageName = section === 'case' ? project?.titulo[lang] : section === 'error' ? t.error : t[section];
+const pageName = section === 'case' ? project.titulo[lang] : t[section];
 const title =
   section === 'home'
     ? lang === 'pt'
       ? 'Isabelly Lima · Designer gráfica e ilustradora'
       : 'Isabelly Lima · Graphic designer and illustrator'
-    : pageName + ' · Isabelly Lima';
+    : project?.tipo === 'marca'
+      ? `${pageName} · ${project.categoria[lang]} · Isabelly Lima`
+      : `${pageName} · Isabelly Lima`;
 const desc = description(lang, section, project);
 const absolute = (path: string) => new URL(path, Astro.site).href;
-const canonical = absolute(pathFor(lang, section, project?.slug));
-const image = absolute('/og/' + lang + '/' + (project?.slug ?? section) + '.jpg');
+const pagePath = pathFor(lang, section, project?.slug);
+const canonical = absolute(pagePath);
+const socialOrigin = process.env.SOCIAL_PREVIEW_ORIGIN || Astro.site;
+const socialUrl = new URL(pagePath, socialOrigin).href;
+const cardKey = project?.slug ?? section;
+const cards: Record<string, { image: string; alt: string }> = shareCards[lang];
+const card = cards[cardKey];
+if (!card) throw new Error(`Cartão de compartilhamento ausente: ${lang}/${cardKey}. Execute npm run media.`);
+const image = new URL(card.image, socialOrigin).href;
 const person = {
   '@type': 'Person',
   '@id': absolute('/#isabelly'),
@@ -64,18 +73,23 @@ const structured =
       />
     ))}
     <link rel="alternate" hreflang="x-default" href={absolute(pathFor('pt', section, project?.slug))} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content={section === 'case' ? 'article' : 'website'} />
+    <meta property="og:site_name" content="Isabelly Lima" />
+    <meta property="og:url" content={socialUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={desc} />
     <meta property="og:locale" content={lang === 'pt' ? 'pt_BR' : 'en_GB'} />
+    <meta property="og:locale:alternate" content={lang === 'pt' ? 'en_GB' : 'pt_BR'} />
     <meta property="og:image" content={image} />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={card.alt} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={desc} />
     <meta name="twitter:image" content={image} />
+    <meta name="twitter:image:alt" content={card.alt} />
     <link rel="icon" href="/cursor/gato.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <slot name="preload" />

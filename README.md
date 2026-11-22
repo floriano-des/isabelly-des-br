@@ -16,10 +16,13 @@ Abra o endereço local indicado pelo Astro. A home em português fica em `/` e a
 ```sh
 npm run check
 npm run build
+npm run check:og
 npm run preview
 ```
 
 Com o servidor local ativo, `npm run check:work` verifica as duas listagens de Trabalhos e segue os links dos sete cases em cada idioma. Para verificar outro servidor, use `npm run check:work -- http://127.0.0.1:4322`.
+
+`npm run check:og` confere o HTML e os JPEGs de compartilhamento em `dist/`. O build usa `https://isabelly.des.br` como domínio oficial. No workflow de `v2-redesign`, `SOCIAL_PREVIEW_ORIGIN` aponta os cartões para a própria prévia do Cloudflare Pages.
 
 ## Atualizar trabalhos
 

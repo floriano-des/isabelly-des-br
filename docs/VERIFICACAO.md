@@ -7,7 +7,8 @@
 - `npm run media` concluiu com os 200 arquivos de origem dos sete cases, sendo 190 imagens e dez vídeos. Os dez vídeos têm MP4, WebM, faixa de áudio e poster.
 - `npm run check` terminou com zero erros e zero avisos. `npm run build` gerou as 26 páginas e o sitemap. O índice do Git também foi exportado para uma pasta limpa. Nessa cópia, sem _material, npm ci e npm run build passaram.
 - O sitemap lista 22 URLs indexáveis. As rotas de erro, a página de treino e a reserva de migração ficam fora.
-- Foram verificados os caminhos locais de mídia, links e imagens responsivas do HTML compilado. Cada imagem de conteúdo tem dimensões explícitas e texto alternativo em seu idioma. Os 24 cartões de compartilhamento têm 1200 × 630.
+- Foram verificados os caminhos locais de mídia, links e imagens responsivas do HTML compilado. Cada imagem de conteúdo tem dimensões explícitas e texto alternativo em seu idioma.
+- O teste `npm run check:og` passou nas compilações com o domínio oficial e com o domínio da prévia. Para as 22 páginas indexáveis e as duas páginas 404, ele verifica as tags Open Graph e Twitter, o texto alternativo em cada idioma e o conteúdo dos JPEGs de 1200 × 630. Também confere a versão na URL de cada imagem contra seu SHA-256.
 - O HTML de treino e o currículo entregues têm os mesmos hashes SHA-256 dos arquivos correspondentes da v1.
 
 ## Navegação e interação

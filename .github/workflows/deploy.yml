@@ -7,6 +7,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      SOCIAL_PREVIEW_ORIGIN: ${{ github.ref_name == 'v2-redesign' && 'https://v2-redesign.isabelly-des-br.pages.dev' || '' }}
     permissions:
       contents: read
     steps:
@@ -17,6 +19,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - run: npm run check:og
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
