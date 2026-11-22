@@ -1,29 +1,22 @@
 ---
 import seed from '../../docs/briefing/projetos.seed.json';
-import { getCover, getMedia, getPhoto } from '../lib/media';
+import { projects } from '../lib/case-content';
+import { getCover, getPhoto } from '../lib/media';
 import { copy, pathFor, socials, type Lang } from '../lib/site';
 import HomePicture from './HomePicture.astro';
+import WorkGrid from './WorkGrid.astro';
 import '../styles/home.css';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const en = lang === 'en';
-const works = pathFor(lang, 'work');
 const about = pathFor(lang, 'about');
 const portrait = getPhoto(1);
 const sizes = '(max-width: 640px) 58vw, (max-width: 1000px) 37vw, 24vw';
 const services = en
   ? ['Visual identity', 'Social media', 'Branding', 'Print design', 'Illustration', 'Video']
   : ['Identidade visual', 'Social media', 'Branding', 'Material gráfico', 'Ilustração', 'Vídeo'];
-const featured = seed.home.destaques.map(slug => seed.cases.find(c => c.slug === slug)!);
-const details = [
-  'Marcas/Identidade Visual - Manicure Vanessa Rosa/PAG 10.jpg',
-  'Marcas/Identidade Visual - Isys Karoline Personal/8.jpg',
-  'Social Media/FORESTRY SERVICES LTD/Cover.jpg'
-];
-const detailAlts = en
-  ? ['A mug and a bag with Vanessa Rosa’s monogram.', 'Blue stationery featuring the Isys Karoline identity.', 'Forestry Services posts laid over a forest photograph.']
-  : ['Caneca e bolsa com o monograma da Vanessa Rosa.', 'Papelaria em azul com a identidade da Isys Karoline.', 'Posts da Forestry Services sobre uma fotografia de floresta.'];
+const featured = seed.home.destaques.map(slug => projects.find(project => project.slug === slug)!);
 const portraitAlt = en ? 'Isabelly Lima wearing glasses against a purple damask backdrop.' : 'Isabelly Lima de óculos, diante de um fundo adamascado roxo.';
 const serviceHeading = copy[lang].servicesHint;
 const sectionHeading = en ? 'Selected work' : 'Trabalhos selecionados';
@@ -119,34 +112,9 @@ const ringText = en ? 'CLICK · MEOW · CLICK · MEOW · ' : 'CLIQUE · MIAU · 
     </div>
   </section>
 
-  <section id="selecionados" class="featured-work" aria-label={sectionHeading}>
-    {featured.map((project, i) => {
-      const name = project.titulo[lang];
-      const shortName = ['Vanessa Rosa', 'Isys Karoline', name][i];
-      const href = pathFor(lang, 'case', project.slug);
-      const confirmedYear = String(project.ano).includes('confirmar') ? '' : String(project.ano);
-      return <article class="feature" style={`--case-colour:${project.corMarca}`} data-feature>
-        <div class="feature-left">
-          <a class="feature-portrait" href={href} aria-label={name} data-cursor="case">
-            <div class="feature-art"><HomePicture asset={getCover(project.slug, 'square')} lang={lang} sizes="(max-width: 700px) min(100vw, 77svh), min(43vw, 735px)" /></div>
-            <span class="feature-super">{shortName}</span>
-          </a>
-          <p class="feature-caption">{project.categoria[lang]}{confirmedYear && ` · ${confirmedYear}`}</p>
-        </div>
-        <span class="feature-initial" aria-hidden="true">{name[0]}.</span>
-        <div class="feature-right">
-          <div class="feature-description">
-            {i === 0 && <p class="home-label">{sectionHeading}</p>}
-            <h2>{name}</h2>
-            <p class="feature-tags">{project.tags[lang].join(' / ')}</p>
-            <p class="feature-copy">{project.linhaHover[lang]}</p>
-            <a class="feature-link" href={href}>{en ? 'View case' : 'Ver case'} <span aria-hidden="true">+</span></a>
-          </div>
-          <div class="feature-detail"><HomePicture asset={getMedia(details[i])} lang={lang} alt={detailAlts[i]} sizes="(max-width: 700px) 90vw, 43vw" /></div>
-        </div>
-      </article>;
-    })}
-    <div class="home-all-work"><a href={works}>{en ? 'All work' : 'Todos os trabalhos'}</a></div>
+  <section id="selecionados" class="featured-work" aria-labelledby="featured-title">
+    <h2 id="featured-title">{sectionHeading}</h2>
+    <WorkGrid {lang} projects={featured} featured />
   </section>
   <template id="home-intro-content">
     <div class="home-intro" aria-hidden="true">

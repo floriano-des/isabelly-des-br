@@ -67,7 +67,7 @@
 }
 .portrait-print picture {
   display: block;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
 }
 .portrait-print img {
   width: 100%;

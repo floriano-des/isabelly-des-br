@@ -1,67 +1,17 @@
 ---
-import { projects, projectUrl, projectYear, type CaseLanguage } from '../lib/case-content';
-import { getCover } from '../lib/media';
-import { copy, pathFor } from '../lib/site';
-import CasePicture from './CasePicture.astro';
-import '../styles/work.css';
+import { projects, type CaseLanguage } from '../lib/case-content';
+import { copy } from '../lib/site';
+import WorkGrid from './WorkGrid.astro';
 
 interface Props { lang: CaseLanguage }
 const { lang } = Astro.props;
 const t = copy[lang];
-const sizes = '(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw';
 ---
 
 <div class="work-index">
   <header class="work-intro">
     <p class="case-label">{t.work}</p>
-    <h1>
-      {t.portfolio.intro}
-      <span><em>{t.portfolio.seven}</em>{t.portfolio.thinking}</span>
-    </h1>
+    <h1>{t.portfolio.intro}</h1>
   </header>
-
-  <div class="work-grid">
-    {projects.map((project, i) => (
-      <a class="work-card" href={projectUrl(lang, project.slug)} data-cursor="case"
-        style={project.hoverBox ? `--box-bg:${project.hoverBox};--box-ink:var(--noite)` : undefined}>
-        <div class="work-cover" transition:name={`capa-${project.slug}`}>
-          <CasePicture media={getCover(project.slug, 'square')} lang={lang} sizes={sizes} priority={i === 0} />
-          <div class="work-overlay" aria-hidden="true">
-            <strong>{project.titulo[lang]}</strong>
-            <p>{project.linhaHover[lang]}</p>
-            <div class="case-tags">{project.tags[lang].map(tag => <span>{tag}</span>)}</div>
-          </div>
-        </div>
-        <div class="work-panel">
-          <div class="work-meta">
-            <span>{String(project.ordem).padStart(2, '0')}<i aria-hidden="true">/</i>{project.categoria[lang]}</span>
-            <img src="/cursor/gato-96.png" width="28" height="29" alt="" />
-          </div>
-          <div class="work-caption">
-            <h2>{project.titulo[lang]}</h2>
-            <div class="work-touch-info">
-              <p>{project.linhaHover[lang]}</p>
-              <div class="case-tags">{project.tags[lang].map(tag => <span>{tag}</span>)}</div>
-            </div>
-            <div class="work-panel-foot">
-              {projectYear(project.ano) && <span class="work-year">{projectYear(project.ano)}</span>}
-              <span class="work-open">{lang === 'pt' ? 'Ver case' : 'View case'}
-                <span class="work-arrow" aria-hidden="true"><span>→</span><span>→</span></span>
-              </span>
-            </div>
-          </div>
-        </div>
-      </a>
-    ))}
-    <a class="work-card work-contact" href={pathFor(lang, 'contact')}>
-      <div class="work-contact-image"><img src="/cursor/gato-96.png" width="96" height="96" alt="" loading="lazy" /></div>
-      <div class="work-panel">
-        <span class="case-label">{t.contact}</span>
-        <div class="work-contact-text">
-          <p>{t.portfolio.contactPrompt}</p>
-          <span>{t.chat} <span aria-hidden="true">→</span></span>
-        </div>
-      </div>
-    </a>
-  </div>
+  <WorkGrid {lang} {projects} />
 </div>

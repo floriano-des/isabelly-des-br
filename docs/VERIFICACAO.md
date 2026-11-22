@@ -13,13 +13,14 @@
 ## Navegação e interação
 
 - A home foi examinada em 375, 768, 1024, 1440 e 1920 px. Os testes incluíram Chrome, Firefox e WebKit. A navegação principal também funcionou sem JavaScript. Retrato, sete links do índice, três destaques, intro por sessão, hover, pausa em touch e movimento reduzido foram verificados.
+- A seção de destaques da home usa os cartões de Trabalhos para Vanessa Rosa, Isys Karoline e Social Media, com acesso à listagem completa na quarta célula. O Chrome confirmou a mesma largura de capa e disposição dos cartões nas duas páginas em 375, 820, 1024 e 1440 px, nos dois idiomas, com e sem JavaScript. O teste por teclado abriu o case a partir da home, retornou à grade e seguiu para a lista completa.
 - Os 14 endereços dos cases foram abertos em PT e EN. Foram testados os links da grade, a ficha técnica por teclado, o controle de som e a pausa de vídeo fora da tela. O próximo case do sétimo abre o primeiro.
 - Em Social Media, as 21 galerias exibem as 114 peças na ordem do inventário pela rolagem vertical da página. O Chrome confirmou uma peça por linha em 375 px e duas em 768 e 1440 px, com e sem JavaScript nos dois idiomas. Cada peça manteve a proporção e a largura anterior de 274,39, 354,83 e 665,28 px, respectivamente. O primeiro e o último slide carregaram e o axe não apontou violações nas galerias.
 - As 12 pranchas de Vanessa Rosa mediram 375 px no celular de 375 px, 1365,13 px na tela de 1440 px e 1400 px na tela de 1920 px. O intervalo entre pranchas foi de 4, 7,92 e 8 px nos três tamanhos.
 - Em PT e EN, o case de Isys Karoline abriu com o crachá sobre fundo azul, e a prancha de referências veio antes da paleta. A seção Fale Seguro de Material Gráfico exibiu as sete imagens selecionadas.
 - No CTA da home, o tamanho computado da fonte do e-mail passou de 86,4 para 72,96 px na tela de 1920 px.
-- O Sobre reúne o retrato, a apresentação e um índice com quatro âncoras. Em PT e EN, o Chrome abriu a seção do Instagram a partir do índice nas larguras de 320, 375, 768, 1024 e 1440 px. As imagens locais dos três posts carregaram em todos esses tamanhos, inclusive nas verificações de 320 e 768 px com JavaScript desativado. O axe passou no conteúdo do Sobre em 375 e 1440 px.
-- O teste com Enter no desktop e toque no celular emulado abriu os posts correspondentes de @bella_designbr nos três cards. As publicações selecionadas são [Isys Karoline, slide 7](https://www.instagram.com/p/Dfua3aTGy4V/?img_index=7), [ilustração do saruê](https://www.instagram.com/p/DfsQgttn5TY/) e [fundamentos do design, slide 7](https://www.instagram.com/p/DcEWmpgkT9d/?img_index=7).
+- O Sobre abre com a foto de infância da Isabelly, a apresentação e um índice com quatro âncoras. Em PT e EN, o Chrome abriu a seção do Instagram a partir do índice nas larguras de 320, 375, 768, 1024 e 1440 px. As imagens locais dos três posts carregaram em todos esses tamanhos, inclusive nas verificações de 320 e 768 px com JavaScript desativado. O axe passou no conteúdo do Sobre em 375 e 1440 px.
+- Os três cards de @bella_designbr têm a legenda “ver post” em PT e “view post” em EN. Na ordem da página, os destinos são [branding](https://www.instagram.com/p/DbI83krAAL0/), [Isys Karoline](https://www.instagram.com/p/Dfua3aTGy4V/) e [fundamentos do design](https://www.instagram.com/p/DcEWmpgkT9d/).
 - A troca de idioma preserva o projeto atual. No menu mobile, abertura, foco e fechamento por Escape passaram na prévia. O trajeto home → trabalhos → case → case em inglês → contato foi exercitado com movimento normal no Chrome e no Firefox.
 - O formulário exibiu os três erros obrigatórios, preservou o texto após falha e limpou os campos após sucesso. As respostas do Formspree foram simuladas no navegador. A entrega real de uma mensagem permanece para homologação.
 - No build estático, axe avaliou os critérios automatizáveis WCAG 2 A/AA e 2.1 A/AA na home, Trabalhos, case de marca, case de vídeo, Sobre, Contato e 404 em inglês, em viewport móvel, com zero violações detectadas.
@@ -31,8 +32,8 @@ Lighthouse 13.6 no build estático servido localmente. O perfil móvel usa emula
 
 | Perfil | Performance | Acessibilidade | Boas práticas | SEO | LCP | CLS |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Mobile | 92 | 100 | 100 | 100 | 2,20 s | 0,00009 |
-| Desktop | 99 | 100 | 100 | 100 | 0,45 s | 0,00029 |
+| Mobile | 95 | 100 | 100 | 100 | 2,45 s | 0 |
+| Desktop | 99 | 100 | 100 | 100 | 0,55 s | 0,00025 |
 
 ## Regressão na listagem de Trabalhos
 

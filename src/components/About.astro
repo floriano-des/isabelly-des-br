@@ -1,5 +1,5 @@
 ---
-import { getPhoto, getAboutSlide } from '../lib/media';
+import { getAboutSlide, getMedia, getPhoto } from '../lib/media';
 import Photo from './HomePicture.astro';
 import AboutInstagram from './AboutInstagram.astro';
 import { copy, pathFor, type Lang } from '../lib/site';
@@ -66,7 +66,7 @@ const off = pt
       <div class="about-opening">
         <figure class="about-portrait">
           <div class="portrait-print">
-            <Photo asset={getPhoto(2)} {lang} sizes="(max-width: 600px) 75vw, (max-width: 1000px) 38vw, 28vw" eager />
+            <Photo asset={getMedia('sobre-infancia')} {lang} sizes="(max-width: 600px) 75vw, (max-width: 1000px) 38vw, 28vw" eager />
           </div>
           <figcaption><span>Isabelly Lima</span><img src="/cursor/gato-lavanda.svg" alt="" width="30" height="30" /></figcaption>
         </figure>

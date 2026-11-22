@@ -147,17 +147,6 @@ function setupHome() {
       .from(lettering.querySelector('.service-hand path'), { strokeDasharray: 1, strokeDashoffset: 1, duration: .9 }, .65)
       .from(lettering.querySelector('.service-amp span + span'), { x: 22, rotation: -35, opacity: 0, duration: .6 }, .6);
 
-    const sections = root.querySelectorAll<HTMLElement>('[data-feature]');
-    sections.forEach(section => {
-      const range = { trigger: section, start: 'top bottom', end: 'bottom top', scrub: true };
-      gsap.fromTo(section.querySelectorAll('.feature-art img,.feature-detail img'), { scale: 1.17, yPercent: -7 }, {
-        yPercent: 7, ease: 'none', scrollTrigger: range,
-      });
-      gsap.fromTo(section.querySelector('.feature-initial'), { y: -24 }, { y: 24, scrollTrigger: range });
-      gsap.fromTo(section.querySelector('.feature-right'), { '--colour-scale': 0 }, {
-        '--colour-scale': 1, duration: .8, ease: 'power2.out', scrollTrigger: { trigger: section, start: 'center 85%', once: true },
-      });
-    });
     return () => {
       local.abort();
       overlay?.remove();

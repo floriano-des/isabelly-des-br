@@ -3601,6 +3601,42 @@
         "pt": "Um selo de coração prende um papel sobre o fundo roxo. Nele se lê “Um designer não serve só pra fazer post ou cartaz bonitinho pra você”.",
         "en": "A note with a heart-shaped wax seal on a purple background explains that a designer does more than make a good-looking post or poster."
       }
+    },
+    "sobre-infancia": {
+      "kind": "image",
+      "asset": "isabelly/isabelly-infancia.webp",
+      "width": 1440,
+      "height": 1440,
+      "widths": [
+        320,
+        480,
+        640,
+        960,
+        1280,
+        1440
+      ],
+      "url": "/media/isabelly/isabelly-infancia",
+      "alt": {
+        "pt": "Isabelly na infância, de vestido jeans e com presilhas coloridas no cabelo.",
+        "en": "Isabelly as a child, wearing a denim dress and colourful hair clips."
+      }
+    },
+    "instagram-marca-bonita": {
+      "kind": "image",
+      "asset": "isabelly/instagram-marca-bonita.webp",
+      "width": 680,
+      "height": 664,
+      "widths": [
+        320,
+        480,
+        640,
+        680
+      ],
+      "url": "/media/isabelly/instagram-marca-bonita",
+      "alt": {
+        "pt": "O título “Sua marca pode ser bonita” aparece em letras claras sobre a textura roxa.",
+        "en": "The headline “Sua marca pode ser bonita” appears in pale lettering on a textured purple background."
+      }
     }
   },
   "covers": {

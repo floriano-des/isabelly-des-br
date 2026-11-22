@@ -1,4 +1,4 @@
-.work-index, .portfolio-case {
+.work-index, .work-grid, .portfolio-case {
   --case-line: rgb(199 199 209 / 23%);
   --case-gutter: max(1rem, 2.6vw);
   --case-gap: clamp(1rem, 2.4vw, 3.5rem);
@@ -25,8 +25,6 @@
   letter-spacing: -.055em;
   text-wrap: balance;
 }
-.work-intro h1 span { display: block; }
-.work-intro h1 em { font: 1.16em/.95 var(--display); color: #cfb7f1; letter-spacing: -.015em; }
 .work-grid {
   --work-rule: color-mix(in srgb, var(--lavanda) 17%, var(--noite));
   display: grid;
@@ -73,7 +71,7 @@
 .work-meta i { opacity: .55; font-style: normal; }
 .work-meta img { width: clamp(1.25rem, 1.8vw, 2rem); height: auto; }
 .work-caption { display: grid; gap: clamp(.65rem, 1.1vw, 1.25rem); }
-.work-caption h2 { font: 500 clamp(1.4rem, 2vw, 2.6rem)/1.06 var(--sans); letter-spacing: -.035em; text-wrap: balance; }
+.work-caption .work-name { font: 500 clamp(1.4rem, 2vw, 2.6rem)/1.06 var(--sans); letter-spacing: -.035em; text-wrap: balance; }
 .work-panel-foot { display: flex; justify-content: space-between; align-items: center; gap: .4rem; border-top: 1px solid var(--work-rule); padding-top: clamp(.55rem, .8vw, .9rem); }
 .work-year { color: var(--lavanda); letter-spacing: .025em; }
 .work-open { display: inline-flex; align-items: center; gap: .5em; margin-left: auto; font: 400 clamp(.75rem, .85vw, .9rem)/1.25 var(--mono); white-space: nowrap; }
@@ -87,6 +85,7 @@
 .work-contact-image { display: grid; place-items: center; background: #18121e url('/media/texturas/tartan.webp') center / 17rem; }
 .work-contact-image img { width: 34%; height: auto; filter: drop-shadow(0 .3rem 1rem #08020b); transform: rotate(-8deg); }
 .work-contact .work-panel { background: var(--ameixa); }
+.work-all .work-panel { justify-content: flex-end; }
 .work-contact-text { font: 400 clamp(1.3rem, 2vw, 2.5rem)/1.07 var(--sans); letter-spacing: -.04em; }
 .work-contact-text > span { display: block; width: fit-content; font: 1.55em/1.08 var(--display); margin-top: .4rem; }
 .work-contact-text > span span { font: .72em/1 var(--sans); }
@@ -107,12 +106,12 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .work-grid { grid-template-columns: minmax(0,1fr); }
   .work-panel { padding: clamp(1.25rem, 3vw, 2rem); }
-  .work-caption h2 { font-size: clamp(1.6rem, 3.7vw, 2.3rem); }
+  .work-caption .work-name { font-size: clamp(1.6rem, 3.7vw, 2.3rem); }
 }
 @media (min-width: 1024px) and (max-width: 1279px) and (hover: none) {
   .work-panel { padding: .8rem; gap: .45rem; }
   .work-caption { gap: .45rem; }
-  .work-caption h2 { font-size: 1.3rem; }
+  .work-caption .work-name { font-size: 1.3rem; }
   .work-touch-info p { margin-bottom: .4rem; line-height: 1.28; }
   .work-touch-info .case-tags { gap: .25rem; }
   .work-touch-info .case-tags > span { padding: .12rem .36rem; }
@@ -122,7 +121,7 @@
   .work-grid, .work-card { grid-template-columns: minmax(0,1fr); }
   .work-intro { padding: 4.5rem 1.25rem; }
   .work-panel { padding: 1.35rem; gap: 1.2rem; }
-  .work-caption h2 { font-size: 1.75rem; }
+  .work-caption .work-name { font-size: 1.75rem; }
   .work-meta { font-size: .75rem; }
   .work-overlay { display: none; }
   .work-card:is(:hover,:focus-visible) .work-cover > .case-picture { transform: none; filter: none; }
