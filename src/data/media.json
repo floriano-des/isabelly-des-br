@@ -103,12 +103,32 @@
       "width": 1400,
       "height": 800,
       "widths": [
+        360,
+        480,
         640,
+        800,
         960,
         1280,
         1400
       ],
       "url": "/media/cases/vanessa-rosa/01-cover",
+      "alt": {
+        "pt": "O monograma VR sobre uma fotografia de mãos com unhas naturais.",
+        "en": "The VR monogram over a photograph of hands with natural nails."
+      }
+    },
+    "grid-vanessa-rosa": {
+      "kind": "image",
+      "asset": "cases/vanessa-rosa/capa-quadrada.webp",
+      "width": 800,
+      "height": 800,
+      "widths": [
+        360,
+        480,
+        640,
+        800
+      ],
+      "url": "/media/cases/vanessa-rosa/capa-quadrada",
       "alt": {
         "pt": "O monograma VR sobre uma fotografia de mãos com unhas naturais.",
         "en": "The VR monogram over a photograph of hands with natural nails."
@@ -321,16 +341,42 @@
     "Marcas/Identidade Visual - Isys Karoline Personal/Cover.jpg": {
       "kind": "image",
       "asset": "cases/isys-karoline/01-cover.webp",
-      "width": 2560,
-      "height": 1707,
+      "width": 3000,
+      "height": 2000,
       "widths": [
+        360,
+        480,
         640,
+        800,
         960,
         1280,
+        1600,
         1920,
-        2560
+        2560,
+        3000
       ],
       "url": "/media/cases/isys-karoline/01-cover",
+      "alt": {
+        "pt": "Colagem de exercícios com o símbolo branco de Isys Karoline sobre azul.",
+        "en": "An exercise collage with the white Isys Karoline symbol on blue."
+      }
+    },
+    "grid-isys-karoline": {
+      "kind": "image",
+      "asset": "cases/isys-karoline/capa-quadrada.webp",
+      "width": 1920,
+      "height": 1920,
+      "widths": [
+        360,
+        480,
+        640,
+        800,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "url": "/media/cases/isys-karoline/capa-quadrada",
       "alt": {
         "pt": "Colagem de exercícios com o símbolo branco de Isys Karoline sobre azul.",
         "en": "An exercise collage with the white Isys Karoline symbol on blue."
@@ -617,16 +663,43 @@
     "Marcas/Identidade Visual - Brucutu Chapeiro/5.png": {
       "kind": "image",
       "asset": "cases/brucutu-chapeiro/01-5.webp",
-      "width": 2560,
-      "height": 1440,
+      "width": 3840,
+      "height": 2160,
       "widths": [
+        360,
+        480,
         640,
+        800,
         960,
         1280,
+        1600,
         1920,
-        2560
+        2560,
+        3200,
+        3840
       ],
       "url": "/media/cases/brucutu-chapeiro/01-5",
+      "alt": {
+        "pt": "Embalagens de batata, hambúrguer e sacola kraft com a marca Brucutu.",
+        "en": "Brucutu fries carton, burger packaging and kraft takeaway bag."
+      }
+    },
+    "grid-brucutu-chapeiro": {
+      "kind": "image",
+      "asset": "cases/brucutu-chapeiro/capa-quadrada.webp",
+      "width": 1920,
+      "height": 1920,
+      "widths": [
+        360,
+        480,
+        640,
+        800,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "url": "/media/cases/brucutu-chapeiro/capa-quadrada",
       "alt": {
         "pt": "Embalagens de batata, hambúrguer e sacola kraft com a marca Brucutu.",
         "en": "Brucutu fries carton, burger packaging and kraft takeaway bag."
@@ -707,16 +780,42 @@
     "Social Media/2 Palitos Marketing Digital/Cover.jpg": {
       "kind": "image",
       "asset": "cases/social-media/01-cover.webp",
-      "width": 2560,
-      "height": 1707,
+      "width": 3000,
+      "height": 2000,
       "widths": [
+        360,
+        480,
         640,
+        800,
         960,
         1280,
+        1600,
         1920,
-        2560
+        2560,
+        3000
       ],
       "url": "/media/cases/social-media/01-cover",
+      "alt": {
+        "pt": "Peças coloridas da 2 Palitos ao redor de um celular sobre fundo roxo.",
+        "en": "Colourful 2 Palitos posts arranged around a phone against purple."
+      }
+    },
+    "grid-social-media": {
+      "kind": "image",
+      "asset": "cases/social-media/capa-quadrada.webp",
+      "width": 1920,
+      "height": 1920,
+      "widths": [
+        360,
+        480,
+        640,
+        800,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "url": "/media/cases/social-media/capa-quadrada",
       "alt": {
         "pt": "Peças coloridas da 2 Palitos ao redor de um celular sobre fundo roxo.",
         "en": "Colourful 2 Palitos posts arranged around a phone against purple."
@@ -2801,16 +2900,42 @@
     "Impressos/Amar.Elo Fotografia/Cover.jpg": {
       "kind": "image",
       "asset": "cases/material-grafico/01-cover.webp",
-      "width": 2560,
-      "height": 1707,
+      "width": 3000,
+      "height": 2000,
       "widths": [
+        360,
+        480,
         640,
+        800,
         960,
         1280,
+        1600,
         1920,
-        2560
+        2560,
+        3000
       ],
       "url": "/media/cases/material-grafico/01-cover",
+      "alt": {
+        "pt": "Cartões de AmarElo Fotografia com câmera e QR code sobre fundo verde.",
+        "en": "AmarElo Fotografia cards with a camera and QR code against green."
+      }
+    },
+    "grid-material-grafico": {
+      "kind": "image",
+      "asset": "cases/material-grafico/capa-quadrada.webp",
+      "width": 1920,
+      "height": 1920,
+      "widths": [
+        360,
+        480,
+        640,
+        800,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "url": "/media/cases/material-grafico/capa-quadrada",
       "alt": {
         "pt": "Cartões de AmarElo Fotografia com câmera e QR code sobre fundo verde.",
         "en": "AmarElo Fotografia cards with a camera and QR code against green."
@@ -3092,30 +3217,122 @@
     "capa-video": {
       "kind": "image",
       "asset": "cases/video/capa.webp",
-      "width": 640,
-      "height": 1138,
+      "width": 1440,
+      "height": 2560,
       "widths": [
-        640
+        360,
+        480,
+        640,
+        800,
+        960,
+        1280,
+        1440
       ],
       "url": "/media/cases/video/capa",
       "alt": {
-        "pt": "Frame de um reel da 2 Palitos Marketing Digital.",
-        "en": "A still from a reel for 2 Palitos Marketing Digital."
+        "pt": "Cinco rostos em pixel art sobre turquesa em um reel da 2 Palitos.",
+        "en": "Five pixel-art faces on turquoise in a 2 Palitos reel."
+      }
+    },
+    "grid-video": {
+      "kind": "image",
+      "asset": "cases/video/capa-quadrada.webp",
+      "width": 1440,
+      "height": 1440,
+      "widths": [
+        360,
+        480,
+        640,
+        800,
+        960,
+        1280,
+        1440
+      ],
+      "url": "/media/cases/video/capa-quadrada",
+      "alt": {
+        "pt": "Cinco rostos em pixel art sobre turquesa em um reel da 2 Palitos.",
+        "en": "Five pixel-art faces on turquoise in a 2 Palitos reel."
+      }
+    },
+    "video-frame-2": {
+      "kind": "image",
+      "asset": "cases/video/frame-2.webp",
+      "width": 1440,
+      "height": 2560,
+      "widths": [
+        360,
+        480,
+        640,
+        800,
+        960,
+        1280,
+        1440
+      ],
+      "url": "/media/cases/video/frame-2",
+      "alt": {
+        "pt": "Um cronômetro ilustrado com a legenda “30 seconds” em um reel da Zen Pensions.",
+        "en": "An illustrated stopwatch marked “30 seconds” in a Zen Pensions reel."
+      }
+    },
+    "video-frame-3": {
+      "kind": "image",
+      "asset": "cases/video/frame-3.webp",
+      "width": 1440,
+      "height": 2560,
+      "widths": [
+        360,
+        480,
+        640,
+        800,
+        960,
+        1280,
+        1440
+      ],
+      "url": "/media/cases/video/frame-3",
+      "alt": {
+        "pt": "Letras brancas e turquesa sobre magenta em um reel de marketing da 2 Palitos.",
+        "en": "White and turquoise lettering on magenta in a 2 Palitos marketing reel."
       }
     },
     "Desenhos e Ilustrações/Desenhos tradicionais/Cover.jpg": {
       "kind": "image",
       "asset": "cases/ilustracao/01-cover.webp",
-      "width": 2560,
-      "height": 1707,
+      "width": 3000,
+      "height": 2000,
       "widths": [
+        360,
+        480,
         640,
+        800,
         960,
         1280,
+        1600,
         1920,
-        2560
+        2560,
+        3000
       ],
       "url": "/media/cases/ilustracao/01-cover",
+      "alt": {
+        "pt": "Caderno aberto com dois retratos em grafite sobre a mesa.",
+        "en": "An open sketchbook with two pencil portraits on a desk."
+      }
+    },
+    "grid-ilustracao": {
+      "kind": "image",
+      "asset": "cases/ilustracao/capa-quadrada.webp",
+      "width": 1920,
+      "height": 1920,
+      "widths": [
+        360,
+        480,
+        640,
+        800,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "url": "/media/cases/ilustracao/capa-quadrada",
       "alt": {
         "pt": "Caderno aberto com dois retratos em grafite sobre a mesa.",
         "en": "An open sketchbook with two pencil portraits on a desk."
@@ -3415,6 +3632,20 @@
     "video": "capa-video",
     "ilustracao": "Desenhos e Ilustrações/Desenhos tradicionais/Cover.jpg"
   },
+  "gridCovers": {
+    "vanessa-rosa": "grid-vanessa-rosa",
+    "isys-karoline": "grid-isys-karoline",
+    "brucutu-chapeiro": "grid-brucutu-chapeiro",
+    "social-media": "grid-social-media",
+    "material-grafico": "grid-material-grafico",
+    "video": "grid-video",
+    "ilustracao": "grid-ilustracao"
+  },
+  "videoFrames": [
+    "capa-video",
+    "video-frame-2",
+    "video-frame-3"
+  ],
   "photos": {
     "1": "foto-1",
     "2": "foto-2",

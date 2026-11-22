@@ -14,7 +14,7 @@ const { media, lang, sizes, priority = false, decorative = false } = Astro.props
 ---
 
 <picture class="case-picture">
-  {media.avifSrcset && <source type="image/avif" srcset={media.avifSrcset} sizes={sizes} />}
+  {media.avifSrcset && <source type="image/avif" srcset={media.avifSrcset} sizes={sizes} width={media.width} height={media.height} />}
   <img
     src={media.src}
     srcset={media.srcset}

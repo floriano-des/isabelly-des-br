@@ -28,6 +28,16 @@ Lighthouse 13.6 no build estático servido localmente. O perfil móvel usa emula
 | Mobile | 92 | 100 | 100 | 100 | 2,20 s | 0,00009 |
 | Desktop | 99 | 100 | 100 | 100 | 0,45 s | 0,00029 |
 
+## Regressão na listagem de Trabalhos
+
+A prévia de desenvolvimento chegou a responder HTTP 200 nas listagens com apenas o bloco de contato e HTTP 404 nos detalhes, embora o build estático tivesse os sete cases. As rotas e o grid passaram a importar os JSONs preparados em `src/content/cases/`, com verificação dos slugs do inventário. A falta de um arquivo agora identifica o case no erro de compilação.
+
+Com a prévia aberta, execute `npm run check:work`. O teste lê o HTML recebido nas listagens PT e EN, confere a ordem dos sete links, abre cada destino e verifica a página equivalente no outro idioma. O teste também abre o maior AVIF de cada capa do grid e compara as dimensões do arquivo com as do srcset. Passou tanto na prévia de desenvolvimento quanto no build estático; para testar este último, passe o endereço de `npm run preview` como argumento.
+
+No Chrome a 1440 px com densidade 2×, as sete capas agora selecionam arquivos de 800 × 800 para células de 359 px. No celular a 375 px e 3×, seis capas selecionam 1280 × 1280. A de Vanessa Rosa chega a 800 × 800, o maior quadrado disponível no original de 1400 × 800. A capa do case Vídeo usa três frames extraídos dos reels em resolução nativa.
+
+O percurso Home → Trabalhos → case → outro idioma → voltar ao grid foi verificado em desktop e celular emulado com movimento ativo. O grid preservou o alinhamento das linhas nas larguras de 320 a 1920 px, inclusive no tablet horizontal com toque.
+
 ## Homologação pendente
 
 Repetir as medições no endereço publicado com GTM e compressão do provedor. Conferir a entrega real do formulário e testar em aparelhos físicos com iOS Safari e Android Chrome. O WebKit local e a emulação cobrem parte desse percurso. As revisões editoriais e de licença estão em [PENDENCIAS.md](PENDENCIAS.md).

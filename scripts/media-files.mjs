@@ -28,12 +28,18 @@ export async function probeVideo(input) {
   return { width: 2 * Math.floor(width * scale / 2), height: 2 * Math.floor(height * scale / 2) };
 }
 
-export async function prepareVideo(input, publicDirectory, media, posterOnly = false) {
+export async function extractCoverFrame(input, output, seconds, recipeTime) {
+  await prepareFile(input, output, (file) => exec('ffmpeg', [
+    '-nostdin', '-v', 'error', '-ss', String(seconds), '-i', input, '-map', '0:v:0',
+    '-frames:v', '1', '-threads', '2', file
+  ]), recipeTime);
+}
+
+export async function prepareVideo(input, publicDirectory, media) {
   const run = (url, args) => prepareFile(input, join(publicDirectory, url), async (file) => {
     await exec('ffmpeg', ['-nostdin', '-v', 'error', '-threads', '2', ...args, file]);
   });
   await run(media.poster, ['-ss', '1', '-i', input, '-frames:v', '1', '-vf', 'scale=640:-2', '-q:v', '3', '-threads', '2']);
-  if (posterOnly) return;
   const video = ['-i', input, '-map', '0:v:0', '-map', '0:a:0?', '-map_metadata', '-1', '-vf', `scale=${media.width}:${media.height},setsar=1`, '-pix_fmt', 'yuv420p'];
   await run(media.src, [...video, '-c:v', 'libx264', '-profile:v', 'high', '-crf', '26', '-preset', 'veryfast', '-threads', '3', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart']);
   await run(media.webm, [...video, '-c:v', 'libvpx-vp9', '-deadline', 'realtime', '-cpu-used', '7', '-row-mt', '1', '-threads', '4', '-b:v', '0', '-crf', '36', '-c:a', 'libopus', '-b:a', '96k']);

@@ -1,4 +1,5 @@
-import { pathFor, projects as seedProjects, type Lang as CaseLanguage } from './site';
+import { pathFor, type Lang as CaseLanguage, type Project } from './site';
+import seed from '../../docs/briefing/projetos.seed.json';
 export type { Lang as CaseLanguage, Project as PortfolioProject } from './site';
 type Translated<T> = Record<CaseLanguage, T>;
 
@@ -15,7 +16,19 @@ export interface ProjectBlock {
   blocos?: ProjectBlock[];
 }
 
-export const projects = [...seedProjects].sort((first, second) => first.ordem - second.ordem);
+// A listagem e as rotas usam os mesmos JSONs preparados, inclusive durante o recarregamento no dev.
+const caseFiles = import.meta.glob<Project>('../content/cases/*.json', {
+  eager: true,
+  import: 'default',
+});
+
+export const projects = seed.cases.map(({ slug }) => {
+  const project = caseFiles[`../content/cases/${slug}.json`];
+  if (!project || project.slug !== slug) {
+    throw new Error(`Case ausente ou com slug incorreto: ${slug}. Execute npm run media.`);
+  }
+  return project;
+}).sort((first, second) => first.ordem - second.ordem);
 
 export function projectUrl(lang: CaseLanguage, slug: string) {
   return pathFor(lang, 'case', slug);

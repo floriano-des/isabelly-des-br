@@ -139,7 +139,7 @@
   top: calc(50% + var(--portrait-w) / 1.8 - 36px); width: 32px; height: 32px;
   border: 1px solid #c7acdc; border-radius: 50%; color: #fff; background: #24102e; cursor: pointer;
 }
-.home-services { padding: clamp(94px, 10vw, 190px) var(--home-gutter); text-align: center; }
+.home-services { padding: clamp(94px, 10vw, 190px) var(--home-gutter); overflow-x: clip; text-align: center; }
 .home-label, .feature-tags { font-size: .74rem; line-height: 1.55; letter-spacing: .12em; text-transform: uppercase; color: var(--home-dim); }
 .service-lettering { width: min(100%, 1050px); margin: clamp(34px, 4vw, 80px) auto 0; font: 400 clamp(37px, 5.5vw, 94px)/1.22 var(--display, Georgia, serif); }
 .service-line { display: flex; align-items: baseline; justify-content: center; gap: clamp(12px, 2.7vw, 54px); }

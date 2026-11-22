@@ -1,14 +1,11 @@
 import pt from '../i18n/pt.json';
 import en from '../i18n/en.json';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
 export type Lang = 'pt' | 'en';
 export type Section = 'home' | 'work' | 'case' | 'about' | 'contact' | 'error';
 export const copy = { pt, en };
 export type Project = CollectionEntry<'cases'>['data'];
-export const projects = (await getCollection('cases'))
-  .map((entry) => entry.data)
-  .sort((a, b) => a.ordem - b.ordem);
 export const email = 'limaisabelly285@gmail.com';
 export const socials = {
   Instagram: 'https://instagram.com/bella_designbr',

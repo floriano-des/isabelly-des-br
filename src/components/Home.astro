@@ -52,7 +52,7 @@ const ringText = en ? 'CLICK · MEOW · CLICK · MEOW · ' : 'CLIQUE · MIAU · 
             <div class="hero-frame-content" data-home-frame>
               <div class="hero-photo" data-slide="0"><HomePicture asset={portrait} lang={lang} alt={portraitAlt} sizes={sizes} eager /></div>
               <template data-home-frames>
-                {featured.map((item, i) => <div class="hero-photo" data-slide={i + 1} hidden><HomePicture asset={getCover(item.slug)} lang={lang} alt="" sizes={sizes} /></div>)}
+                {featured.map((item, i) => <div class="hero-photo" data-slide={i + 1} hidden><HomePicture asset={getCover(item.slug, 'square')} lang={lang} alt="" sizes="(max-width: 640px) min(65vw, 40svh, 323px), (max-width: 1000px) min(42vw, 48svh), min(27vw, 49svh, 478px)" /></div>)}
               </template>
             </div>
           </figure>
@@ -128,7 +128,7 @@ const ringText = en ? 'CLICK · MEOW · CLICK · MEOW · ' : 'CLIQUE · MIAU · 
       return <article class="feature" style={`--case-colour:${project.corMarca}`} data-feature>
         <div class="feature-left">
           <a class="feature-portrait" href={href} aria-label={name} data-cursor="case">
-            <div class="feature-art"><HomePicture asset={getCover(project.slug)} lang={lang} sizes="(max-width: 700px) 72vw, 28vw" /></div>
+            <div class="feature-art"><HomePicture asset={getCover(project.slug, 'square')} lang={lang} sizes="(max-width: 700px) min(100vw, 77svh), min(43vw, 735px)" /></div>
             <span class="feature-super">{shortName}</span>
           </a>
           <p class="feature-caption">{project.categoria[lang]}{confirmedYear && ` · ${confirmedYear}`}</p>

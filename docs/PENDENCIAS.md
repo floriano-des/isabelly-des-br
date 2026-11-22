@@ -30,5 +30,5 @@ Atualizado em 22/11/2026. Este registro acompanha a prévia local. A revisão ed
 
 - Na capa do livro de Ana Gonçalves, dois arquivos mostram a mesma cena. A seleção usa a fotografia de 4000 × 3000.
 - O esboço da tattoo já integra a seção Desenhos tradicionais. A segunda fotografia do mesmo esboço ficou fora.
-- A capa de Vídeo usa um frame real de um reel da 2 Palitos. A montagem com três frames permanece como opção para o acabamento.
+- A abertura de Vídeo reúne três frames originais dos reels da 2 Palitos e da Zen Pensions em uma faixa de HTML e CSS. A miniatura quadrada vem de um dos reels da 2 Palitos.
 - As notas sobre filmes e música no Sobre usam textos bilíngues. As colagens autorais dos gatos e do encerramento acompanham os dois últimos cartões.

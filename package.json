@@ -11,7 +11,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "media": "node scripts/prepare-media.mjs",
-    "check": "astro check"
+    "check": "astro check",
+    "check:work": "node scripts/check-work.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.6",

@@ -20,6 +20,11 @@ export function getMedia(original: string): Media {
   return { kind: 'image', src, width: item.width, height: item.height, alt: item.alt, srcset, avifSrcset };
 }
 
-export const getCover = (slug: string) => getMedia((manifest.covers as Record<string, string>)[slug]);
+export const getCover = (slug: string, shape: 'original' | 'square' = 'original') => {
+  const primary = (manifest.covers as Record<string, string>)[slug];
+  const square = (manifest.gridCovers as Record<string, string> | undefined)?.[slug];
+  return getMedia(shape === 'square' && square ? square : primary);
+};
+export const getVideoCoverFrames = () => (manifest.videoFrames ?? []).map(getMedia);
 export const getPhoto = (index: number) => getMedia((manifest.photos as Record<string, string>)[index]);
 export const getAboutSlide = (index: number) => getMedia((manifest.slides as Record<string, string>)[index]);

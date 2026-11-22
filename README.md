@@ -19,6 +19,8 @@ npm run build
 npm run preview
 ```
 
+Com o servidor local ativo, `npm run check:work` verifica as duas listagens de Trabalhos e segue os links dos sete cases em cada idioma. Para verificar outro servidor, use `npm run check:work -- http://127.0.0.1:4322`.
+
 ## Atualizar trabalhos
 
 Edite [o inventário bilíngue](docs/briefing/projetos.seed.json) e as descrições de mídia em `scripts/media-alt.json`. Para preparar novas peças, instale FFmpeg e FFprobe no PATH e monte o acervo em `_material/isabelly/` e as fotos renomeadas em `_material/fotos/`, conforme a seção 4 do [briefing](docs/briefing/BRIEFING.md). Execute `npm run media` antes do build. O preparo gera a coleção dos sete cases, variantes responsivas, vídeos, posters e imagens de compartilhamento.

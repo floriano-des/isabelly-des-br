@@ -25,7 +25,7 @@ const sizes = '(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw';
       <a class="work-card" href={projectUrl(lang, project.slug)} data-cursor="case"
         style={project.hoverBox ? `--box-bg:${project.hoverBox};--box-ink:var(--noite)` : undefined}>
         <div class="work-cover" transition:name={`capa-${project.slug}`}>
-          <CasePicture media={getCover(project.slug)} lang={lang} sizes={sizes} priority={i === 0} />
+          <CasePicture media={getCover(project.slug, 'square')} lang={lang} sizes={sizes} priority={i === 0} />
           <div class="work-overlay" aria-hidden="true">
             <strong>{project.titulo[lang]}</strong>
             <p>{project.linhaHover[lang]}</p>
@@ -37,16 +37,18 @@ const sizes = '(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw';
             <span>{String(project.ordem).padStart(2, '0')}<i aria-hidden="true">/</i>{project.categoria[lang]}</span>
             <img src="/cursor/gato-96.png" width="28" height="29" alt="" />
           </div>
-          <div class="work-panel-title">
-            <div>
-              <h2>{project.titulo[lang]}</h2>
-              {projectYear(project.ano) && <p class="work-year">{projectYear(project.ano)}</p>}
+          <div class="work-caption">
+            <h2>{project.titulo[lang]}</h2>
+            <div class="work-touch-info">
+              <p>{project.linhaHover[lang]}</p>
+              <div class="case-tags">{project.tags[lang].map(tag => <span>{tag}</span>)}</div>
             </div>
-            <span class="work-arrow" aria-hidden="true"><span>→</span><span>→</span></span>
-          </div>
-          <div class="work-touch-info">
-            <p>{project.linhaHover[lang]}</p>
-            <div class="case-tags">{project.tags[lang].map(tag => <span>{tag}</span>)}</div>
+            <div class="work-panel-foot">
+              {projectYear(project.ano) && <span class="work-year">{projectYear(project.ano)}</span>}
+              <span class="work-open">{lang === 'pt' ? 'Ver case' : 'View case'}
+                <span class="work-arrow" aria-hidden="true"><span>→</span><span>→</span></span>
+              </span>
+            </div>
           </div>
         </div>
       </a>
