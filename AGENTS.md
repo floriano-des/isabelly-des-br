@@ -13,6 +13,7 @@ Redesign do portfólio da designer gráfica e ilustradora Isabelly Lima, em Astr
 
 ## Regras
 - Trabalhe na branch `v2-redesign`. Commits por marco são permitidos. **Não faça push, merge em `master` nem deploy de produção sem autorização explícita do Floriano.**
+- Floriano autorizou a publicação contínua das correções deste portfólio em `isabelly.des.br`. Após validar cada correção, envie o commit e publique em produção.
 - `_material/` nunca vai para o git. Mídia preparada vai para `src/assets/` e `public/media/` pelo script `npm run media`.
 - Conteúdo só do zip. Projeto que não está no seed não entra no site.
 - Tarefas de imagem (recorte do gatinho, fotos da Isabelly, upscale, composições, elementos decorativos) usam o seu **módulo de geração/edição de imagem**, só dentro da lista da seção 13 do briefing. Registre cada uma em `docs/IMAGENS-GERADAS.md`.

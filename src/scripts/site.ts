@@ -39,6 +39,11 @@ function bindPage() {
         // O Astro cuida das âncoras e do histórico de navegação no índice do Sobre.
         anchors: !document.querySelector('.about-index'),
         allowNestedScroll: true,
+        // Shift + roda chega como delta vertical, mas o navegador o usa para percorrer o carrossel.
+        virtualScroll: ({ event }) => !(
+          event instanceof WheelEvent && event.shiftKey &&
+          event.target instanceof Element && event.target.closest('.case-strip-track')
+        ),
       });
   if (smooth) {
     smooth.on('scroll', ScrollTrigger.update);
