@@ -118,7 +118,7 @@ const ringText = en ? 'CLICK · MEOW · CLICK · MEOW · ' : 'CLIQUE · MIAU · 
   </section>
   <template id="home-intro-content">
     <div class="home-intro" aria-hidden="true">
-      <div class="intro-greeting"><span>{en ? 'Hey!' : 'Oi!'}</span><i></i><i></i></div>
+      <div class="intro-greeting"><i></i><span>{en ? 'Hey!' : 'Oi!'}</span><i></i></div>
       <div class="intro-bubbles">{Array.from({ length: 15 }, (_, i) => <i style={`--bx:${(i % 5) * 24 - 1}vw;--by:${Math.floor(i / 5) * 43 + (i % 3) * 3}vh`}></i>)}</div>
     </div>
   </template>

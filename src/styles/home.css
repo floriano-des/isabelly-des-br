@@ -159,10 +159,11 @@
   font: 400 clamp(2.25rem, 3.7vw, 4.5rem)/1.08 var(--display, Georgia, serif);
 }
 
-.home-intro { position: fixed; z-index: 9999; inset: 0; overflow: hidden; pointer-events: none; background: #000; animation: isa-intro-guard 4.5s step-end forwards; }
-.intro-greeting { position: absolute; left: 16%; top: 62%; display: flex; align-items: center; gap: .13em; font: 700 clamp(58px,6vw,114px)/1 var(--display,Georgia,serif); color: var(--lavanda,#c7c7d1); }
-.intro-greeting i { display: block; width: .67em; aspect-ratio: 1; border-radius: 50%; background: var(--violeta,#7f52ad); }
+.home-intro { position: fixed; z-index: 9999; inset: 0; display: grid; place-items: center; overflow: hidden; pointer-events: none; background: #000; animation: isa-intro-guard 4.5s step-end forwards; }
+.intro-greeting { display: flex; align-items: center; gap: .2em; font: 700 clamp(5rem,12vw,11rem)/1 var(--display,Georgia,serif); color: var(--lavanda,#c7c7d1); }
+.intro-greeting i { display: block; width: .42em; aspect-ratio: 1; border-radius: 50%; background: var(--violeta,#7f52ad); }
 .intro-greeting i:last-child { background: var(--lavanda,#c7c7d1); }
+.intro-bubbles { position: absolute; inset: 0; }
 .intro-bubbles i {
   position: absolute; top: var(--by); left: var(--bx); width: max(42vw,56vh); aspect-ratio: 1;
   border-radius: 50%; translate: -50% -50%; transform: scale(0); background: var(--noite-profunda,#13071d);

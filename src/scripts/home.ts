@@ -107,22 +107,23 @@ function setupHome() {
       document.body.append(overlay);
       const tl = gsap.timeline({ onComplete: markReady });
       const greeting = overlay.querySelector('.intro-greeting')!;
-      tl.from(greeting, { y: 40, opacity: 0, duration: .48, ease: 'power3.out' }, .12)
-        .to(greeting, { y: '-18vh', duration: .7, ease: 'power2.inOut' }, .4)
+      tl.from(greeting, { opacity: 0, duration: .4, ease: 'power2.out' }, 0)
         .to(greeting.querySelectorAll('i'), { y: -20, duration: .23, repeat: 1, yoyo: true, stagger: .1 }, .36)
-        .to(greeting.querySelector('i:first-of-type'), { xPercent: 119, duration: .46 }, .48)
-        .to(greeting.querySelector('i:last-of-type'), { xPercent: -119, duration: .46 }, .48)
-        .to(greeting, { opacity: 0, duration: .25 }, 1.1)
-        .to(overlay.querySelectorAll('.intro-bubbles i'), { scale: 1.32, stagger: { amount: .23, from: 'center' }, duration: .56, ease: 'power2.inOut' }, .94)
-        .to(overlay, { opacity: 0, duration: .31 }, 1.68)
-        .from(root.querySelector('.hero-frame-content'), { clipPath: 'inset(47% 47%)', scale: 1.08, duration: .86, ease: 'power3.out' }, 1.72)
-        .from(root.querySelector('.hero-vline'), { scaleY: 0, duration: .78 }, 1.75)
-        .from(root.querySelector('.hero-hline'), { scaleX: 0, duration: .78 }, 1.75)
-        .from(root.querySelectorAll('.hero-orbit'), { scale: .4, opacity: 0, stagger: .1, duration: .79 }, 1.78)
-        .from(root.querySelectorAll('.hero-index a'), { y: 20, opacity: 0, stagger: .05, duration: .46 }, 1.92)
-        .from(root.querySelector('.hero-first > span'), { xPercent: 45, opacity: 0, duration: .92, ease: 'power2.out' }, 2.17)
-        .from(root.querySelector('.hero-last > span'), { xPercent: -45, opacity: 0, duration: .92, ease: 'power2.out' }, 2.17)
-        .from(root.querySelectorAll('.hero-bar, .hero-lower, .hero-edition, .hero-profession'), { y: 8, opacity: 0, stagger: .045, duration: .55 }, 2.42);
+        .to(greeting.querySelector('i:first-of-type'), { backgroundColor: 'var(--lavanda)', duration: .46 }, .48)
+        .to(greeting.querySelector('i:last-of-type'), { backgroundColor: 'var(--violeta)', duration: .46 }, .48)
+        .addLabel('reveal', 2.1)
+        .to(greeting, { opacity: 0, duration: .25 }, 'reveal')
+        .to(overlay.querySelectorAll('.intro-bubbles i'), { scale: 1.32, stagger: { amount: .23, from: 'center' }, duration: .56, ease: 'power2.inOut' }, 'reveal')
+        .addLabel('hero', 'reveal+=0.74')
+        .to(overlay, { opacity: 0, duration: .31 }, 'hero')
+        .from(root.querySelector('.hero-frame-content'), { clipPath: 'inset(47% 47%)', scale: 1.08, duration: .86, ease: 'power3.out' }, 'hero+=0.04')
+        .from(root.querySelector('.hero-vline'), { scaleY: 0, duration: .78 }, 'hero+=0.07')
+        .from(root.querySelector('.hero-hline'), { scaleX: 0, duration: .78 }, 'hero+=0.07')
+        .from(root.querySelectorAll('.hero-orbit'), { scale: .4, opacity: 0, stagger: .1, duration: .79 }, 'hero+=0.10')
+        .from(root.querySelectorAll('.hero-index a'), { y: 20, opacity: 0, stagger: .05, duration: .46 }, 'hero+=0.24')
+        .from(root.querySelector('.hero-first > span'), { xPercent: 45, opacity: 0, duration: .92, ease: 'power2.out' }, 'hero+=0.49')
+        .from(root.querySelector('.hero-last > span'), { xPercent: -45, opacity: 0, duration: .92, ease: 'power2.out' }, 'hero+=0.49')
+        .from(root.querySelectorAll('.hero-bar, .hero-lower, .hero-edition, .hero-profession'), { y: 8, opacity: 0, stagger: .045, duration: .55 }, 'hero+=0.74');
       window.addEventListener('keydown', () => tl.progress(1), { once: true, signal: local.signal });
       window.addEventListener('wheel', () => tl.progress(1), { once: true, passive: true, signal: local.signal });
     } else {
