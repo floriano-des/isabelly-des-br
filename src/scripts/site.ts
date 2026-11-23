@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
+import { email } from '../lib/site';
 import type { TransitionBeforePreparationEvent } from 'astro:transitions/client';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -129,7 +130,6 @@ function bindPage() {
       const link = (event.target as Element).closest('[data-copy-email]');
       if (!link || !toast) return;
       event.preventDefault();
-      const email = 'limaisabelly285@gmail.com';
       try {
         await navigator.clipboard.writeText(email);
         toast.textContent = toast.dataset.copied!;

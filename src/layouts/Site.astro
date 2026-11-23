@@ -2,6 +2,7 @@
 import { ClientRouter } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import AnalyticsPreferences from '../components/AnalyticsPreferences.astro';
 import shareCards from '../data/open-graph.json';
 import { copy, pathFor, description, socials, type Lang, type Section, type Project } from '../lib/site';
 import displayFont from '@fontsource/pirata-one/files/pirata-one-latin-400-normal.woff2?url';
@@ -103,32 +104,13 @@ const structured =
         '\\u003c',
       )}
     ></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      if (!window.__isaGtm && !['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
-        window.__isaGtm = true;
-        window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
-        const gtm = document.createElement('script');
-        gtm.async = true;
-        gtm.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PJGH2MT6';
-        document.head.append(gtm);
-      }
-    </script>
     <ClientRouter fallback="swap" />
   </head>
   <body data-lang={lang} data-page={section}>
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PJGH2MT6"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-        title="Google Tag Manager"
-      ></iframe>
-    </noscript>
     <a class="skip" href="#conteudo">
       {t.skip}
     </a>
+    <AnalyticsPreferences {lang} />
     <Header {lang} {section} slug={project?.slug} />
     <main id="conteudo" tabindex="-1">
       <slot />

@@ -1,0 +1,163 @@
+---
+import EmailLink from './EmailLink.astro';
+import type { Lang } from '../lib/site';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = {
+  pt: {
+    title: 'Política de privacidade',
+    intro: 'Eu sou Isabelly Lima, responsável por este portfólio e pelo uso dos dados pessoais descrito aqui. Você pode ver meus trabalhos e entrar em contato mesmo que recuse os cookies de análise.',
+    browsing: 'Quando você visita o site',
+    hosting: 'A Cloudflare hospeda o portfólio. Para entregar as páginas e proteger o site, o serviço pode processar informações técnicas, como seu endereço IP e o endereço da página solicitada.',
+    cloudflare: 'Política da Cloudflare',
+    storage: 'O site guarda sua escolha sobre análise no armazenamento local do navegador. A página inicial também usa o armazenamento da aba para lembrar se você já viu a animação de abertura.',
+    contact: 'Quando você pede um orçamento',
+    form: 'O formulário de contato pede seu nome, e-mail e uma descrição do projeto. Você pode incluir seu WhatsApp se quiser conversar por lá. Uso essas informações para responder, preparar a proposta que você pediu e, se trabalharmos juntos, acompanhar o projeto.',
+    provider: 'O Formspree recebe os dados enviados pelo formulário e me encaminha a mensagem por e-mail. A empresa informa que pode processar esses dados nos Estados Unidos e em outros países onde opera.',
+    formspree: 'Política do Formspree (em inglês)',
+    retention: 'Guardo a conversa enquanto ela for necessária para atender ao seu pedido, executar o projeto, cumprir obrigações legais ou exercer direitos. Se você optar pelo WhatsApp ou abrir uma rede social, a política desse serviço também se aplica ao que você fizer lá.',
+    analytics: 'Análise de navegação',
+    consent: 'Só com sua autorização o site carrega o Google Tag Manager, que ativa o Google Analytics 4 e o Microsoft Clarity. Uso essas ferramentas para entender quais projetos despertam interesse e onde a navegação pode melhorar.',
+    google: 'O Google Analytics 4 mede visitas e visualizações de páginas. Seus cookies ajudam a distinguir navegadores e a agrupar visualizações em uma mesma visita.',
+    googleLink: 'Como o Google Analytics usa cookies',
+    clarity: 'O Microsoft Clarity usa interações como cliques e rolagens para gerar mapas de calor e reproduções de sessões no site. O conteúdo digitado nos campos do formulário fica oculto nessas reproduções.',
+    clarityLink: 'Dados coletados pelo Clarity',
+    settings: 'Preferências de cookies',
+    choices: 'Você pode aceitar, recusar ou retirar a autorização neste navegador. Ao retirá-la, você interrompe as medições futuras. As preferências também ficam disponíveis no rodapé.',
+    noScript: 'Com o JavaScript desativado, as ferramentas de análise ficam desligadas.',
+    rights: 'Seus direitos e como falar comigo',
+    rightsIntro: 'Pela Lei Geral de Proteção de Dados (LGPD), você pode me pedir confirmação de uso, acesso ou correção dos seus dados e informações sobre com quem foram compartilhados. Nos casos previstos em lei, também pode solicitar a portabilidade, o bloqueio, a anonimização ou a eliminação de dados.',
+    law: 'Artigo 18 da LGPD',
+    email: 'Para fazer um pedido ou tirar uma dúvida sobre privacidade, escreva para',
+    authority: 'Se você já me procurou e seu pedido sobre dados pessoais continua sem solução, pode apresentar uma petição à Agência Nacional de Proteção de Dados (ANPD).',
+    petition: 'Como apresentar uma petição à ANPD',
+  },
+  en: {
+    title: 'Privacy policy',
+    intro: 'I’m Isabelly Lima. I run this portfolio and am responsible for how personal data is used here. You can browse my work and get in touch even if you decline analytics cookies.',
+    browsing: 'When you visit the site',
+    hosting: 'Cloudflare hosts this portfolio. To deliver pages and protect the site, it may process technical information such as your IP address and the address of the page you request.',
+    cloudflare: 'Cloudflare’s privacy policy',
+    storage: 'The site saves your analytics preference in your browser’s local storage. The home page also uses tab storage to remember whether you’ve seen the opening animation.',
+    contact: 'When you ask for a quote',
+    form: 'The contact form asks for your name, email address and a description of your project. You can also add your WhatsApp number if you’d like to talk there. I use these details to reply, prepare the proposal you requested and, if we work together, manage the project.',
+    provider: 'Formspree receives the details you submit and forwards your message to me by email. The company says it may process this information in the United States and other countries where it operates.',
+    formspree: 'Formspree’s privacy policy',
+    retention: 'I keep our correspondence for as long as I need it to handle your enquiry, carry out the project, meet legal obligations or exercise legal rights. If you contact me on WhatsApp or visit a social network, that service’s policy also applies to what you do there.',
+    analytics: 'How I measure site use',
+    consent: 'The site loads Google Tag Manager only with your permission. It activates Google Analytics 4 and Microsoft Clarity. I use these tools to see which projects people visit and where I can make the site easier to use.',
+    google: 'Google Analytics 4 measures visits and page views. Its cookies help distinguish browsers and group page views from the same visit.',
+    googleLink: 'How Google Analytics uses cookies',
+    clarity: 'Microsoft Clarity uses interactions such as clicks and scrolling to create heatmaps and session replays of the site. The contents of the contact form fields are masked in these replays.',
+    clarityLink: 'Data collected by Clarity',
+    settings: 'Cookie preferences',
+    choices: 'You can accept, decline or withdraw permission in this browser. Withdrawing permission stops future measurements. You can also find these preferences in the footer.',
+    noScript: 'With JavaScript disabled, the analytics tools stay off.',
+    rights: 'Your rights and how to reach me',
+    rightsIntro: 'Under Brazil’s General Data Protection Law (LGPD), you can ask me to confirm whether I use your data, give you access to it, correct it or tell you who it was shared with. Where the law allows, you can also request data portability, restriction of processing, anonymisation or deletion.',
+    law: 'Article 18 of the LGPD (in Portuguese)',
+    email: 'If you have a privacy question or want to exercise your rights, email me at',
+    authority: 'If you’ve already contacted me about your personal data and your request is still unresolved, you can petition Brazil’s data protection authority (ANPD).',
+    petition: 'How to petition the ANPD (in Portuguese)',
+  },
+}[lang];
+
+const pt = lang === 'pt';
+const cloudflare = pt ? 'https://www.cloudflare.com/pt-br/privacypolicy/' : 'https://www.cloudflare.com/privacypolicy/';
+const analytics = 'https://support.google.com/analytics/answer/11397207?hl=' + (pt ? 'pt-BR' : 'en');
+const clarity = 'https://learn.microsoft.com/' + (pt ? 'pt-br' : 'en-us') + '/clarity/setup-and-installation/clarity-data';
+const anpd = 'https://www.gov.br/anpd/pt-br/canais_atendimento/cidadao-titular-de-dados/denuncia-peticao-de-titular-referente-lgpd';
+---
+
+<article class="privacy-page">
+  <header>
+    <h1>{t.title}</h1>
+    <p>{t.intro}</p>
+  </header>
+  <section>
+    <h2>{t.browsing}</h2>
+    <div>
+      <p>{t.hosting} <a href={cloudflare}>{t.cloudflare}</a>.</p>
+      <p>{t.storage}</p>
+    </div>
+  </section>
+  <section>
+    <h2>{t.contact}</h2>
+    <div>
+      <p>{t.form}</p>
+      <p>{t.provider} <a href="https://formspree.io/legal/privacy-policy/">{t.formspree}</a>.</p>
+      <p>{t.retention}</p>
+    </div>
+  </section>
+  <section>
+    <h2>{t.analytics}</h2>
+    <div>
+      <p>{t.consent}</p>
+      <p>{t.google} <a href={analytics}>{t.googleLink}</a>.</p>
+      <p>{t.clarity} <a href={clarity}>{t.clarityLink}</a>.</p>
+      <p>{t.choices}</p>
+      <button class="privacy-action" type="button" data-privacy-settings hidden>{t.settings}</button>
+      <noscript><p>{t.noScript}</p></noscript>
+    </div>
+  </section>
+  <section>
+    <h2>{t.rights}</h2>
+    <div>
+      <p>{t.rightsIntro} <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">{t.law}</a>.</p>
+      <p>{t.email} <EmailLink />.</p>
+      <p>{t.authority} <a href={anpd}>{t.petition}</a>.</p>
+    </div>
+  </section>
+</article>
+
+<style>
+  .privacy-page {
+    width: min(100%, 76rem);
+    margin-inline: auto;
+    padding: clamp(3rem, 6vw, 6rem) clamp(1.25rem, 5vw, 5rem);
+  }
+  header { margin-bottom: clamp(2.5rem, 5vw, 4.5rem); }
+  h1 {
+    font: 400 clamp(3.2rem, 7.5vw, 7rem)/1 var(--display);
+    letter-spacing: -0.025em;
+  }
+  header p {
+    max-width: 51ch;
+    margin-top: 1.25rem;
+    font: 500 clamp(1.18rem, 2vw, 1.5rem)/1.5 var(--sans);
+  }
+  section {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 2fr);
+    gap: 1rem clamp(2rem, 6vw, 5.5rem);
+    padding-block: clamp(1.75rem, 4vw, 3.5rem);
+    border-top: 1px solid var(--rule);
+  }
+  h2 { font: 400 clamp(1.85rem, 3vw, 2.7rem)/1.08 var(--display); }
+  section p {
+    max-width: 65ch;
+    margin: 0;
+    font-size: 1.075rem;
+    line-height: 1.6;
+  }
+  section p + p, .privacy-action { margin-top: 1rem; }
+  .privacy-action {
+    min-height: 47px;
+    padding: .65rem 1.45rem;
+    border: 1px solid #bb90e0;
+    border-radius: 99px;
+    background: transparent;
+    color: var(--texto);
+    font: 600 1rem/1.35 var(--sans);
+  }
+  .privacy-action:hover { background: var(--ameixa); }
+  section p :global(a) { text-decoration: underline; text-underline-offset: 0.18em; overflow-wrap: anywhere; }
+  section p :global(a:hover) { color: var(--lavanda); }
+  @media (max-width: 720px) {
+    section { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>

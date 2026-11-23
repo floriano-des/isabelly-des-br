@@ -1,7 +1,8 @@
 ---
 import { getPhoto } from '../lib/media';
+import EmailLink from './EmailLink.astro';
 import Photo from './HomePicture.astro';
-import { copy, email, socials, whatsApp, type Lang } from '../lib/site';
+import { copy, pathFor, socials, whatsApp, type Lang } from '../lib/site';
 import '../styles/info.css';
 interface Props {
   lang: Lang;
@@ -55,6 +56,7 @@ const fields = [
       id="project-form"
       action="https://formspree.io/f/mzdjqaeg"
       method="POST"
+      data-clarity-mask="true"
       data-sending={f.sending}
       data-success={f.success}
       data-fail={f.fail}
@@ -96,9 +98,12 @@ const fields = [
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
         </label>
       </div>
-      <button class="button-fill" type="submit">
-        {f.send}
-      </button>
+      <div class="form-actions">
+        <button class="button-fill" type="submit">
+          {f.send}
+        </button>
+        <a href={pathFor(lang, 'privacy')}>{t.privacy}</a>
+      </div>
       <p class="form-outcome" role="status" aria-live="polite"></p>
     </form>
     <aside class="direct-contact">
@@ -112,7 +117,7 @@ const fields = [
         </div>
       </div>
       <p class="contact-email">
-        <a href={'mailto:' + email}>{email}</a>{' '}
+        <EmailLink />{' '}
         <button type="button" data-copy-email aria-label={t.email}>
           {pt ? 'Copiar' : 'Copy'}
         </button>

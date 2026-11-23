@@ -21,6 +21,7 @@ const pages = [
   { key: 'work', pt: '/trabalhos/', en: '/en/work/', description: 'workDesc' },
   { key: 'about', pt: '/sobre/', en: '/en/about/', description: 'aboutDesc' },
   { key: 'contact', pt: '/contato/', en: '/en/contact/', description: 'contactDesc' },
+  { key: 'privacy', pt: '/privacidade/', en: '/en/privacy/', description: 'privacyDesc' },
   { key: 'error', pt: '/404', en: '/en/404/', description: 'errorDesc' },
   ...seed.cases.map(project => ({
     key: project.slug, pt: `/trabalhos/${project.slug}/`, en: `/en/work/${project.slug}/`, project,

@@ -234,6 +234,13 @@
   flex-wrap: wrap;
   padding-block: 3.5rem 5rem;
 }
+.site-credits {
+  padding-bottom: 3rem;
+  font-size: .9rem;
+}
+.site-credits summary { width: fit-content; cursor: pointer; }
+.site-credits p { margin-top: .5rem; }
+.site-credits a { text-decoration: underline; }
 .button-fill,
 .button-line {
   display: inline-flex;
@@ -308,6 +315,19 @@
 }
 .field [aria-invalid='true'] {
   border-color: #f3a7c4;
+}
+.form-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem 1.25rem;
+}
+.form-actions a {
+  padding-block: .5rem;
+  color: var(--lavanda);
+  font-size: .875rem;
+  text-decoration: underline;
+  text-underline-offset: .2em;
 }
 .form-outcome {
   margin-top: 1rem;

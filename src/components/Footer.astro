@@ -1,5 +1,6 @@
 ---
-import { copy, pathFor, whatsApp, email, socials, type Lang, type Section } from '../lib/site';
+import { copy, pathFor, whatsApp, socials, type Lang, type Section } from '../lib/site';
+import EmailLink from './EmailLink.astro';
 interface Props {
   lang: Lang;
   section: Section;
@@ -15,9 +16,7 @@ const t = copy[lang];
       <h2>
         {t.ctaBefore} <em>{t.ctaEm}</em> {t.ctaAfter}
       </h2>
-      <a class="footer-email" href={'mailto:' + email} data-copy-email>
-        {email}
-      </a>
+      <EmailLink class="footer-email" data-copy-email />
       <div class="footer-links">
         <a href={whatsApp(lang)}>WhatsApp</a>
         <span aria-hidden="true">✦</span>
@@ -41,7 +40,10 @@ const t = copy[lang];
   </div>
   <div class="colophon">
     <span>© 2026 Isabelly Lima</span>
-    <span>{t.textures} · Freepik</span>
+    <div class="footer-privacy">
+      <a href={pathFor(lang, 'privacy')}>{t.privacy}</a>
+      <button type="button" data-privacy-settings hidden>{t.cookieSettings}</button>
+    </div>
     <a href="https://floriano.des.br">{t.credit} Floriano Silva</a>
   </div>
 </footer>

@@ -3,7 +3,7 @@ import en from '../i18n/en.json';
 import type { CollectionEntry } from 'astro:content';
 
 export type Lang = 'pt' | 'en';
-export type Section = 'home' | 'work' | 'case' | 'about' | 'contact' | 'error';
+export type Section = 'home' | 'work' | 'case' | 'about' | 'contact' | 'privacy' | 'error';
 export const copy = { pt, en };
 export type Project = CollectionEntry<'cases'>['data'];
 export const email = 'limaisabelly285@gmail.com';
@@ -15,8 +15,8 @@ export const socials = {
 export const whatsApp = (lang: Lang) =>
   'https://wa.me/5518996505565?text=' + encodeURIComponent(copy[lang].waMessage);
 const paths = {
-  pt: { home: '/', work: '/trabalhos', about: '/sobre', contact: '/contato', error: '/404' },
-  en: { home: '/en/', work: '/en/work', about: '/en/about', contact: '/en/contact', error: '/en/404' },
+  pt: { home: '/', work: '/trabalhos', about: '/sobre', contact: '/contato', privacy: '/privacidade', error: '/404' },
+  en: { home: '/en/', work: '/en/work', about: '/en/about', contact: '/en/contact', privacy: '/en/privacy', error: '/en/404' },
 };
 export function pathFor(lang: Lang, section: Section, slug?: string) {
   if (section === 'case') return paths[lang].work + '/' + slug + '/';
@@ -30,6 +30,7 @@ export function description(lang: Lang, section: Section, project?: Project) {
     work: t.workDesc,
     about: t.aboutDesc,
     contact: t.contactDesc,
+    privacy: t.privacyDesc,
     error: t.errorDesc,
     case: project?.linhaHover[lang],
   }[section];

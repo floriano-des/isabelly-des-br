@@ -1,0 +1,56 @@
+---
+import { copy, pathFor, type Lang } from '../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const pt = lang === 'pt';
+---
+<aside id="analytics-preferences" class="analytics-preferences" data-analytics-panel hidden aria-labelledby="analytics-title">
+  <h2 id="analytics-title" tabindex="-1">{pt ? 'Cookies de análise' : 'Analytics cookies'}</h2>
+  <p>
+    {pt
+      ? 'Com sua permissão, uso o Google Analytics e o Microsoft Clarity para entender como as pessoas navegam pelo portfólio, com estatísticas, mapas de calor e gravações de sessão.'
+      : 'With your permission, I use Google Analytics and Microsoft Clarity to understand how people browse my portfolio through statistics, heatmaps and session recordings.'}
+    <a href={pathFor(lang, 'privacy')}>{copy[lang].privacy}</a>
+  </p>
+  <p data-current-choice="granted" hidden>{pt ? 'Sua escolha atual permite a análise.' : 'Your current choice allows analytics.'}</p>
+  <p data-current-choice="denied" hidden>{pt ? 'Sua escolha atual mantém a análise desativada.' : 'Your current choice keeps analytics off.'}</p>
+  <div>
+    <button type="button" data-analytics-choice="denied">{pt ? 'Recusar' : 'Decline'}</button>
+    <button type="button" data-analytics-choice="granted">{pt ? 'Permitir análise' : 'Allow analytics'}</button>
+  </div>
+</aside>
+<style>
+  .analytics-preferences {
+    position: fixed;
+    z-index: 100;
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    left: max(1rem, env(safe-area-inset-left));
+    width: min(27rem, calc(100% - 2rem));
+    max-height: 72dvh;
+    overflow: auto;
+    padding: 1.15rem 1.25rem;
+    color: #f1eaf5;
+    background: #281532;
+    border: 1px solid #916ea2;
+    box-shadow: 0 .5rem 2rem #10051d55;
+    border-radius: .5rem;
+  }
+  .analytics-preferences h2 { margin: 0; font: 600 1.2rem/1.25 var(--sans); }
+  .analytics-preferences p { margin: .55rem 0; font: 400 .93rem/1.45 var(--sans); }
+  .analytics-preferences a { color: #ecd4ff; text-decoration: underline; text-underline-offset: .15em; }
+  .analytics-preferences div { margin-top: .8rem; display: flex; gap: .6rem; flex-wrap: wrap; }
+  .analytics-preferences button {
+    flex: 1 1 auto;
+    min-height: 44px;
+    padding: .4rem .8rem;
+    border: 1px solid #d5b5e8;
+    border-radius: 2rem;
+    background: transparent;
+    color: inherit;
+    font: 600 .95rem/1.2 var(--sans);
+  }
+  .analytics-preferences button:is(:hover, :focus-visible) { background: #483051; }
+</style>
+<script>
+  import '../scripts/analytics-preferences';
+</script>

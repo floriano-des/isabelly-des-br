@@ -9,7 +9,7 @@ Atualizado em 22/11/2026. Este registro acompanha a prévia local. A revisão ed
 | Terezan Telhas | Os carrosséis arquivados com esse nome aparecem como Thaysa Paixão · Cassulinha Cabelos em Social Media. A subpasta Post Único está vazia. | Autoria e existência de material próprio da Terezan. |
 | Fichas técnicas | A prévia omite os anos e as ferramentas que têm a marcação explícita de confirmação. | Conferir ano e ferramentas de Isys Karoline, Vídeo e Ilustração. Para Zen Pensions, confirmar cliente direto ou agência parceira. |
 | Tipografia | A prévia usa Pirata One no display, Urbanist no texto e Caveat nas anotações. | Nome, arquivos e licença das três fontes originais dos carrosséis. |
-| Texturas | O rodapé credita Freepik. Os tiles preservam o enquadramento das imagens selecionadas. | Verificar as licenças e a forma de atribuição de cada textura antes de publicar. |
+| Texturas | A seção “Créditos do site” na página Sobre credita a Freepik. Os tiles preservam o enquadramento das imagens selecionadas. | Confirmar as licenças e a forma de atribuição de cada textura. |
 | Mascote | O site usa a cabeça do gato da identidade. O nome Sukito aparece na seção sobre os animais da Isa. | Confirmar se a mascote representa Sukito. |
 | Currículo | O download entrega o PDF da v1. | Confirmar a versão destinada ao download público. O currículo enviado nesta revisão serviu de fonte para experiência, formação e cursos. |
 | Vanessa Rosa | As 12 pranchas originais de 1400 × 800 ocupam toda a largura do celular e chegam a 1400 px no desktop. | Disponibilidade dos originais em resolução maior. |

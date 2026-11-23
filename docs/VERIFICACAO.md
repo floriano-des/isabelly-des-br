@@ -4,6 +4,9 @@
 
 ## Build e conteúdo
 
+- Na revisão de privacidade, a compilação passou a gerar 28 páginas, com 24 URLs no sitemap e 26 cartões de compartilhamento. Nas 26 rotas públicas em português e inglês foram conferidos os links internos, as âncoras, os rodapés e os destinos de contato. O formulário tem máscara para as gravações de sessão e link para a política de privacidade em ambos os idiomas.
+- No Chrome, o build foi testado com o nome de domínio de produção e as conexões externas interceptadas. A primeira visita e a recusa não acionaram serviços de análise. O aceite carregou o GTM uma vez por documento, inclusive navegando entre páginas Astro. A revogação interrompeu a medição nas duas abas abertas, removeu os cookies próprios do GA4 e do Clarity e preservou o cookie de teste alheio à análise. Com JavaScript desativado, o endereço de contato e a política ficaram acessíveis e nenhum rastreador foi carregado.
+
 - `npm run media` concluiu com os 200 arquivos de origem dos sete cases, sendo 190 imagens e dez vídeos. Os dez vídeos têm MP4, WebM, faixa de áudio e poster.
 - `npm run check` terminou com zero erros e zero avisos. `npm run build` gerou as 26 páginas e o sitemap. O índice do Git também foi exportado para uma pasta limpa. Nessa cópia, sem _material, npm ci e npm run build passaram.
 - O sitemap lista 22 URLs indexáveis. As rotas de erro, a página de treino e a reserva de migração ficam fora.

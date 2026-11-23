@@ -1,0 +1,12 @@
+---
+import { email } from '../lib/site';
+
+interface Props {
+  class?: string;
+  'data-copy-email'?: boolean;
+}
+---
+
+<!--email_off-->
+<a href={'mailto:' + email} {...Astro.props}>{email}</a>
+<!--/email_off-->

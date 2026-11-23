@@ -10,7 +10,10 @@ const pages = {
   work: { title: ['Trabalhos', 'Work'], caption: ['Marcas, impressos e ilustrações', 'Branding, print and illustration'], paper: '#d4bed1' },
   about: { title: ['Sobre mim', 'About me'], caption: ['Percurso e influências', 'Background and influences'], image: 'sobre-infancia', paper: '#c9b3cb' },
   contact: { title: ['Vamos conversar?', 'Let’s talk'], caption: ['Contato', 'Contact'], image: 'foto-4', paper: '#c7b1c6' },
-  error: { title: ['404', '404'], caption: ['Página perdida', 'Page not found'], paper: '#c9b3cb' }
+  error: { title: ['404', '404'], caption: ['Página perdida', 'Page not found'], paper: '#c9b3cb',
+    graphic: { file: 'media/gravuras/morcego.png', width: 575, alt: { pt: 'Gravura de um morcego de asas abertas sobre papel lilás.', en: 'An engraving of a bat with outstretched wings on lilac paper.' } } },
+  privacy: { title: ['Privacidade', 'Privacy'], caption: ['Dados pessoais', 'Personal data'], paper: '#d4c3d6',
+    graphic: { file: 'cursor/gato-ameixa.svg', width: 265, alt: { pt: 'O símbolo da marca é a cabeça de um gato roxo sobre papel lilás.', en: 'The brand’s purple cat-head symbol is centred on lilac paper.' } } }
 };
 const projects = {
   'vanessa-rosa': { paper: '#dbccc2' },
@@ -117,10 +120,10 @@ async function artwork(root, manifest, layout) {
       visuals.push({ input: await sharp(source(manifest.covers[project])).resize(w, h, { fit: 'cover' }).png().toBuffer(), left: split + 48 + x, top: 80 + y });
     }
     alt = { pt: 'Monograma de Vanessa Rosa sobre mãos, cartões de AmarElo Fotografia e retratos em grafite num caderno.', en: 'Vanessa Rosa’s monogram over a photograph of hands, AmarElo Fotografia business cards and pencil portraits in a sketchbook.' };
-  } else if (layout.key === 'error') {
-    const bat = path.join(root, 'public/media/gravuras/morcego.png');
-    visuals.push(centered(await asPng(sharp(bat).resize({ width: 575 }))));
-    alt = { pt: 'Gravura de um morcego de asas abertas sobre papel lilás.', en: 'An engraving of a bat with outstretched wings on lilac paper.' };
+  } else if (layout.graphic) {
+    const { file, width, alt: description } = layout.graphic;
+    visuals.push(centered(await asPng(sharp(path.join(root, 'public', file)).resize({ width }))));
+    alt = description;
   } else if (layout.key === 'video' && manifest.videoFrames.length === 3) {
     for (const [i, key] of manifest.videoFrames.entries()) {
       const frame = await sharp(source(key)).resize({ width: 196, height: 348, fit: 'inside' }).png().toBuffer();
