@@ -5,11 +5,11 @@ const { lang } = Astro.props;
 const pt = lang === 'pt';
 ---
 <aside id="analytics-preferences" class="analytics-preferences" data-analytics-panel hidden aria-labelledby="analytics-title">
-  <h2 id="analytics-title" tabindex="-1">{pt ? 'Cookies de análise' : 'Analytics cookies'}</h2>
+  <h2 id="analytics-title" tabindex="-1">{pt ? 'Análise de navegação' : 'Site analytics'}</h2>
   <p>
     {pt
-      ? 'Com sua permissão, uso o Google Analytics e o Microsoft Clarity para entender como as pessoas navegam pelo portfólio, com estatísticas, mapas de calor e gravações de sessão.'
-      : 'With your permission, I use Google Analytics and Microsoft Clarity to understand how people browse my portfolio through statistics, heatmaps and session recordings.'}
+      ? 'Com sua permissão, uso o Google Analytics para contar visitas, o Microsoft Clarity para ver mapas de calor e gravações de sessão, e o Cloudflare Web Analytics para medir tempos de carregamento sem cookies de identificação.'
+      : 'With your permission, I use Google Analytics to count visits, Microsoft Clarity for heatmaps and session replays, and Cloudflare Web Analytics to measure page load times without using cookies to identify visitors.'}
     <a href={pathFor(lang, 'privacy')}>{copy[lang].privacy}</a>
   </p>
   <p data-current-choice="granted" hidden>{pt ? 'Sua escolha atual permite a análise.' : 'Your current choice allows analytics.'}</p>

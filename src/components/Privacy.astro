@@ -10,7 +10,7 @@ const { lang } = Astro.props;
 const t = {
   pt: {
     title: 'Política de privacidade',
-    intro: 'Eu sou Isabelly Lima, responsável por este portfólio e pelo uso dos dados pessoais descrito aqui. Você pode ver meus trabalhos e entrar em contato mesmo que recuse os cookies de análise.',
+    intro: 'Eu sou Isabelly Lima, responsável por este portfólio e pelo uso dos dados pessoais descrito aqui. Você pode ver meus trabalhos e entrar em contato mesmo que recuse a análise de navegação.',
     browsing: 'Quando você visita o site',
     hosting: 'A Cloudflare hospeda o portfólio. Para entregar as páginas e proteger o site, o serviço pode processar informações técnicas, como seu endereço IP e o endereço da página solicitada.',
     cloudflare: 'Política da Cloudflare',
@@ -26,6 +26,8 @@ const t = {
     googleLink: 'Como o Google Analytics usa cookies',
     clarity: 'O Microsoft Clarity usa interações como cliques e rolagens para gerar mapas de calor e reproduções de sessões no site. O conteúdo digitado nos campos do formulário fica oculto nessas reproduções.',
     clarityLink: 'Dados coletados pelo Clarity',
+    performance: 'Com a mesma autorização, uso o Cloudflare Web Analytics para medir quanto tempo as páginas levam para carregar no seu navegador e identificar as mais lentas. O serviço faz essa medição sem usar cookies para identificar visitantes.',
+    performanceLink: 'Como funciona o Cloudflare Web Analytics',
     settings: 'Preferências de cookies',
     choices: 'Você pode aceitar, recusar ou retirar a autorização neste navegador. Ao retirá-la, você interrompe as medições futuras. As preferências também ficam disponíveis no rodapé.',
     noScript: 'Com o JavaScript desativado, as ferramentas de análise ficam desligadas.',
@@ -38,7 +40,7 @@ const t = {
   },
   en: {
     title: 'Privacy policy',
-    intro: 'I’m Isabelly Lima. I run this portfolio and am responsible for how personal data is used here. You can browse my work and get in touch even if you decline analytics cookies.',
+    intro: 'I’m Isabelly Lima. I run this portfolio and am responsible for how personal data is used here. You can browse my work and get in touch even if you decline site analytics.',
     browsing: 'When you visit the site',
     hosting: 'Cloudflare hosts this portfolio. To deliver pages and protect the site, it may process technical information such as your IP address and the address of the page you request.',
     cloudflare: 'Cloudflare’s privacy policy',
@@ -54,6 +56,8 @@ const t = {
     googleLink: 'How Google Analytics uses cookies',
     clarity: 'Microsoft Clarity uses interactions such as clicks and scrolling to create heatmaps and session replays of the site. The contents of the contact form fields are masked in these replays.',
     clarityLink: 'Data collected by Clarity',
+    performance: 'With the same permission, I use Cloudflare Web Analytics to measure how long pages take to load in your browser and identify slow pages. The service measures these times without using cookies to identify visitors.',
+    performanceLink: 'How Cloudflare Web Analytics works',
     settings: 'Cookie preferences',
     choices: 'You can accept, decline or withdraw permission in this browser. Withdrawing permission stops future measurements. You can also find these preferences in the footer.',
     noScript: 'With JavaScript disabled, the analytics tools stay off.',
@@ -68,6 +72,7 @@ const t = {
 
 const pt = lang === 'pt';
 const cloudflare = pt ? 'https://www.cloudflare.com/pt-br/privacypolicy/' : 'https://www.cloudflare.com/privacypolicy/';
+const webAnalytics = pt ? 'https://www.cloudflare.com/pt-br/web-analytics/' : 'https://www.cloudflare.com/web-analytics/';
 const analytics = 'https://support.google.com/analytics/answer/11397207?hl=' + (pt ? 'pt-BR' : 'en');
 const clarity = 'https://learn.microsoft.com/' + (pt ? 'pt-br' : 'en-us') + '/clarity/setup-and-installation/clarity-data';
 const anpd = 'https://www.gov.br/anpd/pt-br/canais_atendimento/cidadao-titular-de-dados/denuncia-peticao-de-titular-referente-lgpd';
@@ -99,6 +104,7 @@ const anpd = 'https://www.gov.br/anpd/pt-br/canais_atendimento/cidadao-titular-d
       <p>{t.consent}</p>
       <p>{t.google} <a href={analytics}>{t.googleLink}</a>.</p>
       <p>{t.clarity} <a href={clarity}>{t.clarityLink}</a>.</p>
+      <p>{t.performance} <a href={webAnalytics}>{t.performanceLink}</a>.</p>
       <p>{t.choices}</p>
       <button class="privacy-action" type="button" data-privacy-settings hidden>{t.settings}</button>
       <noscript><p>{t.noScript}</p></noscript>

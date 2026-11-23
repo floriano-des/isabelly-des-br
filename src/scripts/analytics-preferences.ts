@@ -44,6 +44,12 @@ function startTracking() {
   script.async = true;
   script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PJGH2MT6';
   document.head.append(script);
+
+  const performanceBeacon = document.createElement('script');
+  performanceBeacon.type = 'module';
+  performanceBeacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  performanceBeacon.dataset.cfBeacon = JSON.stringify({ token: '829177c6197349e98d60450cf2d61481' });
+  document.head.append(performanceBeacon);
 }
 
 function clearAnalyticsCookies() {
