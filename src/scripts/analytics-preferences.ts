@@ -33,7 +33,7 @@ function signalConsent(state: Choice, action: 'default' | 'update') {
   window.clarity?.('consentv2', { analytics_Storage: state, ad_Storage: 'denied' });
 }
 function startTracking() {
-  if (!production || tracking || choice !== 'granted') return;
+  if (!production || tracking || choice !== 'granted' || document.body.dataset.page === 'error') return;
   tracking = true;
   const queue: Clarity = function () { (queue.q ??= []).push(arguments); };
   window.clarity ??= queue;

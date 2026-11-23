@@ -59,6 +59,7 @@ const structured =
 <!doctype html>
 <html lang={lang === 'pt' ? 'pt-BR' : 'en-GB'} transition:animate="none">
   <head>
+    {section === 'error' && <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'" />}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#13071D" />
@@ -104,7 +105,7 @@ const structured =
         '\\u003c',
       )}
     ></script>
-    <ClientRouter fallback="swap" />
+    {section !== 'error' && <ClientRouter fallback="swap" />}
   </head>
   <body data-lang={lang} data-page={section}>
     <a class="skip" href="#conteudo">
